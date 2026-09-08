@@ -84,7 +84,7 @@ export function Discovery() {
           </Chip>
           {categories.map((c) => (
             <Chip key={c.id} active={category === c.id} onClick={() => setCategory(c.id)}>
-              <span aria-hidden="true">{c.emoji}</span> {c.label}
+              {c.label}
             </Chip>
           ))}
         </div>

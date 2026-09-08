@@ -80,9 +80,10 @@ export function CustomerHomeScreen() {
         <div className="mt-3 flex gap-[6px] overflow-hidden">
           {[
             { l: "All", on: true },
-            { l: "🍚 Rice", on: false },
-            { l: "🥘 Soups", on: false },
-            { l: "🍗 Grills", on: false },
+            { l: "Rice", on: false },
+            { l: "Soups", on: false },
+            { l: "Grills", on: false },
+            { l: "Swallow", on: false },
           ].map((c) => (
             <span
               key={c.l}

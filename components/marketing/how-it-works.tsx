@@ -63,7 +63,7 @@ function Step({
       className="flex flex-col overflow-hidden rounded-lg border border-line bg-white shadow-[var(--shadow-sm)]"
       style={{ "--reveal-delay": `${(Number(n) - 1) * 110}ms` } as React.CSSProperties}
     >
-      <div className="relative h-[15.5rem] overflow-hidden border-b border-line bg-[linear-gradient(165deg,#fff6ec,#fdfaf5)] p-5">
+      <div className="relative h-[14.5rem] overflow-hidden border-b border-line bg-[linear-gradient(165deg,#fff6ec,#fdfaf5)] p-5">
         <span
           aria-hidden="true"
           className="pointer-events-none absolute -right-1 -top-3 z-0 font-headline text-[4.5rem] font-bold leading-none text-ember/[0.07]"

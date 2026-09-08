@@ -40,14 +40,14 @@ export type CategoryId =
   | "drinks"
   | "sweet";
 
-export const categories: { id: CategoryId; label: string; emoji: string }[] = [
-  { id: "rice", label: "Rice & pasta", emoji: "🍚" },
-  { id: "soups", label: "Soups & stews", emoji: "🥘" },
-  { id: "swallow", label: "Swallow", emoji: "🍠" },
-  { id: "grills", label: "Grills & proteins", emoji: "🍗" },
-  { id: "snacks", label: "Small chops", emoji: "🥟" },
-  { id: "sweet", label: "Cakes & pastries", emoji: "🍰" },
-  { id: "drinks", label: "Drinks", emoji: "🥤" },
+export const categories: { id: CategoryId; label: string }[] = [
+  { id: "rice", label: "Rice & pasta" },
+  { id: "soups", label: "Soups & stews" },
+  { id: "swallow", label: "Swallow" },
+  { id: "grills", label: "Grills & proteins" },
+  { id: "snacks", label: "Small chops" },
+  { id: "sweet", label: "Cakes & pastries" },
+  { id: "drinks", label: "Drinks" },
 ];
 
 export type Kitchen = {

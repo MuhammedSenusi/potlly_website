@@ -34,15 +34,14 @@ export function Hero() {
             </p>
 
             <h1 className="mt-6 text-display text-ink">
-              Real home-cooked food,{" "}
+              Real home-cooked food, made by{" "}
               <span className="relative inline-block whitespace-nowrap">
-                <span className="relative z-10">made by</span>
+                <span className="relative z-10">people near you.</span>
                 <span
                   aria-hidden="true"
                   className="absolute inset-x-0 bottom-[0.11em] -z-0 h-[0.26em] rounded-full bg-amber/35"
                 />
-              </span>{" "}
-              people near you.
+              </span>
             </h1>
 
             <p className="mt-6 max-w-xl text-lead text-ink-2">
@@ -96,7 +95,7 @@ export function Hero() {
             </div>
 
             {/* Dish card, floated off the photograph's bottom-right corner */}
-            <div className="absolute bottom-5 right-0 z-20 flex w-[15.5rem] items-center gap-3 rounded-[1.15rem] border border-line bg-white/96 p-2.5 shadow-[var(--shadow-lift)] backdrop-blur-md sm:right-3 sm:w-[17rem] lg:right-0">
+            <div className="absolute bottom-5 right-0 z-20 flex w-[16.5rem] items-center gap-3 rounded-[1.15rem] border border-line bg-white/96 p-2.5 shadow-[var(--shadow-lift)] backdrop-blur-md sm:right-3 sm:w-[18.5rem] lg:right-0 lg:w-[19rem]">
               <div className="relative size-12 shrink-0 overflow-hidden rounded-xl">
                 <Image src={featured.image} alt="" fill sizes="48px" className="object-cover" />
               </div>
