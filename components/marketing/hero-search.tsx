@@ -57,7 +57,7 @@ export function HeroSearch() {
 
       <button
         type="submit"
-        className="h-12 shrink-0 rounded-full bg-ember px-6 text-[0.9375rem] font-bold text-white shadow-[var(--shadow-ember)] transition-[background-color,transform] duration-200 hover:bg-ember-dark active:translate-y-px"
+        className="h-12 shrink-0 rounded-full bg-ember-dark px-6 text-[0.9375rem] font-bold text-white shadow-[var(--shadow-ember)] transition-[background-color,transform] duration-200 hover:bg-ember-deep active:translate-y-px"
       >
         Find food
       </button>

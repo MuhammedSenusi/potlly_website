@@ -103,7 +103,7 @@ function DiscoverArt() {
         {picks.map((d) => (
           <div
             key={d.id}
-            className="overflow-hidden rounded-xl border border-line bg-white shadow-[var(--shadow-xs)]"
+            className="min-w-0 overflow-hidden rounded-xl border border-line bg-white shadow-[var(--shadow-xs)]"
           >
             <div className="relative h-[3.75rem]">
               <Image src={d.image} alt="" fill sizes="140px" className="object-cover" />

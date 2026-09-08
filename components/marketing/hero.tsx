@@ -59,7 +59,7 @@ export function Hero() {
                 <IconArrowRight className="size-[1.15rem]" />
               </ButtonLink>
               <ButtonLink href="/become-a-kitchen" variant="secondary" size="lg">
-                List your kitchen
+                Become a kitchen
               </ButtonLink>
             </div>
 
@@ -95,7 +95,7 @@ export function Hero() {
             </div>
 
             {/* Dish card, floated off the photograph's bottom-right corner */}
-            <div className="absolute bottom-5 right-0 z-20 flex w-[16.5rem] items-center gap-3 rounded-[1.15rem] border border-line bg-white/96 p-2.5 shadow-[var(--shadow-lift)] backdrop-blur-md sm:right-3 sm:w-[18.5rem] lg:right-0 lg:w-[19rem]">
+            <div className="absolute bottom-5 left-0 right-0 z-20 flex items-center gap-3 rounded-[1.15rem] border border-line bg-white/96 p-2.5 shadow-[var(--shadow-lift)] backdrop-blur-md sm:left-auto sm:right-3 sm:w-[18.5rem] lg:right-0 lg:w-[19rem]">
               <div className="relative size-12 shrink-0 overflow-hidden rounded-xl">
                 <Image src={featured.image} alt="" fill sizes="48px" className="object-cover" />
               </div>

@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pottly — marketing site
 
-## Getting Started
+Marketing site for Pottly, a marketplace that connects people with home cooks and
+small kitchens near them. Customers browse without an account and message a
+kitchen directly on WhatsApp or SMS to order; kitchens create an account to
+publish a profile, a menu and their delivery terms.
 
-First, run the development server:
+Built with Next.js (App Router), React and Tailwind CSS v4. No UI or icon
+libraries — the design system, icon set and product mockups are all local.
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install      # or npm install
+bun run dev      # http://localhost:3000
+bun run build
+bun run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where things live
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Path | What it holds |
+| --- | --- |
+| `app/globals.css` | The design system: colour, type, radius, shadow and motion tokens in a Tailwind v4 `@theme` block. Start here. |
+| `constants/theme.ts` | The same tokens in TypeScript, mirroring the mobile app's theme. `docs/mobile-app-theme.reference.ts` is the untouched React Native original. |
+| `constants/site.ts` | Brand name, canonical URL, contact addresses, navigation and app-store links. |
+| `constants/content.ts` | Every kitchen, dish, price and review shown on the site. Swap this for live data without touching a component. |
+| `constants/photo-credits.json` | Attribution for the placeholder photography, rendered at `/credits`. |
+| `components/ui/` | Primitives: buttons, layout, badges, ratings, icons. |
+| `components/site/` | Header, footer, page masthead, legal layout, scroll-reveal. |
+| `components/marketing/` | Landing-page sections. |
+| `components/app-ui/` | The phone frame and the four product screens drawn in HTML. |
+| `public/food/` | Optimised WebP photography. |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Product mockups
 
-## Learn More
+The app screens on the site are not screenshots. `components/app-ui/screens.tsx`
+reconstructs the customer home, favorites, kitchen profile and kitchen dashboard
+in HTML, laid out at a logical 320×660 and scaled to whatever width the frame is
+given. They stay sharp at any density and update when the design system does.
+Each frame is exposed to assistive technology as a single labelled image.
 
-To learn more about Next.js, take a look at the following resources:
+## Before launch
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Replace the photography.** Everything in `public/food/` is openly licensed
+   placeholder imagery credited at `/credits`, and several images are
+   share-alike. Swap in Pottly's own kitchen and dish photos, then delete
+   `constants/photo-credits.json` and the `/credits` route along with its footer
+   link.
+2. **Replace the sample listings.** The kitchens, cooks, dishes and reviews in
+   `constants/content.ts` are illustrative examples, labelled as such on the
+   page. Point the site at real data.
+3. **Set the canonical URL** in `constants/site.ts` (`site.url`) — it drives
+   metadata, Open Graph, the sitemap and robots.txt.
+4. **Add the store links** in `site.apps` once the app is listed. The badges
+   render as non-clickable "coming soon" plates until then.
+5. **Have the legal pages reviewed.** `/terms` and `/privacy` are structured
+   drafts and say so on the page. They need a lawyer and a check against the
+   third-party services actually in use.
+6. **Add social links** in `site.socials` when the accounts exist. The footer
+   renders nothing while the array is empty.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The mobile app's brand palette sets white text on `#e85d04`, which is 3.5:1 and
+  below WCAG AA. On the web the same brand orange is used for icons and fills,
+  while buttons use the app's `primaryDark` (`#c44303`) so white labels reach
+  5.1:1. Worth revisiting in the app too.
+- Motion is opt-out: scroll reveals only activate once JavaScript confirms
+  `IntersectionObserver` support and `prefers-reduced-motion` is not set, so the
+  page renders complete without JavaScript.
