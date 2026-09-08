@@ -90,7 +90,7 @@ export default function HowItWorksPage() {
               </ol>
               <div className="mt-10">
                 <ButtonLink href="/become-a-kitchen" size="lg">
-                  Become a kitchen
+                  List your kitchen
                   <IconArrowRight className="size-[1.15rem]" />
                 </ButtonLink>
               </div>

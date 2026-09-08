@@ -128,11 +128,11 @@ export default function AboutPage() {
             <div className="max-w-xl">
               <h2 className="font-headline text-h3 text-ink">Cooking something worth finding?</h2>
               <p className="mt-2 leading-relaxed text-ink-2">
-                List your kitchen and let the people already living around you know you exist.
+                Let the people already living around you know you exist.
               </p>
             </div>
             <ButtonLink href="/become-a-kitchen" size="lg" className="shrink-0">
-              Become a kitchen
+              List your kitchen
               <IconArrowRight className="size-[1.15rem]" />
             </ButtonLink>
           </div>

@@ -104,7 +104,7 @@ export function AppPromo() {
             <div className="relative flex justify-center gap-5 lg:justify-end">
               <div
                 data-reveal
-                className="hidden translate-y-16 sm:block"
+                className="hidden translate-y-24 sm:block"
                 style={{ "--reveal-delay": "100ms" } as React.CSSProperties}
               >
                 <PhoneFrame
@@ -115,7 +115,7 @@ export function AppPromo() {
                   <KitchenProfileScreen />
                 </PhoneFrame>
               </div>
-              <div data-reveal className="translate-y-10">
+              <div data-reveal className="translate-y-16">
                 <PhoneFrame
                   label="The Pottly home screen showing nearby dishes"
                   width={248}

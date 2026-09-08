@@ -114,7 +114,7 @@ export function Discovery() {
         <>
           <div
             ref={railRef}
-            className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 no-scrollbar sm:px-8 lg:hidden"
+            className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-pl-5 px-5 pb-4 no-scrollbar sm:scroll-pl-8 sm:px-8 lg:hidden"
           >
             {results.map((d, i) => (
               <DishCard

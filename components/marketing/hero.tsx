@@ -59,7 +59,7 @@ export function Hero() {
                 <IconArrowRight className="size-[1.15rem]" />
               </ButtonLink>
               <ButtonLink href="/become-a-kitchen" variant="secondary" size="lg">
-                Become a kitchen
+                List your kitchen
               </ButtonLink>
             </div>
 
@@ -111,10 +111,10 @@ export function Hero() {
             </div>
 
             {/* The app itself, overlapping the photograph's left edge */}
-            <div className="pointer-events-none absolute -left-2 top-1/2 z-10 hidden -translate-y-1/2 lg:block">
+            <div className="pointer-events-none absolute -left-6 top-1/2 z-10 hidden -translate-y-1/2 lg:block xl:-left-10">
               <PhoneFrame
                 label="The Pottly app home screen, showing nearby dishes and top-rated kitchens in Yaba, Lagos"
-                width={196}
+                width={228}
                 className="rotate-[-6deg]"
               >
                 <CustomerHomeScreen />
@@ -134,7 +134,7 @@ export function Hero() {
 
             {/* Floating order chip */}
             <div
-              className="animate-float absolute bottom-0 left-0 z-20 flex items-center gap-2.5 rounded-full border border-line bg-white py-2.5 pl-2.5 pr-4 shadow-[var(--shadow-card)] sm:left-2 lg:left-6"
+              className="animate-float absolute left-0 top-2 z-20 flex items-center gap-2.5 rounded-full border border-line bg-white py-2.5 pl-2.5 pr-4 shadow-[var(--shadow-card)] sm:bottom-0 sm:left-2 sm:top-auto lg:left-6"
               style={{ animationDelay: "-3.2s" }}
             >
               <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#25D366] text-white">
