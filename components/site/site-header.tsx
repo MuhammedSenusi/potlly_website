@@ -65,7 +65,7 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-2.5 md:flex">
           <ButtonLink href="/become-a-kitchen" variant="secondary" size="md">
-            List your kitchen
+            Become a kitchen
           </ButtonLink>
           <ButtonLink href="/#discover" size="md">
             Find food near you
@@ -123,7 +123,7 @@ export function SiteHeader() {
             size="lg"
             onClick={() => setOpen(false)}
           >
-            List your kitchen
+            Become a kitchen
           </ButtonLink>
         </div>
       </div>

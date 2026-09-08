@@ -52,7 +52,11 @@ export default function BecomeAKitchenPage() {
         </p>
       </PageHero>
 
-      <KitchenBenefits />
+      <KitchenBenefits
+        eyebrow="What you get"
+        title="Everything you need to run a listing."
+        lead="A kitchen account is a small set of tools that do one job each — describe your kitchen, publish your menu, and let people reach you on the number you already use."
+      />
 
       {/* What your listing looks like */}
       <section className="py-20 sm:py-24 lg:py-28">

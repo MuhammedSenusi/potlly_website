@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from "react";
+import type { ReactNode } from "react";
 
 /** Logical size every screen in `screens.tsx` is authored against. */
 const SCREEN_W = 320;

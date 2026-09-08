@@ -83,7 +83,6 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        // eslint-disable-next-line react/no-danger -- static, locally-authored JSON-LD
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <DiscoveryProvider>

@@ -24,36 +24,38 @@ export default async function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          padding: 72,
+          padding: 64,
           backgroundColor: "#fdfaf5",
           backgroundImage:
             "radial-gradient(110% 80% at 82% -10%, #ffdcb8 0%, #fdf2e4 42%, #fdfaf5 74%)",
           fontFamily: "Jakarta",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div
             style={{
-              width: 62,
-              height: 62,
-              borderRadius: 18,
+              width: 54,
+              height: 54,
+              borderRadius: 15,
               backgroundColor: "#e85d04",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              fontFamily: "Epilogue",
+              fontSize: 32,
+              color: "#ffffff",
             }}
           >
-            <div
-              style={{
-                width: 34,
-                height: 22,
-                borderRadius: "0 0 12px 12px",
-                backgroundColor: "#ffffff",
-                display: "flex",
-              }}
-            />
+            P
           </div>
-          <div style={{ fontFamily: "Epilogue", fontSize: 40, color: "#191410", letterSpacing: -1.2 }}>
+          <div
+            style={{
+              fontFamily: "Epilogue",
+              fontSize: 34,
+              color: "#191410",
+              letterSpacing: -1,
+            }}
+          >
             Pottly
           </div>
         </div>
@@ -62,11 +64,11 @@ export default async function OpenGraphImage() {
           <div
             style={{
               fontFamily: "Epilogue",
-              fontSize: 78,
-              lineHeight: 1.02,
-              letterSpacing: -3,
+              fontSize: 62,
+              lineHeight: 1.06,
+              letterSpacing: -2.4,
               color: "#191410",
-              maxWidth: 880,
+              maxWidth: 900,
               display: "flex",
               flexDirection: "column",
             }}
@@ -74,24 +76,32 @@ export default async function OpenGraphImage() {
             <span>Real home-cooked food,</span>
             <span>made by people near you.</span>
           </div>
-          <div style={{ fontSize: 29, lineHeight: 1.45, color: "#4a423b", maxWidth: 760, marginTop: 26 }}>
+          <div
+            style={{
+              fontSize: 25,
+              lineHeight: 1.45,
+              color: "#4a423b",
+              maxWidth: 720,
+              marginTop: 22,
+            }}
+          >
             Discover meals from local home cooks and small kitchens. Browse menus, see prices, and
             message the kitchen directly to order.
           </div>
         </div>
 
-        <div style={{ display: "flex", gap: 14 }}>
+        <div style={{ display: "flex", gap: 12 }}>
           {["No account needed", "Real prices", "Cash on delivery"].map((t) => (
             <div
               key={t}
               style={{
                 display: "flex",
-                fontSize: 23,
+                fontSize: 20,
                 color: "#4a423b",
                 border: "1px solid #e0d3c0",
                 backgroundColor: "#ffffff",
                 borderRadius: 999,
-                padding: "12px 24px",
+                padding: "10px 20px",
               }}
             >
               {t}

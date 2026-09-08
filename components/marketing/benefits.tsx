@@ -97,7 +97,15 @@ const kitchenTools = [
   { Icon: IconShield, label: "Stay in control", body: "Pause your kitchen, hide a dish, or update your hours any time." },
 ];
 
-export function KitchenBenefits() {
+export function KitchenBenefits({
+  eyebrow = "For kitchens",
+  title = "Turn your kitchen into a local food business.",
+  lead = "If you already cook for people, you already have the hard part. Pottly gives you the shopfront: a profile people can find, a menu they can read, and a rating that grows with every good plate you send out.",
+}: {
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+} = {}) {
   return (
     <section
       id="for-kitchens"
@@ -110,15 +118,9 @@ export function KitchenBenefits() {
       <Container className="relative">
         <div className="grid gap-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:gap-16">
           <div>
-            <Eyebrow tone="light">For kitchens</Eyebrow>
-            <h2 className="mt-4 text-h2 text-white">
-              Turn your kitchen into a local food business.
-            </h2>
-            <p className="mt-5 max-w-lg text-lead text-white/65">
-              If you already cook for people, you already have the hard part. Pottly gives you the
-              shopfront: a profile people can find, a menu they can read, and a rating that grows
-              with every good plate you send out.
-            </p>
+            <Eyebrow tone="light">{eyebrow}</Eyebrow>
+            <h2 className="mt-4 text-h2 text-white">{title}</h2>
+            <p className="mt-5 max-w-lg text-lead text-white/65">{lead}</p>
 
             <ul className="mt-9 grid gap-x-8 gap-y-5 sm:grid-cols-2">
               {kitchenTools.map((t) => (
