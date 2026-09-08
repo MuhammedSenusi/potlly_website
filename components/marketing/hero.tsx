@@ -77,7 +77,7 @@ export function Hero() {
               A photograph, the app over its left edge, and two chips lifted off
               the surface. Padding on the wrapper keeps every floating element
               inside the section, so nothing is ever clipped. */}
-          <div className="relative mx-auto w-full max-w-[34rem] px-2 pb-14 pt-8 sm:px-8 sm:pb-16 lg:mx-0 lg:max-w-none lg:pl-16 lg:pr-4 xl:pl-24">
+          <div className="relative mx-auto w-full max-w-[34rem] px-2 pb-14 pt-8 sm:px-8 sm:pb-16 lg:mx-0 lg:max-w-none lg:px-0 xl:pl-24 xl:pr-4">
             <div className="relative aspect-[5/6] overflow-hidden rounded-[2rem] bg-sand shadow-[var(--shadow-lift)] sm:aspect-[4/5]">
               <Image
                 src="/food/hero-main.webp"
@@ -111,10 +111,10 @@ export function Hero() {
             </div>
 
             {/* The app itself, overlapping the photograph's left edge */}
-            <div className="pointer-events-none absolute -left-6 top-1/2 z-10 hidden -translate-y-1/2 lg:block xl:-left-10">
+            <div className="pointer-events-none absolute -left-10 top-1/2 z-10 hidden -translate-y-1/2 xl:block">
               <PhoneFrame
                 label="The Pottly app home screen, showing nearby dishes and top-rated kitchens in Yaba, Lagos"
-                width={228}
+                width={232}
                 className="rotate-[-6deg]"
               >
                 <CustomerHomeScreen />
