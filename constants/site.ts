@@ -40,7 +40,7 @@ export const nav = {
     { label: "Top rated", href: "/#reviews" },
   ],
   kitchens: [
-    { label: "List your kitchen", href: "/become-a-kitchen" },
+    { label: "Become a kitchen", href: "/become-a-kitchen" },
     { label: "Kitchen login", href: "/become-a-kitchen#login" },
     { label: "How it works", href: "/how-it-works" },
   ],

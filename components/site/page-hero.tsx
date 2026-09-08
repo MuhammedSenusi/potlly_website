@@ -42,7 +42,7 @@ export function Prose({ children }: { children: ReactNode }) {
     <div
       className="
         max-w-[46rem] text-[1rem] leading-[1.72] text-ink-2
-        [&_a]:font-semibold [&_a]:text-ember [&_a]:underline [&_a]:decoration-ember/30 [&_a]:underline-offset-4 hover:[&_a]:decoration-ember
+        [&_a]:font-semibold [&_a]:text-ember-dark [&_a]:underline [&_a]:decoration-ember/30 [&_a]:underline-offset-4 hover:[&_a]:decoration-ember
         [&_h2]:mt-14 [&_h2]:scroll-mt-28 [&_h2]:font-headline [&_h2]:text-[1.5rem] [&_h2]:font-bold [&_h2]:tracking-[-0.02em] [&_h2]:text-ink
         [&_h3]:mt-9 [&_h3]:font-headline [&_h3]:text-[1.125rem] [&_h3]:font-bold [&_h3]:text-ink
         [&_li]:mt-2
@@ -69,7 +69,7 @@ export function TableOfContents({ items }: { items: { id: string; label: string 
           <li key={i.id}>
             <a
               href={`#${i.id}`}
-              className="text-[0.875rem] text-ink-2 transition-colors hover:text-ember"
+              className="text-[0.875rem] text-ink-2 transition-colors hover:text-ember-dark"
             >
               {i.label}
             </a>

@@ -134,7 +134,7 @@ export default function BecomeAKitchenPage() {
                     separate web login yet. If you cannot get in, email{" "}
                     <a
                       href={`mailto:${site.contact.support}`}
-                      className="font-semibold text-ember underline decoration-ember/30 underline-offset-4"
+                      className="font-semibold text-ember-dark underline decoration-ember/30 underline-offset-4"
                     >
                       {site.contact.support}
                     </a>{" "}

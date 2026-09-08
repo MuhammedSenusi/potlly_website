@@ -39,7 +39,7 @@ export function Eyebrow({ children, tone = "ember" }: { children: ReactNode; ton
   return (
     <span
       className={`inline-flex items-center gap-2 text-[0.6875rem] font-bold uppercase tracking-[0.16em] ${
-        tone === "ember" ? "text-ember" : "text-amber"
+        tone === "ember" ? "text-ember-dark" : "text-amber"
       }`}
     >
       <span aria-hidden="true" className="h-px w-6 bg-current opacity-50" />

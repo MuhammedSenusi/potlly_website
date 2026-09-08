@@ -78,7 +78,7 @@ export default function HowItWorksPage() {
                     </span>
                     <div>
                       <h3 className="font-headline text-[1.0625rem] font-bold text-ink">
-                        <span className="mr-2 text-[0.8125rem] font-bold text-ember">
+                        <span className="mr-2 text-[0.8125rem] font-bold text-ember-dark">
                           0{i + 1}
                         </span>
                         {s.title}

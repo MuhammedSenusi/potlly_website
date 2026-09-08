@@ -18,6 +18,7 @@
   /* ---- Brand ---------------------------------------------------------- */
   --color-ember: #e85d04;
   --color-ember-dark: #c44303;
+  --color-ember-deep: #a33602;
   --color-ember-soft: #fff2e8;
   --color-ember-tint: #ffe4cf;
   --color-amber: #faa307;
@@ -26,7 +27,7 @@
   /* ---- Warm neutrals -------------------------------------------------- */
   --color-ink: #191410;
   --color-ink-2: #4a423b;
-  --color-ink-3: #857c73;
+  --color-ink-3: #736a61;
   --color-cream: #fdfaf5;
   --color-shell: #f7f1e8;
   --color-sand: #efe5d7;

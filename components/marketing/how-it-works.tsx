@@ -66,7 +66,7 @@ function Step({
       <div className="relative h-[14.5rem] overflow-hidden border-b border-line bg-[linear-gradient(165deg,#fff6ec,#fdfaf5)] p-5">
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute -right-1 -top-3 z-0 font-headline text-[4.5rem] font-bold leading-none text-ember/[0.07]"
+          className="pointer-events-none absolute -right-1 -top-3 z-0 font-headline text-[4.5rem] font-bold leading-none text-ember-dark/[0.07]"
         >
           {n}
         </span>
@@ -74,7 +74,7 @@ function Step({
       </div>
       <div className="p-6">
         <h3 className="font-headline text-h3 text-ink">
-          <span className="mr-2 text-[0.8125rem] font-bold tracking-[0.08em] text-ember align-middle">
+          <span className="mr-2 text-[0.8125rem] font-bold tracking-[0.08em] text-ember-dark align-middle">
             {n}
           </span>
           {title}
@@ -138,7 +138,7 @@ function ChooseArt() {
             <Image src={m.image} alt="" fill sizes="36px" className="object-cover" />
           </div>
           <p className="min-w-0 flex-1 truncate text-[0.75rem] font-semibold text-ink">{m.name}</p>
-          <span className="text-[0.75rem] font-bold text-ember">{formatPrice(m.price)}</span>
+          <span className="text-[0.75rem] font-bold text-ember-dark">{formatPrice(m.price)}</span>
         </div>
       ))}
     </div>

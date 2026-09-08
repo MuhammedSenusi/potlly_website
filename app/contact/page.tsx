@@ -79,7 +79,7 @@ export default function ContactPage() {
               <p className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-ink-2">{r.body}</p>
               <a
                 href={`mailto:${r.email}`}
-                className="mt-4 inline-flex items-center gap-2 text-[0.9375rem] font-semibold text-ember underline decoration-ember/30 underline-offset-4 transition-colors hover:decoration-ember"
+                className="mt-4 inline-flex items-center gap-2 text-[0.9375rem] font-semibold text-ember-dark underline decoration-ember/30 underline-offset-4 transition-colors hover:decoration-ember"
               >
                 <IconMail className="size-4" />
                 {r.email}

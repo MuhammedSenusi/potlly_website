@@ -105,7 +105,7 @@ export function Hero() {
                   {featured.kitchen} · {featured.distanceKm} km
                 </p>
               </div>
-              <span className="shrink-0 font-headline text-[0.9375rem] font-bold text-ember">
+              <span className="shrink-0 font-headline text-[0.9375rem] font-bold text-ember-dark">
                 {formatPrice(featured.price)}
               </span>
             </div>

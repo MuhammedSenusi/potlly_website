@@ -48,7 +48,7 @@ export default function CreditsPage() {
                     <a
                       href={c.licenseUrl}
                       rel="license noopener"
-                      className="font-semibold text-ember underline decoration-ember/30 underline-offset-4 hover:decoration-ember"
+                      className="font-semibold text-ember-dark underline decoration-ember/30 underline-offset-4 hover:decoration-ember"
                     >
                       {c.license}
                     </a>

@@ -20,7 +20,7 @@ function FavoriteButton({ label, defaultOn = false }: { label: string; defaultOn
       className={`grid size-9 place-items-center rounded-full border transition-[background-color,color,transform,border-color] duration-200 ease-[var(--ease-spring)] active:scale-90 ${
         on
           ? "border-ember bg-ember text-white"
-          : "border-white/70 bg-white/92 text-ink-2 backdrop-blur-sm hover:text-ember"
+          : "border-white/70 bg-white/92 text-ink-2 backdrop-blur-sm hover:text-ember-dark"
       }`}
     >
       <IconHeart filled={on} className="size-[1.05rem]" strokeWidth={2} />
@@ -68,7 +68,7 @@ export function DishCard({
         </h3>
         <p className="mt-1 text-[0.8125rem] text-ink-3">{dish.kitchen}</p>
         <div className="mt-4 flex items-center justify-between border-t border-line pt-3">
-          <span className="font-headline text-[1.0625rem] font-bold text-ember">
+          <span className="font-headline text-[1.0625rem] font-bold text-ember-dark">
             {formatPrice(dish.price)}
           </span>
           <span className="inline-flex items-center gap-1 text-[0.8125rem] font-semibold text-ink">

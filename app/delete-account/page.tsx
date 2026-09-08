@@ -172,7 +172,7 @@ export default function DeleteAccountPage() {
               Read how account data is handled in the{" "}
               <a
                 href="/privacy"
-                className="font-semibold text-ember underline decoration-ember/30 underline-offset-4"
+                className="font-semibold text-ember-dark underline decoration-ember/30 underline-offset-4"
               >
                 privacy policy
               </a>

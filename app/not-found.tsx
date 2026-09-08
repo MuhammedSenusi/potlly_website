@@ -12,7 +12,7 @@ export default function NotFound() {
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(110%_80%_at_70%_-15%,#ffe9d2_0%,#fdf6ec_40%,#fdfaf5_72%)]"
       />
       <Container>
-        <p className="font-headline text-[0.75rem] font-bold uppercase tracking-[0.16em] text-ember">
+        <p className="font-headline text-[0.75rem] font-bold uppercase tracking-[0.16em] text-ember-dark">
           404
         </p>
         <h1 className="mt-4 max-w-2xl text-h1 text-ink">
@@ -37,7 +37,7 @@ export default function NotFound() {
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className="font-semibold text-ink-2 underline decoration-line-strong underline-offset-4 transition-colors hover:text-ember hover:decoration-ember/50"
+                  className="font-semibold text-ink-2 underline decoration-line-strong underline-offset-4 transition-colors hover:text-ember-dark hover:decoration-ember/50"
                 >
                   {l.label}
                 </Link>

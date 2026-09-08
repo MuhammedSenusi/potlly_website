@@ -110,7 +110,7 @@ export default function AboutPage() {
               >
                 <span
                   aria-hidden="true"
-                  className="font-headline text-[0.8125rem] font-bold tracking-[0.1em] text-ember"
+                  className="font-headline text-[0.8125rem] font-bold tracking-[0.1em] text-ember-dark"
                 >
                   0{i + 1}
                 </span>
