@@ -7,17 +7,13 @@ import { CustomerHomeScreen } from "@/components/app-ui/screens";
 import { formatPrice, dishes } from "@/constants/content";
 import { HeroSearch } from "./hero-search";
 
-const assurances = [
-  "No account needed to browse",
-  "Real prices, no markup",
-  "Cash on delivery",
-];
+const assurances = ["No account needed to browse", "Real prices, no markup", "Cash on delivery"];
 
 export function Hero() {
   const featured = dishes[0];
 
   return (
-    <section className="relative isolate overflow-hidden pb-16 pt-10 sm:pb-24 sm:pt-14 lg:pb-32 lg:pt-16">
+    <section className="relative isolate overflow-hidden pb-20 pt-10 sm:pb-24 sm:pt-14 lg:pb-28 lg:pt-16">
       {/* Warm light falling from the top-right, plus paper grain over the field. */}
       <div
         aria-hidden="true"
@@ -26,7 +22,7 @@ export function Hero() {
       <div aria-hidden="true" className="grain pointer-events-none absolute inset-0 -z-10" />
 
       <Container>
-        <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.06fr)] lg:gap-10 xl:gap-16">
+        <div className="grid items-center gap-16 lg:grid-cols-[minmax(0,1.06fr)_minmax(0,1fr)] lg:gap-12 xl:gap-16">
           {/* ---------------------------------------------------------- copy */}
           <div className="max-w-2xl">
             <p className="inline-flex items-center gap-2 rounded-full border border-ember-tint bg-ember-soft px-3.5 py-1.5 text-[0.75rem] font-bold text-ember-dark">
@@ -38,15 +34,15 @@ export function Hero() {
             </p>
 
             <h1 className="mt-6 text-display text-ink">
-              Real home-cooked food,
-              <br className="hidden sm:block" />{" "}
-              <span className="relative inline-block">
-                <span className="relative z-10">made by people near you.</span>
+              Real home-cooked food,{" "}
+              <span className="relative inline-block whitespace-nowrap">
+                <span className="relative z-10">made by</span>
                 <span
                   aria-hidden="true"
-                  className="absolute inset-x-0 bottom-[0.1em] -z-0 h-[0.28em] rounded-full bg-amber/35"
+                  className="absolute inset-x-0 bottom-[0.11em] -z-0 h-[0.26em] rounded-full bg-amber/35"
                 />
-              </span>
+              </span>{" "}
+              people near you.
             </h1>
 
             <p className="mt-6 max-w-xl text-lead text-ink-2">
@@ -54,7 +50,7 @@ export function Hero() {
               prices, and message the kitchen directly to order.
             </p>
 
-            <div className="mt-8">
+            <div className="mt-8 max-w-xl">
               <HeroSearch />
             </div>
 
@@ -78,52 +74,48 @@ export function Hero() {
             </ul>
           </div>
 
-          {/* ------------------------------------------------------ composition */}
-          <div className="relative">
-            {/* Anchor photograph */}
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-[30rem] overflow-hidden rounded-[2rem] bg-sand shadow-[var(--shadow-lift)] lg:mr-0 lg:max-w-none">
+          {/* ------------------------------------------------------ composition
+              A photograph, the app over its left edge, and two chips lifted off
+              the surface. Padding on the wrapper keeps every floating element
+              inside the section, so nothing is ever clipped. */}
+          <div className="relative mx-auto w-full max-w-[34rem] px-2 pb-14 pt-8 sm:px-8 sm:pb-16 lg:mx-0 lg:max-w-none lg:pl-16 lg:pr-4 xl:pl-24">
+            <div className="relative aspect-[5/6] overflow-hidden rounded-[2rem] bg-sand shadow-[var(--shadow-lift)] sm:aspect-[4/5]">
               <Image
                 src="/food/hero-main.webp"
-                alt="A plate of smoky jollof rice served with fried plantain and grilled chicken"
+                alt="A plate of smoky jollof rice served with fried plantain, salad and grilled fish"
                 fill
                 priority
                 fetchPriority="high"
-                sizes="(max-width: 640px) 92vw, (max-width: 1024px) 70vw, 34rem"
+                sizes="(max-width: 640px) 92vw, (max-width: 1024px) 60vw, 30rem"
                 className="object-cover"
               />
               <div
                 aria-hidden="true"
-                className="absolute inset-0 bg-[linear-gradient(200deg,rgba(25,20,16,0)_45%,rgba(25,20,16,0.45))]"
+                className="absolute inset-0 bg-[linear-gradient(200deg,rgba(25,20,16,0)_50%,rgba(25,20,16,0.5))]"
               />
-
-              {/* Dish card sitting on the photograph, exactly as it appears in-app */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center gap-3 rounded-[1.1rem] border border-white/50 bg-white/95 p-3 shadow-[var(--shadow-card)] backdrop-blur-md sm:right-auto sm:max-w-[17rem]">
-                <div className="relative size-12 shrink-0 overflow-hidden rounded-xl">
-                  <Image
-                    src={featured.image}
-                    alt=""
-                    fill
-                    sizes="48px"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <p className="truncate text-[0.875rem] font-bold text-ink">{featured.name}</p>
-                  <p className="truncate text-[0.75rem] text-ink-3">
-                    {featured.kitchen} · {featured.distanceKm} km
-                  </p>
-                </div>
-                <span className="shrink-0 font-headline text-[0.9375rem] font-bold text-ember">
-                  {formatPrice(featured.price)}
-                </span>
-              </div>
             </div>
 
-            {/* Phone preview, overlapping the photograph on large screens */}
-            <div className="pointer-events-none absolute -left-6 bottom-8 hidden xl:block">
+            {/* Dish card, floated off the photograph's bottom-right corner */}
+            <div className="absolute bottom-5 right-0 z-20 flex w-[15.5rem] items-center gap-3 rounded-[1.15rem] border border-line bg-white/96 p-2.5 shadow-[var(--shadow-lift)] backdrop-blur-md sm:right-3 sm:w-[17rem] lg:right-0">
+              <div className="relative size-12 shrink-0 overflow-hidden rounded-xl">
+                <Image src={featured.image} alt="" fill sizes="48px" className="object-cover" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-[0.875rem] font-bold text-ink">{featured.name}</p>
+                <p className="truncate text-[0.75rem] text-ink-3">
+                  {featured.kitchen} · {featured.distanceKm} km
+                </p>
+              </div>
+              <span className="shrink-0 font-headline text-[0.9375rem] font-bold text-ember">
+                {formatPrice(featured.price)}
+              </span>
+            </div>
+
+            {/* The app itself, overlapping the photograph's left edge */}
+            <div className="pointer-events-none absolute -left-2 top-1/2 z-10 hidden -translate-y-1/2 lg:block">
               <PhoneFrame
                 label="The Pottly app home screen, showing nearby dishes and top-rated kitchens in Yaba, Lagos"
-                width={224}
+                width={196}
                 className="rotate-[-6deg]"
               >
                 <CustomerHomeScreen />
@@ -131,7 +123,7 @@ export function Hero() {
             </div>
 
             {/* Floating rating chip */}
-            <div className="animate-float absolute -right-1 -top-4 hidden rounded-[1.1rem] border border-line bg-white px-4 py-3 shadow-[var(--shadow-card)] sm:block lg:-right-3">
+            <div className="animate-float absolute right-0 top-0 z-20 hidden rounded-[1.1rem] border border-line bg-white px-4 py-3 shadow-[var(--shadow-card)] sm:block">
               <div className="flex items-center gap-1">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <IconStar key={i} strokeWidth={0} className="size-3.5 text-amber" />
@@ -143,7 +135,7 @@ export function Hero() {
 
             {/* Floating order chip */}
             <div
-              className="animate-float absolute -bottom-5 right-2 hidden items-center gap-2.5 rounded-full border border-line bg-white py-2.5 pl-2.5 pr-4 shadow-[var(--shadow-card)] sm:flex lg:-bottom-6 lg:right-6"
+              className="animate-float absolute bottom-0 left-0 z-20 flex items-center gap-2.5 rounded-full border border-line bg-white py-2.5 pl-2.5 pr-4 shadow-[var(--shadow-card)] sm:left-2 lg:left-6"
               style={{ animationDelay: "-3.2s" }}
             >
               <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#25D366] text-white">

@@ -25,13 +25,13 @@ export function Community() {
               the people already living around the corner.
             </p>
 
-            <ul className="mt-9 flex flex-wrap gap-x-8 gap-y-4">
+            <ul className="mt-9 grid gap-5 sm:grid-cols-3">
               {[
                 ["Cooked to order", "Nothing sits under a heat lamp."],
                 ["Priced by the cook", "Pottly does not mark anything up."],
                 ["Paid in cash", "Settled at your door, with a person."],
               ].map(([t, s]) => (
-                <li key={t} className="max-w-[13rem]">
+                <li key={t}>
                   <p className="font-headline text-[1rem] font-bold text-ink">{t}</p>
                   <p className="mt-1 text-[0.875rem] text-ink-3">{s}</p>
                 </li>
@@ -45,7 +45,6 @@ export function Community() {
                 src="/food/story-cook.webp"
                 alt="A home cook stirring a large pot on a gas burner"
                 ratio="aspect-[4/5]"
-                caption="Adetayo, Yaba"
               />
               <Photo
                 src="/food/story-table.webp"
@@ -63,7 +62,6 @@ export function Community() {
                 src="/food/story-serving.webp"
                 alt="A cook plating up a serving of freshly made food"
                 ratio="aspect-[4/5]"
-                caption="Halima, Ojota"
               />
             </div>
           </div>

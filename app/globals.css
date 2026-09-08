@@ -56,7 +56,7 @@
   --shadow-ember: 0 6px 20px -6px rgb(232 93 4 / 0.45);
 
   /* ---- Fluid display sizes -------------------------------------------- */
-  --text-display: clamp(2.5rem, 1.4rem + 4.4vw, 4.75rem);
+  --text-display: clamp(2.375rem, 1.6rem + 3.1vw, 4.125rem);
   --text-display--line-height: 1.02;
   --text-display--letter-spacing: -0.035em;
   --text-h1: clamp(2rem, 1.25rem + 3vw, 3.5rem);

@@ -1,13 +1,23 @@
 import type { CSSProperties, ReactNode } from "react";
 
+/** Logical size every screen in `screens.tsx` is authored against. */
+const SCREEN_W = 320;
+const SCREEN_H = 660;
+/** Bezel: 3px outer rim + 7px inner cushion on each side. */
+const BEZEL = 20;
+
 /**
  * Device shell for the in-page product previews.
  *
  * The screens inside are a faithful reconstruction of the Pottly mobile UI
  * rather than flat screenshots, so they stay sharp at any density and can be
- * updated alongside the app. The whole frame is exposed to assistive tech as a
- * single labelled image — reading out a simulated interface would otherwise be
- * announced as if it were operable.
+ * updated alongside the app. Each screen is laid out once at 320×660 and then
+ * scaled to the requested frame width, so type, spacing and radii keep their
+ * exact proportions whether the phone is rendered at 214px or 320px.
+ *
+ * The whole frame is exposed to assistive tech as a single labelled image —
+ * reading out a simulated interface would otherwise be announced as if it were
+ * operable.
  */
 export function PhoneFrame({
   children,
@@ -22,24 +32,36 @@ export function PhoneFrame({
   className?: string;
   glare?: boolean;
 }) {
+  const inner = width - BEZEL;
+  const scale = inner / SCREEN_W;
+
   return (
     <div
       role="img"
       aria-label={label}
       className={`relative shrink-0 select-none ${className}`}
-      style={{ width, "--pw": `${width}px` } as CSSProperties}
+      style={{ width }}
     >
       <div className="relative rounded-[2.6rem] bg-[linear-gradient(150deg,#3b3129,#151009_45%,#2a221b)] p-[3px] shadow-[var(--shadow-device)]">
         <div className="rounded-[2.45rem] bg-charcoal p-[7px]">
           <div
             aria-hidden="true"
             className="relative overflow-hidden rounded-[2rem] bg-white"
-            style={{ aspectRatio: "320 / 660" }}
+            style={{ width: inner, height: inner * (SCREEN_H / SCREEN_W) }}
           >
-            <StatusBar />
-            <div className="h-[calc(100%-2.1rem)] overflow-hidden">{children}</div>
+            <div
+              style={{
+                width: SCREEN_W,
+                height: SCREEN_H,
+                transform: `scale(${scale})`,
+                transformOrigin: "top left",
+              }}
+            >
+              <StatusBar />
+              <div className="h-[626px] overflow-hidden">{children}</div>
+            </div>
             {glare ? (
-              <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-[linear-gradient(115deg,rgba(255,255,255,0.28),rgba(255,255,255,0)_38%)]" />
+              <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-[linear-gradient(115deg,rgba(255,255,255,0.26),rgba(255,255,255,0)_38%)]" />
             ) : null}
           </div>
         </div>
@@ -50,7 +72,7 @@ export function PhoneFrame({
 
 function StatusBar() {
   return (
-    <div className="relative z-20 flex h-[2.1rem] items-center justify-between px-5 pt-1 text-[10px] font-semibold text-ink">
+    <div className="relative z-20 flex h-[34px] items-center justify-between px-5 pt-1 text-[10px] font-semibold text-ink">
       <span>9:41</span>
       <span className="absolute left-1/2 top-[3px] h-[18px] w-[68px] -translate-x-1/2 rounded-full bg-charcoal" />
       <span className="flex items-center gap-1">
@@ -99,9 +121,7 @@ export function TabBar({ active }: { active: "home" | "search" | "favorites" | "
             >
               <path d={t.d} />
             </svg>
-            <span
-              className={`text-[8.5px] font-semibold ${on ? "text-ember" : "text-ink-3"}`}
-            >
+            <span className={`text-[8.5px] font-semibold ${on ? "text-ember" : "text-ink-3"}`}>
               {t.label}
             </span>
           </span>
