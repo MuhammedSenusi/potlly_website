@@ -53,5 +53,6 @@ export const nav = {
     { label: "Terms & conditions", href: "/terms" },
     { label: "Privacy policy", href: "/privacy" },
     { label: "Delete account", href: "/delete-account" },
+    { label: "Photo credits", href: "/credits" },
   ],
 } as const;

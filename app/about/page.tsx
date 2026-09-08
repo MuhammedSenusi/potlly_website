@@ -83,7 +83,7 @@ export default function AboutPage() {
             <figure className="relative aspect-[5/4] overflow-hidden rounded-card bg-sand shadow-[var(--shadow-sm)] lg:aspect-[4/3]">
               <Image
                 src="/food/story-table.webp"
-                alt="A table set with several dishes of home-cooked food"
+                alt="Serving bowls of rice and salad laid out for a gathering"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 45vw, 26rem"

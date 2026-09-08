@@ -42,13 +42,13 @@ export function Community() {
           <div className="grid grid-cols-2 gap-3 sm:gap-4">
             <div className="flex flex-col gap-3 pt-8 sm:gap-4">
               <Photo
-                src="/food/story-cook.webp"
-                alt="A home cook stirring a large pot on a gas burner"
+                src="/food/story-pot.webp"
+                alt="A wide pot of egusi soup simmering on a gas burner"
                 ratio="aspect-[4/5]"
               />
               <Photo
                 src="/food/story-table.webp"
-                alt="A table set with several dishes of home-cooked food"
+                alt="Serving bowls of rice and salad laid out for a gathering"
                 ratio="aspect-square"
               />
             </div>
@@ -59,8 +59,8 @@ export function Community() {
                 ratio="aspect-square"
               />
               <Photo
-                src="/food/story-serving.webp"
-                alt="A cook plating up a serving of freshly made food"
+                src="/food/story-kitchen.webp"
+                alt="A home kitchen counter with pots on the stove and ingredients laid out"
                 ratio="aspect-[4/5]"
               />
             </div>

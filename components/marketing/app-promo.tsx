@@ -60,13 +60,13 @@ export function AppPromo() {
   return (
     <section id="app" className="relative scroll-mt-24 py-20 sm:py-24 lg:py-28">
       <Container>
-        <div className="relative overflow-hidden rounded-[2rem] bg-[linear-gradient(140deg,#241b14,#12100e_60%)] px-7 pt-14 sm:rounded-[2.5rem] sm:px-12 lg:px-16">
+        <div className="relative overflow-hidden rounded-[2rem] bg-[linear-gradient(140deg,#241b14,#12100e_60%)] px-7 pb-0 pt-14 sm:rounded-[2.5rem] sm:px-12 lg:px-16">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -right-24 -top-24 size-[30rem] rounded-full bg-ember/18 blur-[110px]"
           />
           <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-8">
-            <div className="pb-14 lg:pb-20">
+            <div className="pb-12 lg:pb-24">
               <Eyebrow tone="light">Get the app</Eyebrow>
               <h2 className="mt-4 text-h2 text-white">
                 Your next favorite meal is closer than you think.
@@ -104,21 +104,21 @@ export function AppPromo() {
             <div className="relative flex justify-center gap-5 lg:justify-end">
               <div
                 data-reveal
-                className="hidden translate-y-10 sm:block"
+                className="hidden translate-y-16 sm:block"
                 style={{ "--reveal-delay": "100ms" } as React.CSSProperties}
               >
                 <PhoneFrame
                   label="A kitchen profile in the Pottly app"
-                  width={214}
+                  width={210}
                   className="rotate-[-4deg]"
                 >
                   <KitchenProfileScreen />
                 </PhoneFrame>
               </div>
-              <div data-reveal className="translate-y-6">
+              <div data-reveal className="translate-y-10">
                 <PhoneFrame
                   label="The Pottly home screen showing nearby dishes"
-                  width={252}
+                  width={248}
                   className="rotate-[2deg]"
                 >
                   <CustomerHomeScreen />
