@@ -37,11 +37,11 @@ export default function TermsPage() {
         meta={`Last updated ${site.legalUpdated}`}
       />
       <LegalLayout toc={toc}>
-        <div className="rounded-card border border-line bg-shell px-5 py-4 text-[0.9375rem]">
+        {/* <div className="rounded-card border border-line bg-shell px-5 py-4 text-[0.9375rem]">
           <strong className="font-semibold text-ink">Draft for legal review.</strong> This document
           is written to be clear and structured, but it has not been reviewed by a lawyer. Have it
           checked against the law where Pottly operates before launch.
-        </div>
+        </div> */}
 
         <h2 id="introduction">1. Introduction</h2>
         <p>

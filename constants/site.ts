@@ -5,13 +5,13 @@ export const site = {
   description:
     "Discover home-cooked meals from local home cooks and small kitchens. Browse menus, see real prices, and message the kitchen directly to order.",
   /** Update before launch — used for canonical URLs, sitemap and Open Graph. */
-  url: "https://pottly.app",
+  url: "https://pottly.com",
   locale: "en_NG",
   contact: {
-    general: "hello@pottly.app",
-    support: "support@pottly.app",
-    privacy: "privacy@pottly.app",
-    legal: "legal@pottly.app",
+    general: "hello@pottly.com",
+    support: "support@pottly.com",
+    privacy: "privacy@pottly.com",
+    legal: "legal@pottly.com",
   },
   /**
    * Social profiles are intentionally empty until real accounts exist —

@@ -37,11 +37,11 @@ export default function PrivacyPage() {
         meta={`Last updated ${site.legalUpdated}`}
       />
       <LegalLayout toc={toc}>
-        <div className="rounded-card border border-line bg-shell px-5 py-4 text-[0.9375rem]">
+        {/* <div className="rounded-card border border-line bg-shell px-5 py-4 text-[0.9375rem]">
           <strong className="font-semibold text-ink">Draft for legal review.</strong> This policy
           describes how the product is designed to work. Confirm it against the live implementation
           and the data-protection law that applies to Pottly before publishing.
-        </div>
+        </div> */}
 
         <h2 id="collected">1. Information we collect</h2>
         <p>
