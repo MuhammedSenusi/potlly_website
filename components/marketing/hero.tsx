@@ -7,7 +7,7 @@ import { CustomerHomeScreen } from "@/components/app-ui/screens";
 import { formatPrice, dishes } from "@/constants/content";
 import { HeroSearch } from "./hero-search";
 
-const assurances = ["No account needed to browse", "Real prices, no markup", "Cash on delivery"];
+const assurances = ["No account needed to browse", "Real prices, no markup", "Pay by e-Transfer or cash"];
 
 export function Hero() {
   const featured = dishes[0];
@@ -30,11 +30,11 @@ export function Hero() {
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-ember opacity-60" />
                 <span className="relative inline-flex size-2 rounded-full bg-ember" />
               </span>
-              Home kitchens cooking in Lagos today
+              West African home kitchens cooking across the GTA today
             </p>
 
             <h1 className="mt-6 text-display text-ink">
-              Real home-cooked food, made by{" "}
+              Real Nigerian home cooking, made by{" "}
               <span className="relative inline-block whitespace-nowrap">
                 <span className="relative z-10">people near you.</span>
                 <span
@@ -45,8 +45,8 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lead text-ink-2">
-              Discover delicious meals from local home cooks and small kitchens. Browse menus, see
-              prices, and message the kitchen directly to order.
+              Discover Nigerian and West African meals from home cooks and small kitchens around
+              the GTA. Browse menus, see prices, and message the kitchen directly to order.
             </p>
 
             <div className="mt-8 max-w-xl">
@@ -113,7 +113,7 @@ export function Hero() {
             {/* The app itself, overlapping the photograph's left edge */}
             <div className="pointer-events-none absolute -left-10 top-1/2 z-10 hidden -translate-y-1/2 xl:block">
               <PhoneFrame
-                label="The Pottly app home screen, showing nearby dishes and top-rated kitchens in Yaba, Lagos"
+                label="The Pottly app home screen, showing nearby dishes and top-rated kitchens across the GTA"
                 width={232}
                 className="rotate-[-6deg]"
               >
@@ -129,7 +129,7 @@ export function Hero() {
                 ))}
               </div>
               <p className="mt-1.5 text-[0.8125rem] font-bold text-ink">4.8 average</p>
-              <p className="text-[0.75rem] text-ink-3">across kitchens near Yaba</p>
+              <p className="text-[0.75rem] text-ink-3">across kitchens near you</p>
             </div>
 
             {/* Floating order chip */}

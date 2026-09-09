@@ -8,7 +8,7 @@ import { IconArrowRight } from "@/components/ui/icons";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Why Pottly exists: a simple way to find home cooks and small kitchens nearby, without commissions, checkouts or anything standing between a cook and a customer.",
+    "Why Pottly exists: a simple way to find Nigerian and West African home cooks and small kitchens across the GTA, without commissions, checkouts or anything standing between a cook and a customer.",
   alternates: { canonical: "/about" },
 };
 
@@ -37,7 +37,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="A front door for the kitchens already cooking around you."
-        lead="Pottly started from a simple observation: the best food in most neighbourhoods is being cooked by someone with no website, no listing and no way to be found beyond a WhatsApp group."
+        lead="Pottly started from a simple observation: some of the best Nigerian and West African cooking in the GTA is coming out of home kitchens with no website, no listing and no way to be found beyond a WhatsApp group."
       />
 
       <Container className="pb-20 sm:pb-24">

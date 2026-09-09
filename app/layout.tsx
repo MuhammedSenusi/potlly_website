@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   keywords: [
-    "home-cooked food",
-    "local home cooks",
-    "homemade food near me",
-    "local kitchens",
-    "order homemade food",
-    "home kitchen marketplace",
+    "Nigerian food Toronto",
+    "West African food near me",
+    "jollof rice delivery GTA",
+    "home cooks Toronto",
+    "African home kitchen marketplace",
+    "order homemade Nigerian food",
   ],
   alternates: { canonical: "/" },
   openGraph: {

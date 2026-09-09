@@ -36,7 +36,7 @@ export function HowItWorks() {
           <Step
             n="03"
             title="Message & order"
-            body="Tap once to open WhatsApp or SMS with your order ready to send. Pay cash on delivery."
+            body="Tap once to open WhatsApp or SMS with your order ready to send. Pay by e-Transfer or cash."
           >
             <MessageArt />
           </Step>
@@ -97,7 +97,7 @@ function DiscoverArt() {
       </div>
       <div className="flex items-center gap-1.5 text-[0.75rem] font-semibold text-ink-2">
         <IconPin className="size-3.5 text-ember" />
-        Yaba, Lagos · 6 kitchens
+        Scarborough · 6 kitchens
       </div>
       <div className="grid grid-cols-2 gap-2.5">
         {picks.map((d) => (
@@ -151,13 +151,13 @@ function MessageArt() {
       <div className="ml-auto max-w-[87%] rounded-[1rem] rounded-br-[0.3rem] bg-[#dcf8c6] px-3 py-2.5 shadow-[var(--shadow-xs)]">
         <p className="text-[0.75rem] leading-relaxed text-[#14311b]">
           Hi Mama Tayo, I&rsquo;d like <strong className="font-semibold">1× Party Jollof &amp; Chicken</strong>{" "}
-          (₦3,500) delivered to Akoka today.
+          ($18) delivered to Agincourt today.
         </p>
         <p className="mt-1 text-right text-[0.625rem] text-[#14311b]/45">12:04 ✓✓</p>
       </div>
       <div className="mr-auto mt-2 max-w-[75%] rounded-[1rem] rounded-bl-[0.3rem] border border-line bg-white px-3 py-2.5 shadow-[var(--shadow-xs)]">
         <p className="text-[0.75rem] leading-relaxed text-ink-2">
-          Received! It will be with you by 1:30. ₦800 delivery, cash on arrival.
+          Received! It will be with you by 1:30. $7 delivery, e-Transfer or cash.
         </p>
       </div>
       <div className="mt-3 flex h-10 items-center justify-center gap-2 rounded-full bg-[#25D366] text-[0.8125rem] font-bold text-white">

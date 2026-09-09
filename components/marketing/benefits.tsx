@@ -46,8 +46,8 @@ const customerBenefits = [
   },
   {
     Icon: IconWallet,
-    title: "Pay cash on delivery",
-    body: "No card details, no wallet to top up. You settle with the person handing you the food.",
+    title: "Pay by e-Transfer or cash",
+    body: "No card to enter, no wallet to top up. You settle with the cook directly by Interac e-Transfer or cash when the food arrives.",
   },
 ];
 

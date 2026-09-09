@@ -130,8 +130,8 @@ const profileFacts = [
   },
   {
     Icon: IconWallet,
-    title: "Delivery area, fee and cash on delivery",
-    body: "You see where they deliver and what it costs before you type a single message.",
+    title: "Delivery area, fee and how to pay",
+    body: "You see where they deliver, what it costs and that it's e-Transfer or cash before you type a single message.",
   },
   {
     Icon: IconWhatsApp,
@@ -153,7 +153,7 @@ export function KitchenProfileShowcase() {
             />
             <div data-reveal>
               <PhoneFrame
-                label="A kitchen profile in the Pottly app: cover photo, kitchen name, rating, description, delivery fee, ready-in time, cash payment, the menu, and a Message to order button"
+                label="A kitchen profile in the Pottly app: cover photo, kitchen name, rating, description, delivery fee, ready-in time, payment method, the menu, and a Message to order button"
                 width={310}
               >
                 <KitchenProfileScreen />

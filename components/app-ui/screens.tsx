@@ -62,7 +62,7 @@ export function CustomerHomeScreen() {
             </p>
             <p className="mt-[2px] flex items-center gap-1 text-[13px] font-bold text-ink">
               <IconPin className="size-[13px] text-ember" />
-              Yaba, Lagos
+              Scarborough
               <IconChevronDown className="size-[12px] text-ink-3" />
             </p>
           </div>
@@ -275,7 +275,7 @@ export function KitchenProfileScreen() {
           {[
             { l: "Delivery", v: formatPrice(k.deliveryFee) },
             { l: "Ready in", v: "35–50 min" },
-            { l: "Payment", v: "Cash" },
+            { l: "Payment", v: "e-Transfer" },
           ].map((s) => (
             <div key={s.l} className="rounded-[10px] border border-line bg-white px-[7px] py-[6px]">
               <p className="text-[8px] font-semibold uppercase tracking-[0.08em] text-ink-3">
@@ -320,7 +320,7 @@ export function KitchenProfileScreen() {
           </span>
         </div>
         <p className="mt-[5px] text-center text-[8.5px] text-ink-3">
-          Cash on delivery · You arrange directly with the kitchen
+          e-Transfer or cash · You arrange directly with the kitchen
         </p>
       </div>
     </div>

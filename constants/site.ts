@@ -1,12 +1,12 @@
 /** Single place to change brand-level facts, links and contact details. */
 export const site = {
   name: "Pottly",
-  tagline: "Real home-cooked food, made by people near you",
+  tagline: "Nigerian & West African home cooking, made by people near you",
   description:
-    "Discover home-cooked meals from local home cooks and small kitchens. Browse menus, see real prices, and message the kitchen directly to order.",
+    "Find Nigerian and West African home-cooked meals from local cooks and small kitchens across the Greater Toronto Area. Browse menus, see real prices, and message the kitchen directly to order.",
   /** Update before launch — used for canonical URLs, sitemap and Open Graph. */
   url: "https://pottly.com",
-  locale: "en_NG",
+  locale: "en_CA",
   contact: {
     general: "hello@pottly.com",
     support: "support@pottly.com",
@@ -23,7 +23,7 @@ export const site = {
     ios: null as string | null,
     android: null as string | null,
   },
-  legalUpdated: "8 September 2026",
+  legalUpdated: "9 September 2026",
 } as const;
 
 export const nav = {

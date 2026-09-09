@@ -20,16 +20,16 @@ export function Community() {
             </p>
             <p className="mt-5 text-[1rem] leading-relaxed text-ink-2">
               Most of the kitchens on Pottly started the same way — cooking for family, then for
-              neighbours, then for a WhatsApp group that got too big to manage. Pottly gives that
+              friends, then for a WhatsApp group that got too big to manage. Pottly gives that
               cooking a proper front door: a profile, a menu, a price list and a way to be found by
-              the people already living around the corner.
+              the people who want a plate of home.
             </p>
 
             <ul className="mt-9 grid gap-5 sm:grid-cols-3">
               {[
                 ["Cooked to order", "Nothing sits under a heat lamp."],
                 ["Priced by the cook", "Pottly does not mark anything up."],
-                ["Paid in cash", "Settled at your door, with a person."],
+                ["Paid direct", "e-Transfer or cash, settled with the cook."],
               ].map(([t, s]) => (
                 <li key={t}>
                   <p className="font-headline text-[1rem] font-bold text-ink">{t}</p>
@@ -70,7 +70,7 @@ export function Community() {
         {/* Kitchens rail — real listings, so the story lands on something concrete */}
         <div className="mt-16 sm:mt-20" id="kitchens">
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <h3 className="font-headline text-h3 text-ink">Kitchens near Yaba</h3>
+            <h3 className="font-headline text-h3 text-ink">Kitchens across the GTA</h3>
             <p className="text-[0.875rem] text-ink-3">Six of the kitchens currently listed</p>
           </div>
           <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

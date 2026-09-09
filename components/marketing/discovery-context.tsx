@@ -18,7 +18,7 @@ const Ctx = createContext<DiscoveryState | null>(null);
 
 export function DiscoveryProvider({ children }: { children: ReactNode }) {
   const [query, setQuery] = useState("");
-  const [area, setArea] = useState("Yaba, Lagos");
+  const [area, setArea] = useState("Scarborough");
   const [category, setCategory] = useState<CategoryId | "all">("all");
 
   const submitSearch = useCallback((q: string, a: string) => {
