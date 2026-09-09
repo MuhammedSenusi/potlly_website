@@ -36,7 +36,7 @@ export function SiteHeader() {
     <header
       className={`sticky top-0 z-50 transition-[background-color,border-color,box-shadow] duration-300 ${
         scrolled
-          ? "border-b border-line/80 bg-cream/85 shadow-[0_1px_0_rgba(61,42,24,0.04)] backdrop-blur-xl"
+          ? "border-b border-line-strong bg-cream/95 shadow-sm backdrop-blur-xl supports-backdrop-filter:bg-cream/80"
           : "border-b border-transparent bg-transparent"
       }`}
     >
