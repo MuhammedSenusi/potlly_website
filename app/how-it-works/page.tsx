@@ -11,7 +11,7 @@ import { IconArrowRight, IconCamera, IconMenuList, IconStar, IconWhatsApp } from
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "How Pottly works for customers and for kitchens: discover home cooks near you, browse menus and prices, and message the kitchen directly to order. Cash on delivery.",
+    "How Pottly works for customers and for kitchens: discover Nigerian and West African home cooks near you, browse menus and prices, and message the kitchen directly to order. Pay by e-Transfer or cash.",
   alternates: { canonical: "/how-it-works" },
 };
 
@@ -29,7 +29,7 @@ const cookSteps = [
   {
     Icon: IconWhatsApp,
     title: "Take orders on WhatsApp",
-    body: "Customers who find you tap Message to order and land in your WhatsApp or SMS with the dish already named. You confirm the details and the price yourself.",
+    body: "Customers who find you tap Message to order and land in your WhatsApp or SMS with the dish already named. You confirm the details, the price and payment yourself — e-Transfer or cash, straight to you.",
   },
   {
     Icon: IconStar,
@@ -125,7 +125,7 @@ export default function HowItWorksPage() {
               ],
               [
                 "How do I pay?",
-                "Cash, when the food arrives. Pottly does not process payments and adds nothing to the cook's price.",
+                "By Interac e-Transfer or cash, settled directly with the kitchen. Pottly does not process payments and adds nothing to the cook's price.",
               ],
               [
                 "Who delivers the food?",

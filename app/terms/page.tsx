@@ -125,9 +125,9 @@ export default function TermsPage() {
 
         <h2 id="payments">7. Payments</h2>
         <p>
-          Payment is cash on delivery, settled directly with the kitchen. Pottly does not process
-          payments, hold funds, or charge customers a service fee. Kitchens set their own prices and
-          delivery fees and receive the full amount from the customer.
+          Payment is by Interac e-Transfer or cash on delivery, settled directly with the kitchen.
+          Pottly does not process payments, hold funds, or charge customers a service fee. Kitchens
+          set their own prices and delivery fees and receive the full amount from the customer.
         </p>
         <p>
           Any refund, discount or dispute about payment is a matter between the customer and the

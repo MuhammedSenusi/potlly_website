@@ -12,7 +12,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Become a kitchen",
   description:
-    "List your home kitchen on Pottly. Create a profile, publish your menu and prices, set your delivery area, and take orders on WhatsApp. Free to list, no commission.",
+    "List your Nigerian or West African home kitchen on Pottly and reach hungry people across the GTA. Create a profile, publish your menu and prices, set your delivery area, and take orders on WhatsApp. Free to list, no commission.",
   alternates: { canonical: "/become-a-kitchen" },
 };
 

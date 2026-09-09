@@ -44,10 +44,10 @@ export default function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-16">
           <div className="max-w-2xl text-[1.0625rem] leading-[1.75] text-ink-2">
             <p>
-              Home cooks and small kitchens are everywhere. They cook to order, in portions people
-              can afford, and they are usually within a few streets of the person who wants the food.
-              What they do not have is a way to be discovered by anyone who is not already in the
-              group chat.
+              Home cooks and small kitchens are everywhere in the Nigerian and West African
+              community here. They cook to order, in portions people can afford, and they are
+              usually a short drive from the person who wants the food. What they do not have is a
+              way to be discovered by anyone who is not already in the group chat.
             </p>
             <p className="mt-5">
               The delivery apps did not solve this. Their economics are built for restaurants with
@@ -59,7 +59,7 @@ export default function AboutPage() {
               Pottly is the smallest thing that fixes that. A cook gets a real profile, a real menu
               and a real price list. A customer gets to search by dish, by kitchen or by area, see
               what is actually near them, and then message the cook directly. No account to browse,
-              no checkout, no commission, cash at the door.
+              no checkout, no commission — an e-Transfer or cash at the door.
             </p>
             <p className="mt-5">
               We are deliberately not a delivery company. Pottly does not take your order, hold your
