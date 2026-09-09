@@ -30,7 +30,7 @@ export function Hero() {
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-ember opacity-60" />
                 <span className="relative inline-flex size-2 rounded-full bg-ember" />
               </span>
-              West African home kitchens cooking across the GTA today
+              Home kitchens cooking across the GTA today
             </p>
 
             <h1 className="mt-6 text-display text-ink">
