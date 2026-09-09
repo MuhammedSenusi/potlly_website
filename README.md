@@ -1,6 +1,6 @@
 # Pottly — marketing site
 
-Marketing site for Pottly, a marketplace that connects people with home cooks and
+Marketing site for Pottly, an app that connects people with home cooks and
 small kitchens near them. Customers browse without an account and message a
 kitchen directly on WhatsApp or SMS to order; kitchens create an account to
 publish a profile, a menu and their delivery terms.
