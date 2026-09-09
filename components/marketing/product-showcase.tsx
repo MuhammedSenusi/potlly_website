@@ -38,7 +38,7 @@ export function ProductShowcase() {
             </h2>
             <p className="mt-5 max-w-lg text-lead text-white/65">
               Open Pottly and you are already browsing. Set your area, search a dish, and see who
-              is cooking it within walking distance — no sign-up, no wall.
+              is cooking it a short drive away — no sign-up, no wall.
             </p>
 
             <ul className="mt-9 flex flex-col gap-6">

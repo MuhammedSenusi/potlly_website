@@ -52,7 +52,7 @@ export default function HowItWorksPage() {
             <IconArrowRight className="size-[1.15rem]" />
           </ButtonLink>
           <ButtonLink href="/become-a-kitchen" variant="secondary" size="lg">
-            Become a kitchen
+            List your kitchen
           </ButtonLink>
         </div>
       </PageHero>

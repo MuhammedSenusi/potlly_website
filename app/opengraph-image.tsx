@@ -73,7 +73,7 @@ export default async function OpenGraphImage() {
               flexDirection: "column",
             }}
           >
-            <span>Real home-cooked food,</span>
+            <span>Real Nigerian home cooking,</span>
             <span>made by people near you.</span>
           </div>
           <div
@@ -85,13 +85,13 @@ export default async function OpenGraphImage() {
               marginTop: 22,
             }}
           >
-            Discover meals from local home cooks and small kitchens. Browse menus, see prices, and
-            message the kitchen directly to order.
+            Discover Nigerian and West African meals from home cooks and small kitchens across the
+            GTA. Browse menus, see prices, and message the kitchen directly to order.
           </div>
         </div>
 
         <div style={{ display: "flex", gap: 12 }}>
-          {["No account needed", "Real prices", "Cash on delivery"].map((t) => (
+          {["No account needed", "Real prices", "e-Transfer or cash"].map((t) => (
             <div
               key={t}
               style={{

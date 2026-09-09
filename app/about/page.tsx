@@ -132,7 +132,7 @@ export default function AboutPage() {
               </p>
             </div>
             <ButtonLink href="/become-a-kitchen" size="lg" className="shrink-0">
-              Become a kitchen
+              List your kitchen
               <IconArrowRight className="size-[1.15rem]" />
             </ButtonLink>
           </div>
