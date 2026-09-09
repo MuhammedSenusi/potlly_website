@@ -32,6 +32,20 @@ bun run lint
 | `components/app-ui/` | The phone frame and the four product screens drawn in HTML. |
 | `public/food/` | Optimised WebP photography. |
 
+## Deployment
+
+Deploys to **Netlify**. `netlify.toml` holds the whole config: build command
+(`bun run build`), publish directory (`.next`) and the Node/Bun versions.
+
+Netlify detects Next.js and installs the Next.js Runtime
+(`@netlify/plugin-nextjs`) automatically — nothing to add to `package.json`. To
+set it up, connect the repo in the Netlify UI (or `netlify init`); no build
+settings need to be entered by hand. Every route currently prerenders to static
+HTML, so the runtime mainly provides `next/image` optimisation and the headers
+layer.
+
+`netlify dev` runs the site through Netlify's local proxy against `bun run dev`.
+
 ## Product mockups
 
 The app screens on the site are not screenshots. `components/app-ui/screens.tsx`
