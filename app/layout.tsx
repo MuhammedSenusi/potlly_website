@@ -1,22 +1,26 @@
 import type { Metadata, Viewport } from "next";
-import { Epilogue, Plus_Jakarta_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
 import { Reveal } from "@/components/site/reveal";
 import { site } from "@/constants/site";
 
-const epilogue = Epilogue({
+const epilogue = localFont({
   variable: "--font-epilogue",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  src: "./_og/epilogue-bold.ttf",
+  weight: "700",
   display: "swap",
 });
 
-const jakarta = Plus_Jakarta_Sans({
+const jakarta = localFont({
   variable: "--font-jakarta",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  src: [
+    { path: "../public/fonts/PlusJakartaSans-Regular.ttf", weight: "400" },
+    { path: "../public/fonts/PlusJakartaSans-Medium.ttf", weight: "500" },
+    { path: "../public/fonts/PlusJakartaSans-SemiBold.ttf", weight: "600" },
+    { path: "../public/fonts/PlusJakartaSans-Bold.ttf", weight: "700" },
+  ],
   display: "swap",
 });
 
