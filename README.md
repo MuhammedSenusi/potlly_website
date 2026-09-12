@@ -34,15 +34,28 @@ bun run lint
 
 ## Deployment
 
-Deploys to **Netlify**. `netlify.toml` holds the whole config: build command
-(`bun run build`), publish directory (`.next`) and the Node/Bun versions.
+Deploys to **Netlify** as a **static export**. Every route prerenders to HTML,
+so `next.config.ts` sets `output: "export"` and the build writes plain files to
+`out`. Netlify serves them directly and no Next.js runtime adapter is involved.
 
-Netlify detects Next.js and installs the Next.js Runtime
-(`@netlify/plugin-nextjs`) automatically — nothing to add to `package.json`. To
-set it up, connect the repo in the Netlify UI (or `netlify init`); no build
-settings need to be entered by hand. Every route currently prerenders to static
-HTML, so the runtime mainly provides `next/image` optimisation and the headers
-layer.
+`netlify.toml` holds the whole config: the build command, the `out` publish
+directory, the Node/Bun versions and two `Content-Type` headers. Those headers
+matter: a static export writes the generated metadata images as extensionless
+files (`out/opengraph-image`, `out/apple-icon`), and Netlify infers the type
+from the extension, so without them both PNGs are served as the wrong type.
+
+The build command runs `bun install --frozen-lockfile` explicitly. Netlify only
+detects `bun.lockb` when picking a package manager and this repo commits the
+newer text-format `bun.lock`, so otherwise Netlify silently falls back to
+`npm install` and ignores the lockfile.
+
+Because the export is unoptimised, `next/image` no longer resizes at request
+time. The photography in `public/food/` is already sized and WebP, so it ships
+as-is.
+
+To set it up, connect the repo in the Netlify UI (or `netlify init`). Leave the
+build settings blank so `netlify.toml` wins; values typed into the UI override
+the file and a stale publish directory there will serve Netlify's default 404.
 
 `netlify dev` runs the site through Netlify's local proxy against `bun run dev`.
 

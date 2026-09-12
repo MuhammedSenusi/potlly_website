@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/constants/site";
 
+export const dynamic = "force-static";
+
 const routes: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: "/how-it-works", priority: 0.8, changeFrequency: "monthly" },
@@ -10,6 +12,7 @@ const routes: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: "/terms", priority: 0.3, changeFrequency: "yearly" },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
   { path: "/delete-account", priority: 0.4, changeFrequency: "yearly" },
+  { path: "/waitlist", priority: 0.8, changeFrequency: "monthly" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
