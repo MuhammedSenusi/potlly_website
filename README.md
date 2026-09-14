@@ -39,10 +39,18 @@ so `next.config.ts` sets `output: "export"` and the build writes plain files to
 `out`. Netlify serves them directly and no Next.js runtime adapter is involved.
 
 `netlify.toml` holds the whole config: the build command, the `out` publish
-directory, the Node/Bun versions and two `Content-Type` headers. Those headers
-matter: a static export writes the generated metadata images as extensionless
-files (`out/opengraph-image`, `out/apple-icon`), and Netlify infers the type
-from the extension, so without them both PNGs are served as the wrong type.
+directory, the Node/Bun versions and a `Content-Type` header. That header
+matters: a static export writes the generated social card as an extensionless
+file (`out/opengraph-image`), and Netlify infers the type from the extension, so
+without it the PNG is served as the wrong type.
+
+## Brand logo
+
+Source art is in `public/logo/` at 512px and 1024px. The site uses cropped
+derivatives: `public/logo/pottly-mark.webp` in the header and footer,
+`app/icon.png` for the favicon, `app/apple-icon.png` for the iOS home screen and
+`app/_og/pottly-mark.png` in the social card. Regenerate them from the 1024px
+file if the logo changes.
 
 The build command runs `bun install --frozen-lockfile` explicitly. Netlify only
 detects `bun.lockb` when picking a package manager and this repo commits the

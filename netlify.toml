@@ -27,19 +27,14 @@
   targetPort = 3000
   framework = "#custom"
 
-# `next build` with `output: "export"` writes the generated metadata images as
-# extensionless files (`out/opengraph-image`, `out/apple-icon`), and Netlify
-# infers Content-Type from the file extension. Without these rules both PNGs go
-# out as the wrong type, which breaks social link previews and the iOS
-# home-screen icon. The query string Next appends to the URLs does not affect
-# path matching here.
+# `next build` with `output: "export"` writes the generated social card as an
+# extensionless file (`out/opengraph-image`), and Netlify infers Content-Type
+# from the file extension. Without this rule the PNG goes out as the wrong type,
+# which breaks social link previews. The query string Next appends to the URL
+# does not affect path matching here. The favicon and iOS home-screen icon are
+# static files (`app/icon.png`, `app/apple-icon.png`) and keep their extension.
 
 [[headers]]
   for = "/opengraph-image"
-  [headers.values]
-    Content-Type = "image/png"
-
-[[headers]]
-  for = "/apple-icon"
   [headers.values]
     Content-Type = "image/png"

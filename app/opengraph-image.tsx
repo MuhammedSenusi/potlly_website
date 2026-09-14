@@ -11,9 +11,10 @@ export const contentType = "image/png";
 /** Social card. Rendered at build time, so it costs nothing at request time. */
 export default async function OpenGraphImage() {
   const dir = join(process.cwd(), "app", "_og");
-  const [headline, body] = await Promise.all([
+  const [headline, body, mark] = await Promise.all([
     readFile(join(dir, "epilogue-bold.ttf")),
     readFile(join(dir, "jakarta-medium.ttf")),
+    readFile(join(dir, "pottly-mark.png")),
   ]);
 
   return new ImageResponse(
@@ -33,22 +34,12 @@ export default async function OpenGraphImage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div
-            style={{
-              width: 54,
-              height: 54,
-              borderRadius: 15,
-              backgroundColor: "#e85d04",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontFamily: "Epilogue",
-              fontSize: 32,
-              color: "#ffffff",
-            }}
-          >
-            P
-          </div>
+          <img
+            src={`data:image/png;base64,${mark.toString("base64")}`}
+            width={54}
+            height={54}
+            alt=""
+          />
           <div
             style={{
               fontFamily: "Epilogue",
