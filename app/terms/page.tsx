@@ -5,7 +5,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Terms & conditions",
   description:
-    "The terms that apply to using Pottly as a customer or as a kitchen, including listings, ordering, payment, reviews and account termination.",
+    "The terms that apply to using Potlly as a customer or as a kitchen, including listings, ordering, payment, reviews and account termination.",
   alternates: { canonical: "/terms" },
   robots: { index: true, follow: true },
 };
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const toc = [
   { id: "introduction", label: "1. Introduction" },
   { id: "eligibility", label: "2. Eligibility" },
-  { id: "customers", label: "3. Using Pottly as a customer" },
+  { id: "customers", label: "3. Using Potlly as a customer" },
   { id: "kitchens", label: "4. Kitchen responsibilities" },
   { id: "listings", label: "5. Listings and content" },
   { id: "ordering", label: "6. Ordering" },
@@ -33,25 +33,25 @@ export default function TermsPage() {
       <PageHero
         eyebrow="Legal"
         title="Terms & conditions"
-        lead="These terms explain what Pottly does, what it does not do, and what is expected of the people who use it."
+        lead="These terms explain what Potlly does, what it does not do, and what is expected of the people who use it."
         meta={`Last updated ${site.legalUpdated}`}
       />
       <LegalLayout toc={toc}>
         {/* <div className="rounded-card border border-line bg-shell px-5 py-4 text-[0.9375rem]">
           <strong className="font-semibold text-ink">Draft for legal review.</strong> This document
           is written to be clear and structured, but it has not been reviewed by a lawyer. Have it
-          checked against the law where Pottly operates before launch.
+          checked against the law where Potlly operates before launch.
         </div> */}
 
         <h2 id="introduction">1. Introduction</h2>
         <p>
-          Pottly is a marketplace that helps people discover home cooks and small kitchens near them,
+          Potlly is a marketplace that helps people discover home cooks and small kitchens near them,
           and helps those kitchens publish a profile, a menu and their contact details. These terms
-          apply whenever you use the Pottly website or mobile app, whether or not you have an
+          apply whenever you use the Potlly website or mobile app, whether or not you have an
           account.
         </p>
         <p>
-          By using Pottly you agree to these terms. If you do not agree with them, please do not use
+          By using Potlly you agree to these terms. If you do not agree with them, please do not use
           the service.
         </p>
 
@@ -59,7 +59,7 @@ export default function TermsPage() {
         <ul>
           <li>
             You must be old enough to enter a binding agreement where you live in order to place an
-            order or operate a kitchen through Pottly.
+            order or operate a kitchen through Potlly.
           </li>
           <li>
             If you list a kitchen, you confirm that you are entitled to prepare and sell food where
@@ -67,12 +67,12 @@ export default function TermsPage() {
             that apply to you.
           </li>
           <li>
-            You may not use Pottly if we have previously removed your account for a breach of these
+            You may not use Potlly if we have previously removed your account for a breach of these
             terms.
           </li>
         </ul>
 
-        <h2 id="customers">3. Using Pottly as a customer</h2>
+        <h2 id="customers">3. Using Potlly as a customer</h2>
         <p>
           You do not need an account to browse kitchens, search dishes, view prices, read reviews or
           contact a kitchen. An optional account exists so that your saved favorites follow you
@@ -86,7 +86,7 @@ export default function TermsPage() {
         </p>
 
         <h2 id="kitchens">4. Kitchen responsibilities</h2>
-        <p>If you operate a kitchen on Pottly, you agree that:</p>
+        <p>If you operate a kitchen on Potlly, you agree that:</p>
         <ul>
           <li>Your kitchen profile, menu, prices and delivery information are accurate and kept up to date.</li>
           <li>You will prepare and handle food safely and comply with the food-safety rules that apply where you cook.</li>
@@ -103,7 +103,7 @@ export default function TermsPage() {
         <h2 id="listings">5. Listings and content</h2>
         <p>
           You keep ownership of the photos, descriptions and other content you upload. By uploading
-          it you grant Pottly a non-exclusive licence to display, resize and distribute that content
+          it you grant Potlly a non-exclusive licence to display, resize and distribute that content
           for the purpose of running and promoting the marketplace.
         </p>
         <p>
@@ -113,20 +113,20 @@ export default function TermsPage() {
 
         <h2 id="ordering">6. Ordering</h2>
         <p>
-          Orders are not placed or processed inside Pottly. When you choose to order, Pottly opens
+          Orders are not placed or processed inside Potlly. When you choose to order, Potlly opens
           WhatsApp or SMS with the kitchen&rsquo;s number and, where possible, the dish and kitchen name
           already filled in. Everything after that — confirming the order, the price, the delivery
           time and the handover — is arranged directly between you and the kitchen.
         </p>
         <p>
-          Pottly does not confirm, track, deliver, refund or cancel orders, and does not act as an
+          Potlly does not confirm, track, deliver, refund or cancel orders, and does not act as an
           agent for either party.
         </p>
 
         <h2 id="payments">7. Payments</h2>
         <p>
           Payment is by Interac e-Transfer or cash on delivery, settled directly with the kitchen.
-          Pottly does not process payments, hold funds, or charge customers a service fee. Kitchens
+          Potlly does not process payments, hold funds, or charge customers a service fee. Kitchens
           set their own prices and delivery fees and receive the full amount from the customer.
         </p>
         <p>
@@ -136,7 +136,7 @@ export default function TermsPage() {
 
         <h2 id="reviews">8. Reviews</h2>
         <p>
-          Reviews on Pottly are published anonymously: no reviewer name, photo or profile is shown.
+          Reviews on Potlly are published anonymously: no reviewer name, photo or profile is shown.
           A review should describe a genuine experience with a kitchen.
         </p>
         <p>
@@ -153,26 +153,26 @@ export default function TermsPage() {
           <li>Post false, misleading or fraudulent listings, prices or reviews.</li>
           <li>Impersonate another person, cook or kitchen.</li>
           <li>Harass, threaten or discriminate against another user.</li>
-          <li>Use Pottly to sell anything other than food and drink prepared by the listed kitchen.</li>
-          <li>Scrape, copy or resell Pottly&rsquo;s content or data without permission.</li>
+          <li>Use Potlly to sell anything other than food and drink prepared by the listed kitchen.</li>
+          <li>Scrape, copy or resell Potlly&rsquo;s content or data without permission.</li>
           <li>Interfere with, probe or attempt to disrupt the service or its security.</li>
         </ul>
 
         <h2 id="role">10. Our role</h2>
         <p>
-          Pottly is a discovery platform. We are not a restaurant, a food business, a delivery
+          Potlly is a discovery platform. We are not a restaurant, a food business, a delivery
           company or a payment processor. We do not prepare, inspect, handle, deliver or guarantee
           any food listed on the service, and we do not verify the licensing or hygiene status of
           the kitchens that list on it.
         </p>
         <p>
           Ratings and reviews reflect what customers reported about their own experience. They are
-          not a certification or endorsement by Pottly.
+          not a certification or endorsement by Potlly.
         </p>
 
         <h2 id="liability">11. Limitation of liability</h2>
         <p>
-          Pottly is provided on an &ldquo;as is&rdquo; basis. To the fullest extent permitted by law,
+          Potlly is provided on an &ldquo;as is&rdquo; basis. To the fullest extent permitted by law,
           we are not liable for loss or damage arising from the food you buy, the conduct of a
           kitchen or a customer, the accuracy of a listing, or any agreement reached between a
           customer and a kitchen.
@@ -184,7 +184,7 @@ export default function TermsPage() {
 
         <h2 id="termination">12. Suspension and termination</h2>
         <p>
-          You may stop using Pottly at any time. Kitchen account holders can request deletion of
+          You may stop using Potlly at any time. Kitchen account holders can request deletion of
           their account and listing on the{" "}
           <a href="/delete-account">delete account</a> page.
         </p>

@@ -6,14 +6,14 @@ import { IconCheck, IconClock, IconHeart, IconPot } from "@/components/ui/icons"
 export const metadata: Metadata = {
   title: "Join the waitlist",
   description:
-    "Be the first to know when Pottly launches near you — local Nigerian and West African home cooking, made by people nearby.",
+    "Be the first to know when Potlly launches near you — local Nigerian and West African home cooking, made by people nearby.",
   alternates: { canonical: "/waitlist" },
 };
 
 const reasons = [
   { Icon: IconPot, text: "Discover meals made in real home kitchens" },
   { Icon: IconHeart, text: "Find cooks and dishes worth coming back to" },
-  { Icon: IconClock, text: "Hear when Pottly opens near you" },
+  { Icon: IconClock, text: "Hear when Potlly opens near you" },
 ];
 
 export default function WaitlistPage() {
@@ -32,7 +32,7 @@ export default function WaitlistPage() {
             Good food is closer than you think.
           </h1>
           <p className="mt-6 max-w-xl text-lead text-ink-2">
-            Pottly brings Nigerian and West African home cooking from local cooks to your table.
+            Potlly brings Nigerian and West African home cooking from local cooks to your table.
             Join the list and be first to know when we launch near you.
           </p>
 

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   Pottly design system
+   Potlly design system
    Tokens mirror constants/theme.ts, which mirrors the mobile app's theme.
    ========================================================================== */
 
@@ -159,18 +159,18 @@
   transition-delay: var(--reveal-delay, 0ms);
 }
 
-@keyframes pottly-float {
+@keyframes potlly-float {
   0%, 100% { transform: translate3d(0, 0, 0); }
   50% { transform: translate3d(0, -10px, 0); }
 }
 
-@keyframes pottly-rail {
+@keyframes potlly-rail {
   from { transform: translate3d(0, 0, 0); }
   to { transform: translate3d(-50%, 0, 0); }
 }
 
 .animate-float {
-  animation: pottly-float 7s var(--ease-out-soft) infinite;
+  animation: potlly-float 7s var(--ease-out-soft) infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

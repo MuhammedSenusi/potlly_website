@@ -14,7 +14,7 @@ export default async function OpenGraphImage() {
   const [headline, body, mark] = await Promise.all([
     readFile(join(dir, "epilogue-bold.ttf")),
     readFile(join(dir, "jakarta-medium.ttf")),
-    readFile(join(dir, "pottly-mark.png")),
+    readFile(join(dir, "potlly-mark.png")),
   ]);
 
   return new ImageResponse(
@@ -48,7 +48,7 @@ export default async function OpenGraphImage() {
               letterSpacing: -1,
             }}
           >
-            Pottly
+            Potlly
           </div>
         </div>
 

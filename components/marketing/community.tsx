@@ -19,8 +19,8 @@ export function Community() {
               support small kitchens, and enjoy food made with care.
             </p>
             <p className="mt-5 text-[1rem] leading-relaxed text-ink-2">
-              Most of the kitchens on Pottly started the same way — cooking for family, then for
-              friends, then for a WhatsApp group that got too big to manage. Pottly gives that
+              Most of the kitchens on Potlly started the same way — cooking for family, then for
+              friends, then for a WhatsApp group that got too big to manage. Potlly gives that
               cooking a proper front door: a profile, a menu, a price list and a way to be found by
               the people who want a plate of home.
             </p>
@@ -28,7 +28,7 @@ export function Community() {
             <ul className="mt-9 grid gap-5 sm:grid-cols-3">
               {[
                 ["Cooked to order", "Nothing sits under a heat lamp."],
-                ["Priced by the cook", "Pottly does not mark anything up."],
+                ["Priced by the cook", "Potlly does not mark anything up."],
                 ["Paid direct", "e-Transfer or cash, settled with the cook."],
               ].map(([t, s]) => (
                 <li key={t}>

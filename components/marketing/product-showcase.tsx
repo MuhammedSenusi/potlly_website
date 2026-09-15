@@ -37,7 +37,7 @@ export function ProductShowcase() {
               Find food. Meet your local cooks.
             </h2>
             <p className="mt-5 max-w-lg text-lead text-white/65">
-              Open Pottly and you are already browsing. Set your area, search a dish, and see who
+              Open Potlly and you are already browsing. Set your area, search a dish, and see who
               is cooking it a short drive away — no sign-up, no wall.
             </p>
 
@@ -79,7 +79,7 @@ export function ProductShowcase() {
             </div>
             <div data-reveal>
               <PhoneFrame
-                label="The Pottly home screen, showing a location picker, search, category chips, nearby dishes and top-rated kitchens"
+                label="The Potlly home screen, showing a location picker, search, category chips, nearby dishes and top-rated kitchens"
                 width={288}
                 className="rotate-[2deg]"
               >
@@ -153,7 +153,7 @@ export function KitchenProfileShowcase() {
             />
             <div data-reveal>
               <PhoneFrame
-                label="A kitchen profile in the Pottly app: cover photo, kitchen name, rating, description, delivery fee, ready-in time, payment method, the menu, and a Message to order button"
+                label="A kitchen profile in the Potlly app: cover photo, kitchen name, rating, description, delivery fee, ready-in time, payment method, the menu, and a Message to order button"
                 width={310}
               >
                 <KitchenProfileScreen />

@@ -113,7 +113,7 @@ export function Hero() {
             {/* The app itself, overlapping the photograph's left edge */}
             <div className="pointer-events-none absolute -left-10 top-1/2 z-10 hidden -translate-y-1/2 xl:block">
               <PhoneFrame
-                label="The Pottly app home screen, showing nearby dishes and top-rated kitchens across the GTA"
+                label="The Potlly app home screen, showing nearby dishes and top-rated kitchens across the GTA"
                 width={232}
                 className="rotate-[-6deg]"
               >

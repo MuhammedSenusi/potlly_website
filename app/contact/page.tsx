@@ -8,7 +8,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Contact & help",
   description:
-    "Get help with Pottly, report a listing, ask about listing your kitchen, or make a privacy request.",
+    "Get help with Potlly, report a listing, ask about listing your kitchen, or make a privacy request.",
   alternates: { canonical: "/contact" },
 };
 
@@ -16,7 +16,7 @@ const routes = [
   {
     Icon: IconUsers,
     title: "General questions",
-    body: "Anything about how Pottly works, or an idea for the product.",
+    body: "Anything about how Potlly works, or an idea for the product.",
     email: site.contact.general,
   },
   {
@@ -48,7 +48,7 @@ const help = [
   },
   {
     q: "Something went wrong with my order",
-    a: "Orders are agreed directly between you and the kitchen, so start there — most issues are sorted in the same conversation. Pottly cannot refund, cancel or re-deliver an order, because it never handled it.",
+    a: "Orders are agreed directly between you and the kitchen, so start there — most issues are sorted in the same conversation. Potlly cannot refund, cancel or re-deliver an order, because it never handled it.",
   },
   {
     q: "I want to delete my kitchen account",
@@ -62,7 +62,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Talk to us."
-        lead="Pottly is small, and email reaches a person. Pick the address closest to what you need and we will come back to you."
+        lead="Potlly is small, and email reaches a person. Pick the address closest to what you need and we will come back to you."
       />
 
       <Container className="pb-20 sm:pb-24">

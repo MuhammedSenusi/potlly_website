@@ -8,14 +8,14 @@ import { IconArrowRight } from "@/components/ui/icons";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Why Pottly exists: a simple way to find Nigerian and West African home cooks and small kitchens across the GTA, without commissions, checkouts or anything standing between a cook and a customer.",
+    "Why Potlly exists: a simple way to find Nigerian and West African home cooks and small kitchens across the GTA, without commissions, checkouts or anything standing between a cook and a customer.",
   alternates: { canonical: "/about" },
 };
 
 const principles = [
   {
     title: "The cook sets the price",
-    body: "Pottly adds no commission and no service fee. What a kitchen charges is what a customer pays, and the kitchen keeps all of it.",
+    body: "Potlly adds no commission and no service fee. What a kitchen charges is what a customer pays, and the kitchen keeps all of it.",
   },
   {
     title: "Browsing should never need an account",
@@ -23,7 +23,7 @@ const principles = [
   },
   {
     title: "Let people talk to people",
-    body: "Ordering from a home cook is a conversation, not a checkout. Pottly hands you off to WhatsApp or SMS and stays out of it.",
+    body: "Ordering from a home cook is a conversation, not a checkout. Potlly hands you off to WhatsApp or SMS and stays out of it.",
   },
   {
     title: "Say only what is true",
@@ -37,7 +37,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="A front door for the kitchens already cooking around you."
-        lead="Pottly started from a simple observation: some of the best Nigerian and West African cooking in the GTA is coming out of home kitchens with no website, no listing and no way to be found beyond a WhatsApp group."
+        lead="Potlly started from a simple observation: some of the best Nigerian and West African cooking in the GTA is coming out of home kitchens with no website, no listing and no way to be found beyond a WhatsApp group."
       />
 
       <Container className="pb-20 sm:pb-24">
@@ -56,13 +56,13 @@ export default function AboutPage() {
               to find them.
             </p>
             <p className="mt-5">
-              Pottly is the smallest thing that fixes that. A cook gets a real profile, a real menu
+              Potlly is the smallest thing that fixes that. A cook gets a real profile, a real menu
               and a real price list. A customer gets to search by dish, by kitchen or by area, see
               what is actually near them, and then message the cook directly. No account to browse,
               no checkout, no commission — an e-Transfer or cash at the door.
             </p>
             <p className="mt-5">
-              We are deliberately not a delivery company. Pottly does not take your order, hold your
+              We are deliberately not a delivery company. Potlly does not take your order, hold your
               money, or promise you a delivery window. It gets you to the right kitchen and then
               gets out of the way — which is exactly how ordering from a neighbour has always
               worked.

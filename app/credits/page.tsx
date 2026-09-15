@@ -6,7 +6,7 @@ import credits from "@/constants/photo-credits.json";
 export const metadata: Metadata = {
   title: "Photo credits",
   description:
-    "Attribution for the sample photography used across the Pottly marketing site, with the creator, licence and original source for each image.",
+    "Attribution for the sample photography used across the Potlly marketing site, with the creator, licence and original source for each image.",
   alternates: { canonical: "/credits" },
   robots: { index: false, follow: true },
 };
@@ -17,7 +17,7 @@ export default function CreditsPage() {
       <PageHero
         eyebrow="Credits"
         title="Photo credits"
-        lead="The photography on this site is placeholder imagery, used under open licences while Pottly builds its own library of kitchen and dish photos. Each image is credited below."
+        lead="The photography on this site is placeholder imagery, used under open licences while Potlly builds its own library of kitchen and dish photos. Each image is credited below."
       />
 
       <Container className="pb-24 sm:pb-28">
@@ -74,7 +74,7 @@ export default function CreditsPage() {
 
         <p className="mt-6 max-w-2xl text-[0.9375rem] leading-relaxed text-ink-3">
           Some images are licensed share-alike, which carries obligations on reuse. Replace them with
-          Pottly&rsquo;s own photography before launch, or confirm the terms of each licence still fit
+          Potlly&rsquo;s own photography before launch, or confirm the terms of each licence still fit
           how the image is being used.
         </p>
       </Container>

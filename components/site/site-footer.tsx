@@ -18,7 +18,7 @@ export function SiteFooter() {
           <div className="max-w-sm">
             <Logo tone="light" />
             <p className="mt-5 text-[0.9375rem] leading-relaxed text-white/60">
-              Pottly connects you with home cooks and small kitchens in your area. Browse menus and
+              Potlly connects you with home cooks and small kitchens in your area. Browse menus and
               real prices, then message the kitchen directly to arrange your order.
             </p>
             <p className="mt-5 text-sm text-white/45">

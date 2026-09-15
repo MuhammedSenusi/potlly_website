@@ -8,14 +8,14 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Delete your account",
   description:
-    "How to request deletion of a Pottly kitchen account, what is removed, what is kept, and how long it takes.",
+    "How to request deletion of a Potlly kitchen account, what is removed, what is kept, and how long it takes.",
   alternates: { canonical: "/delete-account" },
 };
 
 const subject = encodeURIComponent("Account deletion request");
 const body = encodeURIComponent(
   [
-    "Please delete my Pottly account.",
+    "Please delete my Potlly account.",
     "",
     "Kitchen name:",
     "Account email or phone number:",
@@ -46,7 +46,7 @@ const kept = [
   },
   {
     title: "Conversations in WhatsApp or SMS",
-    body: "Messages between you and customers live in WhatsApp or in your phone's messages, never on Pottly. Deleting your account does not touch them — remove those in the app where they are stored.",
+    body: "Messages between you and customers live in WhatsApp or in your phone's messages, never on Potlly. Deleting your account does not touch them — remove those in the app where they are stored.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function DeleteAccountPage() {
           <div>
             <h2 className="font-headline text-h3 text-ink">What happens when you delete</h2>
             <p className="mt-3 max-w-xl leading-relaxed text-ink-2">
-              Deleting your account removes your kitchen from Pottly. Customers can no longer find
+              Deleting your account removes your kitchen from Potlly. Customers can no longer find
               your listing, open your menu or reach your published number through the app. This
               cannot be undone — to come back you would create a new account and rebuild your
               profile.
@@ -111,7 +111,7 @@ export default function DeleteAccountPage() {
               {[
                 {
                   t: "From the app",
-                  b: "Open the Pottly app, go to Profile, then Account settings, and choose Delete account. You will be asked to confirm once.",
+                  b: "Open the Potlly app, go to Profile, then Account settings, and choose Delete account. You will be asked to confirm once.",
                 },
                 {
                   t: "By email",
