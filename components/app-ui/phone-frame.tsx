@@ -9,7 +9,7 @@ const BEZEL = 20;
 /**
  * Device shell for the in-page product previews.
  *
- * The screens inside are a faithful reconstruction of the Pottly mobile UI
+ * The screens inside are a faithful reconstruction of the Potlly mobile UI
  * rather than flat screenshots, so they stay sharp at any density and can be
  * updated alongside the app. Each screen is laid out once at 320×660 and then
  * scaled to the requested frame width, so type, spacing and radii keep their

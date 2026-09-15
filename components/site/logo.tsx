@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 /**
- * Pottly wordmark. The mark is the brand app icon: a steaming pot with a spoon
+ * Potlly wordmark. The mark is the brand app icon: a steaming pot with a spoon
  * and fork on a red tile. Source art lives in `public/logo/`; the header uses
  * a cropped 96px WebP so it stays sharp at 3x without shipping the 1024px file.
  */
 export function LogoMark({ className = "size-8" }: { className?: string }) {
   return (
     <Image
-      src="/logo/pottly-mark.webp"
+      src="/logo/potlly-mark.webp"
       alt=""
       width={96}
       height={96}
@@ -32,7 +32,7 @@ export function Logo({
           tone === "light" ? "text-white" : "text-ink"
         }`}
       >
-        Pottly
+        Potlly
       </span>
     </span>
   );

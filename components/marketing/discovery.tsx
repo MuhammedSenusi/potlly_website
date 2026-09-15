@@ -48,7 +48,7 @@ export function Discovery() {
               What&rsquo;s cooking near you?
             </h2>
             <p className="mt-4 text-lead text-ink-2">
-              A live look at the kind of listings on Pottly. Every dish shows the kitchen, the real
+              A live look at the kind of listings on Potlly. Every dish shows the kitchen, the real
               price and how far away it is.
             </p>
           </div>

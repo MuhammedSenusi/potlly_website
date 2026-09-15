@@ -5,7 +5,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Privacy policy",
   description:
-    "What information Pottly collects, how location and kitchen account data are used, what happens when you message a kitchen, and how to exercise your rights.",
+    "What information Potlly collects, how location and kitchen account data are used, what happens when you message a kitchen, and how to exercise your rights.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -33,14 +33,14 @@ export default function PrivacyPage() {
       <PageHero
         eyebrow="Legal"
         title="Privacy policy"
-        lead="Pottly is designed to need as little information about you as possible. This page explains what is collected and why."
+        lead="Potlly is designed to need as little information about you as possible. This page explains what is collected and why."
         meta={`Last updated ${site.legalUpdated}`}
       />
       <LegalLayout toc={toc}>
         {/* <div className="rounded-card border border-line bg-shell px-5 py-4 text-[0.9375rem]">
           <strong className="font-semibold text-ink">Draft for legal review.</strong> This policy
           describes how the product is designed to work. Confirm it against the live implementation
-          and the data-protection law that applies to Pottly before publishing.
+          and the data-protection law that applies to Potlly before publishing.
         </div> */}
 
         <h2 id="collected">1. Information we collect</h2>
@@ -77,7 +77,7 @@ export default function PrivacyPage() {
 
         <h2 id="location">3. Location information</h2>
         <p>
-          Location drives almost everything in Pottly, so it is worth being precise about it. You can
+          Location drives almost everything in Potlly, so it is worth being precise about it. You can
           set your area in two ways: by granting device location permission, or by typing an area or
           address by hand. Manual entry always works — location permission is optional and can be
           declined or revoked without losing access to the service.
@@ -90,7 +90,7 @@ export default function PrivacyPage() {
         <h2 id="kitchen-accounts">4. Kitchen account information</h2>
         <p>
           Kitchen profiles are public by design. The kitchen name, description, photos, menu, prices,
-          delivery area and the contact number you publish are visible to anyone using Pottly,
+          delivery area and the contact number you publish are visible to anyone using Potlly,
           including people who are not signed in. Do not publish a phone number or address you do not
           want to be public.
         </p>
@@ -111,7 +111,7 @@ export default function PrivacyPage() {
 
         <h2 id="storage">6. Cookies and local storage</h2>
         <p>
-          Pottly uses cookies and local storage on your device for things the product needs in order
+          Potlly uses cookies and local storage on your device for things the product needs in order
           to work: keeping you signed in if you have an account, remembering the area you set, and
           keeping the list of kitchens and dishes you recently viewed.
         </p>
@@ -133,25 +133,25 @@ export default function PrivacyPage() {
 
         <h2 id="handoff">8. WhatsApp and SMS handoff</h2>
         <p>
-          When you choose to order, Pottly opens WhatsApp or SMS on your device with the
+          When you choose to order, Potlly opens WhatsApp or SMS on your device with the
           kitchen&rsquo;s number and a suggested message. From that moment the conversation happens
           in that app, between you and the kitchen.
         </p>
         <p>
-          Pottly does not host, read, store or have access to those messages. What happens in
+          Potlly does not host, read, store or have access to those messages. What happens in
           WhatsApp is covered by WhatsApp&rsquo;s own privacy policy, and what happens over SMS is
           covered by your mobile network. The kitchen will see the phone number you message from.
         </p>
 
         <h2 id="third-parties">9. Third-party services</h2>
         <p>
-          Running Pottly requires a small number of service providers — for example hosting,
+          Running Potlly requires a small number of service providers — for example hosting,
           storage of uploaded kitchen photos, and error reporting. These providers process data only
           to provide their service to us.
         </p>
         <p>
           The current list of providers should be published here before launch. We do not claim any
-          certification or compliance programme that Pottly has not actually completed.
+          certification or compliance programme that Potlly has not actually completed.
         </p>
 
         <h2 id="retention">10. Data retention</h2>
@@ -192,7 +192,7 @@ export default function PrivacyPage() {
 
         <h2 id="children">13. Children</h2>
         <p>
-          Pottly is not directed at children. We do not knowingly collect personal information from
+          Potlly is not directed at children. We do not knowingly collect personal information from
           a child. If you believe a child has given us information, contact us and we will remove it.
         </p>
 

@@ -47,7 +47,7 @@ export function SiteHeader() {
         Skip to content
       </a>
       <div className="mx-auto flex h-[4.5rem] w-full max-w-[78rem] items-center justify-between gap-6 px-5 sm:px-8">
-        <Link href="/" aria-label="Pottly home" className="rounded-lg">
+        <Link href="/" aria-label="Potlly home" className="rounded-lg">
           <Logo />
         </Link>
 

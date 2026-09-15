@@ -108,7 +108,7 @@ export function AppPromo() {
                 style={{ "--reveal-delay": "100ms" } as React.CSSProperties}
               >
                 <PhoneFrame
-                  label="A kitchen profile in the Pottly app"
+                  label="A kitchen profile in the Potlly app"
                   width={210}
                   className="rotate-[-4deg]"
                 >
@@ -117,7 +117,7 @@ export function AppPromo() {
               </div>
               <div data-reveal className="translate-y-16">
                 <PhoneFrame
-                  label="The Pottly home screen showing nearby dishes"
+                  label="The Potlly home screen showing nearby dishes"
                   width={248}
                   className="rotate-[2deg]"
                 >

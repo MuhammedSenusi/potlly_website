@@ -1,6 +1,6 @@
-# Pottly — marketing site
+# Potlly — marketing site
 
-Marketing site for Pottly, an app that connects people with home cooks and
+Marketing site for Potlly, an app that connects people with home cooks and
 small kitchens near them. Customers browse without an account and message a
 kitchen directly on WhatsApp or SMS to order; kitchens create an account to
 publish a profile, a menu and their delivery terms.
@@ -47,9 +47,9 @@ without it the PNG is served as the wrong type.
 ## Brand logo
 
 Source art is in `public/logo/` at 512px and 1024px. The site uses cropped
-derivatives: `public/logo/pottly-mark.webp` in the header and footer,
+derivatives: `public/logo/potlly-mark.webp` in the header and footer,
 `app/icon.png` for the favicon, `app/apple-icon.png` for the iOS home screen and
-`app/_og/pottly-mark.png` in the social card. Regenerate them from the 1024px
+`app/_og/potlly-mark.png` in the social card. Regenerate them from the 1024px
 file if the logo changes.
 
 The build command runs `bun install --frozen-lockfile` explicitly. Netlify only
@@ -79,7 +79,7 @@ Each frame is exposed to assistive technology as a single labelled image.
 
 1. **Replace the photography.** Everything in `public/food/` is openly licensed
    placeholder imagery credited at `/credits`, and several images are
-   share-alike. Swap in Pottly's own kitchen and dish photos, then delete
+   share-alike. Swap in Potlly's own kitchen and dish photos, then delete
    `constants/photo-credits.json` and the `/credits` route along with its footer
    link.
 2. **Replace the sample listings.** The kitchens, cooks, dishes and reviews in

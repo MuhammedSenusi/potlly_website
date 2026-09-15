@@ -1,5 +1,5 @@
 /**
- * Pottly design tokens — the web mirror of the mobile app's theme.
+ * Potlly design tokens — the web mirror of the mobile app's theme.
  *
  * The mobile (React Native) source of truth is preserved verbatim at
  * `docs/mobile-app-theme.reference.ts`. This file is the web-safe port: same

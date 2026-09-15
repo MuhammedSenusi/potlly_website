@@ -4,7 +4,7 @@
  * Everything the marketing site shows about dishes, kitchens and reviews lives
  * here so it can be swapped for live API data without touching a component.
  * The kitchens and cooks below are illustrative examples of the kind of
- * Nigerian and West African home kitchen Pottly lists across the Greater
+ * Nigerian and West African home kitchen Potlly lists across the Greater
  * Toronto Area — they are clearly-labelled sample content, not real vendors,
  * and no usage, revenue or scale claims are made anywhere on the site.
  */
@@ -401,7 +401,7 @@ export type Review = {
 };
 
 /**
- * Reviews are anonymous everywhere on Pottly — no reviewer name, photo or
+ * Reviews are anonymous everywhere on Potlly — no reviewer name, photo or
  * handle is ever stored against a public review.
  */
 export const reviews: Review[] = [

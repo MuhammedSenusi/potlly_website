@@ -20,7 +20,7 @@ export function WaitlistForm() {
         </span>
         <h2 className="mt-6 font-headline text-h3 text-ink">You&rsquo;re on the list.</h2>
         <p className="mt-3 leading-relaxed text-ink-2">
-          We&rsquo;ll let you know when Pottly is ready in your area. No noise, just good food.
+          We&rsquo;ll let you know when Potlly is ready in your area. No noise, just good food.
         </p>
       </div>
     );
@@ -36,7 +36,7 @@ export function WaitlistForm() {
       </div>
       <h2 className="mt-6 font-headline text-h3 text-ink">Save me a seat.</h2>
       <p className="mt-3 leading-relaxed text-ink-2">
-        Leave your email and we&rsquo;ll tell you when Pottly opens near you.
+        Leave your email and we&rsquo;ll tell you when Potlly opens near you.
       </p>
 
       <div className="mt-7">

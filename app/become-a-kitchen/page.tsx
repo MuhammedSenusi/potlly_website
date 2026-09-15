@@ -12,7 +12,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Become a kitchen",
   description:
-    "List your Nigerian or West African home kitchen on Pottly and reach hungry people across the GTA. Create a profile, publish your menu and prices, set your delivery area, and take orders on WhatsApp. Free to list, no commission.",
+    "List your Nigerian or West African home kitchen on Potlly and reach hungry people across the GTA. Create a profile, publish your menu and prices, set your delivery area, and take orders on WhatsApp. Free to list, no commission.",
   alternates: { canonical: "/become-a-kitchen" },
 };
 
@@ -31,7 +31,7 @@ export default function BecomeAKitchenPage() {
       <PageHero
         eyebrow="For kitchens"
         title="Turn your kitchen into a local food business."
-        lead="You already cook. Pottly gives that cooking a front door: a profile people can find, a menu they can read, and a rating that grows with every good plate you send out."
+        lead="You already cook. Potlly gives that cooking a front door: a profile people can find, a menu they can read, and a rating that grows with every good plate you send out."
       >
         <div className="flex flex-wrap gap-3">
           <ButtonLink href="#start" size="lg">
@@ -80,7 +80,7 @@ export default function BecomeAKitchenPage() {
                 your full menu — then a button that opens your WhatsApp.
               </p>
               <p className="mt-5 max-w-lg leading-relaxed text-ink-2">
-                Nothing sits between you and the customer. Pottly does not take the order, does not
+                Nothing sits between you and the customer. Potlly does not take the order, does not
                 hold the money and does not talk to your customer on your behalf. It gets people to
                 your door and lets you do the rest the way you always have.
               </p>
@@ -111,7 +111,7 @@ export default function BecomeAKitchenPage() {
                 <Eyebrow>Get started</Eyebrow>
                 <h2 className="mt-4 text-h2 text-ink">Ready to list?</h2>
                 <p className="mt-4 max-w-md leading-relaxed text-ink-2">
-                  Kitchen accounts are created in the Pottly app, where you upload photos, build your
+                  Kitchen accounts are created in the Potlly app, where you upload photos, build your
                   menu and set your delivery areas. The app is not on the stores yet — tell us about
                   your kitchen and we will get you set up as soon as it is.
                 </p>
@@ -130,7 +130,7 @@ export default function BecomeAKitchenPage() {
                     Already have a kitchen account?
                   </h3>
                   <p className="mt-2 max-w-md text-[0.9375rem] leading-relaxed text-ink-2">
-                    Sign in from the Pottly app to manage your profile, menu and photos. There is no
+                    Sign in from the Potlly app to manage your profile, menu and photos. There is no
                     separate web login yet. If you cannot get in, email{" "}
                     <a
                       href={`mailto:${site.contact.support}`}

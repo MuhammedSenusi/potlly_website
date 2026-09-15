@@ -32,7 +32,7 @@ const customerBenefits = [
   {
     Icon: IconTag,
     title: "See the real price",
-    body: "The price on the card is the cook's price. Pottly adds no service fee and no commission on top of it.",
+    body: "The price on the card is the cook's price. Potlly adds no service fee and no commission on top of it.",
   },
   {
     Icon: IconHeart,
@@ -61,7 +61,7 @@ export function CustomerBenefits() {
             Built for how people actually order from a home cook.
           </h2>
           <p className="mt-5 text-lead text-ink-2">
-            Pottly is a way to find someone, not a system to route your food through.
+            Potlly is a way to find someone, not a system to route your food through.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export function CustomerBenefits() {
 const kitchenTools = [
   { Icon: IconCamera, label: "Create your kitchen profile", body: "Photos, description, and the areas you deliver to." },
   { Icon: IconMenuList, label: "Add and edit your menu", body: "Dishes, prices and notes. Changes go live immediately." },
-  { Icon: IconWallet, label: "Set your own prices and fees", body: "Your price, your delivery fee. Pottly takes no cut." },
+  { Icon: IconWallet, label: "Set your own prices and fees", body: "Your price, your delivery fee. Potlly takes no cut." },
   { Icon: IconWhatsApp, label: "Take orders where you already are", body: "Customers reach you on WhatsApp or SMS on your own number." },
   { Icon: IconStar, label: "Build a reputation", body: "Anonymous reviews add up to a rating that lifts your visibility." },
   { Icon: IconShield, label: "Stay in control", body: "Pause your kitchen, hide a dish, or update your hours any time." },
@@ -100,7 +100,7 @@ const kitchenTools = [
 export function KitchenBenefits({
   eyebrow = "For kitchens",
   title = "Turn your kitchen into a local food business.",
-  lead = "If you already cook for people, you already have the hard part. Pottly gives you the shopfront: a profile people can find, a menu they can read, and a rating that grows with every good plate you send out.",
+  lead = "If you already cook for people, you already have the hard part. Potlly gives you the shopfront: a profile people can find, a menu they can read, and a rating that grows with every good plate you send out.",
 }: {
   eyebrow?: string;
   title?: string;
@@ -158,7 +158,7 @@ export function KitchenBenefits({
             />
             <div data-reveal>
               <PhoneFrame
-                label="The kitchen owner's dashboard in the Pottly app: kitchen status, rating, review count, dish count, add-dish and photo shortcuts, the menu with live and hidden dishes, and the latest review"
+                label="The kitchen owner's dashboard in the Potlly app: kitchen status, rating, review count, dish count, add-dish and photo shortcuts, the menu with live and hidden dishes, and the latest review"
                 width={296}
                 className="rotate-[-2deg]"
               >

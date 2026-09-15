@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-/** Structured data describing what Pottly is, for search results. */
+/** Structured data describing what Potlly is, for search results. */
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -43,7 +43,7 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "Do I need an account to order Nigerian home-cooked food on Pottly?",
+          name: "Do I need an account to order Nigerian home-cooked food on Potlly?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "No. You can search dishes, browse kitchen profiles, read reviews and message a kitchen without creating an account. An account is only needed if you want your saved favorites to follow you between devices.",
@@ -62,7 +62,7 @@ const jsonLd = {
           name: "How do I pay?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You pay the kitchen directly by Interac e-Transfer or cash on delivery. Pottly does not process payments and does not add a service fee to the cook's price.",
+            text: "You pay the kitchen directly by Interac e-Transfer or cash on delivery. Potlly does not process payments and does not add a service fee to the cook's price.",
           },
         },
         {

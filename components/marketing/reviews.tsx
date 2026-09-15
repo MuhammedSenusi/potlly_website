@@ -19,7 +19,7 @@ export function Reviews() {
             <Eyebrow>Ratings &amp; reviews</Eyebrow>
             <h2 className="mt-4 text-h2 text-ink">Real kitchens. Real experiences.</h2>
             <p className="mt-5 text-lead text-ink-2">
-              Every review on Pottly is anonymous. No name, no photo, no profile — just a rating and
+              Every review on Potlly is anonymous. No name, no photo, no profile — just a rating and
               what the food was like.
             </p>
 
@@ -49,7 +49,7 @@ export function Reviews() {
 
             <p className="mt-6 flex gap-2.5 text-[0.875rem] leading-relaxed text-ink-3">
               <IconShield className="mt-0.5 size-4 shrink-0 text-ink-3" />
-              Pottly does not take, process or deliver orders. Ratings describe experiences people
+              Potlly does not take, process or deliver orders. Ratings describe experiences people
               had with a kitchen — they are not a guarantee from us.
             </p>
           </div>
