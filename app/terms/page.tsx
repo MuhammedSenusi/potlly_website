@@ -3,9 +3,9 @@ import { PageHero, LegalLayout } from "@/components/site/page-hero";
 import { site } from "@/constants/site";
 
 export const metadata: Metadata = {
-  title: "Terms & conditions",
+  title: "Terms & conditions (EULA)",
   description:
-    "The terms that apply to using Potlly as a customer or as a kitchen, including listings, ordering, payment, reviews and account termination.",
+    "Potlly's 18+ End User Licence Agreement, including community-safety rules, content controls, reporting, blocking and enforcement.",
   alternates: { canonical: "/terms" },
   robots: { index: true, follow: true },
 };
@@ -19,12 +19,13 @@ const toc = [
   { id: "ordering", label: "6. Ordering" },
   { id: "payments", label: "7. Payments" },
   { id: "reviews", label: "8. Reviews" },
-  { id: "prohibited", label: "9. Prohibited activity" },
-  { id: "role", label: "10. Our role" },
-  { id: "liability", label: "11. Limitation of liability" },
-  { id: "termination", label: "12. Suspension and termination" },
-  { id: "changes", label: "13. Changes to these terms" },
-  { id: "contact", label: "14. Contact" },
+  { id: "safety", label: "9. Safety and community standards" },
+  { id: "prohibited", label: "10. Prohibited activity" },
+  { id: "role", label: "11. Our role" },
+  { id: "liability", label: "12. Limitation of liability" },
+  { id: "termination", label: "13. Suspension and termination" },
+  { id: "changes", label: "14. Changes to these terms" },
+  { id: "contact", label: "15. Contact and reporting" },
 ];
 
 export default function TermsPage() {
@@ -32,8 +33,8 @@ export default function TermsPage() {
     <>
       <PageHero
         eyebrow="Legal"
-        title="Terms & conditions"
-        lead="These terms explain what Potlly does, what it does not do, and what is expected of the people who use it."
+        title="Terms & conditions (EULA)"
+        lead="These terms explain the rules for using Potlly, an 18+ service, and the safety standards every user must follow."
         meta={`Last updated ${site.legalUpdated}`}
       />
       <LegalLayout toc={toc}>
@@ -47,19 +48,25 @@ export default function TermsPage() {
         <p>
           Potlly is a marketplace that helps people discover home cooks and small kitchens near them,
           and helps those kitchens publish a profile, a menu and their contact details. These terms
-          apply whenever you use the Potlly website or mobile app, whether or not you have an
-          account.
+          form the Potlly End User Licence Agreement (EULA). They apply whenever you access or use
+          the Potlly website or mobile app, whether or not you have an account.
         </p>
         <p>
-          By using Potlly you agree to these terms. If you do not agree with them, please do not use
-          the service.
+          You must affirmatively accept this EULA when the app asks you to do so, including when you
+          create an account or use features that let you post content. By tapping or selecting
+          &ldquo;I agree&rdquo;, creating an account, posting content, or continuing to use Potlly, you
+          agree to these terms. If you do not agree, do not use the service.
         </p>
 
         <h2 id="eligibility">2. Eligibility</h2>
         <ul>
           <li>
-            You must be old enough to enter a binding agreement where you live in order to place an
-            order or operate a kitchen through Potlly.
+            Potlly is only for people aged 18 or older. You may not access or use the service if you
+            are under 18.
+          </li>
+          <li>
+            By using Potlly, you confirm that you are at least 18 and are legally able to enter a
+            binding agreement where you live.
           </li>
           <li>
             If you list a kitchen, you confirm that you are entitled to prepare and sell food where
@@ -108,15 +115,15 @@ export default function TermsPage() {
         </p>
         <p>
           You must only upload content you have the right to use. We may remove content that is
-          misleading, unlawful, offensive, or that infringes someone else&rsquo;s rights.
+          misleading, unlawful, objectionable, abusive, or that infringes someone else&rsquo;s rights.
         </p>
 
         <h2 id="ordering">6. Ordering</h2>
         <p>
           Orders are not placed or processed inside Potlly. When you choose to order, Potlly opens
           WhatsApp or SMS with the kitchen&rsquo;s number and, where possible, the dish and kitchen name
-          already filled in. Everything after that — confirming the order, the price, the delivery
-          time and the handover — is arranged directly between you and the kitchen.
+          already filled in. Everything after that, including confirming the order, price, delivery
+          time and handover, is arranged directly between you and the kitchen.
         </p>
         <p>
           Potlly does not confirm, track, deliver, refund or cancel orders, and does not act as an
@@ -147,18 +154,59 @@ export default function TermsPage() {
         </p>
         <p>Ratings and review volume influence how kitchens are ranked in search and discovery.</p>
 
-        <h2 id="prohibited">9. Prohibited activity</h2>
+        <h2 id="safety">9. Safety and community standards</h2>
+        <p>
+          Potlly has zero tolerance for objectionable content or abusive users. Objectionable content
+          includes content that is unlawful, threatening, harassing, hateful, discriminatory,
+          sexually explicit, violent, exploitative, fraudulent, invasive of another person&rsquo;s
+          privacy, or otherwise harmful or seriously offensive. Abuse includes bullying, stalking,
+          intimidation, repeated unwanted contact and attempts to evade another user&rsquo;s block.
+        </p>
+        <p>To help keep Potlly safe:</p>
+        <ul>
+          <li>
+            We use content filters and moderation systems to detect, limit and remove objectionable
+            content.
+          </li>
+          <li>
+            You can use the in-app Report action to flag objectionable content, a post, a review,
+            a listing or abusive conduct for our review.
+          </li>
+          <li>
+            You can block an abusive user. A blocked user will no longer be able to interact with
+            you through the features covered by the block.
+          </li>
+          <li>
+            You can immediately hide or remove any post from your own feed using the control shown
+            on that post.
+          </li>
+          <li>
+            You can also report inappropriate activity through the contact option in the app or by
+            emailing <a href={`mailto:${site.contact.support}`}>{site.contact.support}</a>.
+          </li>
+        </ul>
+        <p>
+          We review reports of objectionable content or abusive conduct within 24 hours. When a
+          report identifies content or conduct that violates these terms, we will act within that
+          24-hour period by removing the offending content and suspending or permanently ejecting
+          the user responsible for it. We may preserve information where required for safety, fraud
+          prevention, legal compliance or an investigation.
+        </p>
+
+        <h2 id="prohibited">10. Prohibited activity</h2>
         <p>You agree not to:</p>
         <ul>
           <li>Post false, misleading or fraudulent listings, prices or reviews.</li>
           <li>Impersonate another person, cook or kitchen.</li>
           <li>Harass, threaten or discriminate against another user.</li>
+          <li>Post, share or promote objectionable content.</li>
+          <li>Contact or target a user who has blocked you, including through another account.</li>
           <li>Use Potlly to sell anything other than food and drink prepared by the listed kitchen.</li>
           <li>Scrape, copy or resell Potlly&rsquo;s content or data without permission.</li>
           <li>Interfere with, probe or attempt to disrupt the service or its security.</li>
         </ul>
 
-        <h2 id="role">10. Our role</h2>
+        <h2 id="role">11. Our role</h2>
         <p>
           Potlly is a discovery platform. We are not a restaurant, a food business, a delivery
           company or a payment processor. We do not prepare, inspect, handle, deliver or guarantee
@@ -170,7 +218,7 @@ export default function TermsPage() {
           not a certification or endorsement by Potlly.
         </p>
 
-        <h2 id="liability">11. Limitation of liability</h2>
+        <h2 id="liability">12. Limitation of liability</h2>
         <p>
           Potlly is provided on an &ldquo;as is&rdquo; basis. To the fullest extent permitted by law,
           we are not liable for loss or damage arising from the food you buy, the conduct of a
@@ -182,28 +230,32 @@ export default function TermsPage() {
           for death or personal injury caused by negligence, or for fraud.
         </p>
 
-        <h2 id="termination">12. Suspension and termination</h2>
+        <h2 id="termination">13. Suspension and termination</h2>
         <p>
           You may stop using Potlly at any time. Kitchen account holders can request deletion of
           their account and listing on the{" "}
           <a href="/delete-account">delete account</a> page.
         </p>
         <p>
-          We may suspend or remove an account or a listing that breaches these terms, misrepresents
-          a kitchen, or puts customers at risk. Where it is reasonable to do so, we will tell you
-          why.
+          We may suspend or permanently remove an account, listing or content that breaches these
+          terms, misrepresents a kitchen, puts another person at risk, or involves objectionable
+          content or abusive conduct. Serious or repeated violations may result in immediate and
+          permanent ejection from Potlly. Where it is reasonable to do so, we will tell you why.
         </p>
 
-        <h2 id="changes">13. Changes to these terms</h2>
+        <h2 id="changes">14. Changes to these terms</h2>
         <p>
           We may update these terms as the product changes. The date at the top of this page always
           shows when they were last revised. If a change materially affects your rights, we will give
           notice in the app or by email to kitchen account holders before it takes effect.
         </p>
 
-        <h2 id="contact">14. Contact</h2>
+        <h2 id="contact">15. Contact and reporting</h2>
         <p>
-          Questions about these terms can be sent to{" "}
+          Use the reporting and contact options available in the Potlly app to report inappropriate
+          activity. You can also report safety concerns to{" "}
+          <a href={`mailto:${site.contact.support}`}>{site.contact.support}</a>. Questions about
+          these terms can be sent to{" "}
           <a href={`mailto:${site.contact.legal}`}>{site.contact.legal}</a>.
         </p>
       </LegalLayout>
