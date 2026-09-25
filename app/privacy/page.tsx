@@ -210,7 +210,7 @@ export default function PrivacyPage() {
           <li>
             Safety reports, moderation decisions, blocks and enforcement records are kept only as
             long as reasonably necessary to investigate the matter, apply your safety choices,
-            prevent repeat abuse, resolve an appeal or dispute, or meet legal obligations.
+            prevent repeat abuse, resolve a review or dispute, or meet legal obligations.
           </li>
           <li>
             Records showing acceptance of the terms and confirmation of 18+ eligibility may be kept
@@ -244,9 +244,9 @@ export default function PrivacyPage() {
         <h2 id="age">14. Age eligibility</h2>
         <p>
           Potlly is an 18+ service and is not directed to anyone under 18. We may record whether a
-          person confirmed that they are at least 18, but this policy does not authorise the collection
-          of government identification, facial images or biometric information for age checks. If our
-          age-assurance method changes, we will update this policy before collecting additional data.
+          person confirmed that they are at least 18. We do not currently ask for government
+          identification, facial images or biometric information for age checks. If our age-assurance
+          method changes, we will update this policy before collecting additional data.
         </p>
         <p>
           We do not knowingly collect personal information from anyone under 18. If you believe a
