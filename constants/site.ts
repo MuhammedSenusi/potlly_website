@@ -23,7 +23,7 @@ export const site = {
     ios: null as string | null,
     android: null as string | null,
   },
-  legalUpdated: "9 September 2026",
+  legalUpdated: "25 September 2026",
 } as const;
 
 export const nav = {
