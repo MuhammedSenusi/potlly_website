@@ -5,7 +5,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Privacy policy",
   description:
-    "What information Potlly collects, how location and kitchen account data are used, what happens when you message a kitchen, and how to exercise your rights.",
+    "What information Potlly collects, including information used for accounts, safety reports, content moderation, blocking and age confirmation.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -17,14 +17,15 @@ const toc = [
   { id: "device", label: "5. Device information" },
   { id: "storage", label: "6. Cookies and local storage" },
   { id: "reviews", label: "7. Reviews" },
-  { id: "handoff", label: "8. WhatsApp and SMS handoff" },
-  { id: "third-parties", label: "9. Third-party services" },
-  { id: "retention", label: "10. Data retention" },
-  { id: "security", label: "11. Security" },
-  { id: "rights", label: "12. Your rights" },
-  { id: "children", label: "13. Children" },
-  { id: "changes", label: "14. Changes" },
-  { id: "contact", label: "15. Contact" },
+  { id: "safety", label: "8. Safety, reports and moderation" },
+  { id: "handoff", label: "9. WhatsApp and SMS handoff" },
+  { id: "third-parties", label: "10. Third-party services and disclosure" },
+  { id: "retention", label: "11. Data retention" },
+  { id: "security", label: "12. Security" },
+  { id: "rights", label: "13. Your rights" },
+  { id: "age", label: "14. Age eligibility" },
+  { id: "changes", label: "15. Changes" },
+  { id: "contact", label: "16. Contact" },
 ];
 
 export default function PrivacyPage() {
@@ -61,7 +62,15 @@ export default function PrivacyPage() {
         </p>
         <p>
           <strong>Everyone.</strong> We collect basic technical information described under device
-          information below, and the content of any review left through the app.
+          information below, the content you submit through the app, and any confirmation that you
+          are at least 18 and have accepted the current version of our terms.
+        </p>
+        <p>
+          <strong>People who use safety features.</strong> If you report content or another user, we
+          collect the report, the reason you select, any details you provide, the content and account
+          involved, and relevant account, device or activity information needed to investigate. If
+          you block someone or remove a post from your feed, we store the information needed to apply
+          that choice.
         </p>
 
         <h2 id="use">2. How we use information</h2>
@@ -70,7 +79,10 @@ export default function PrivacyPage() {
           <li>To publish kitchen listings so customers can find them.</li>
           <li>To keep saved favorites available on your account.</li>
           <li>To calculate ratings and rank kitchens in search and discovery.</li>
-          <li>To detect and limit fake or duplicate reviews and other abuse.</li>
+          <li>To filter, detect and limit objectionable content, fake reviews and abusive activity.</li>
+          <li>To investigate reports, enforce our terms and prevent repeat violations.</li>
+          <li>To apply your blocks and keep content you remove from reappearing in your feed.</li>
+          <li>To record that you confirmed you are at least 18 and accepted our terms.</li>
           <li>To fix problems, keep the service running, and respond when you contact us.</li>
         </ul>
         <p>We do not sell personal information.</p>
@@ -79,7 +91,7 @@ export default function PrivacyPage() {
         <p>
           Location drives almost everything in Potlly, so it is worth being precise about it. You can
           set your area in two ways: by granting device location permission, or by typing an area or
-          address by hand. Manual entry always works — location permission is optional and can be
+          address by hand. Manual entry always works. Location permission is optional and can be
           declined or revoked without losing access to the service.
         </p>
         <p>
@@ -131,7 +143,29 @@ export default function PrivacyPage() {
           is not used to build a profile of you.
         </p>
 
-        <h2 id="handoff">8. WhatsApp and SMS handoff</h2>
+        <h2 id="safety">8. Safety, reports and moderation</h2>
+        <p>
+          Potlly uses automated filters and human review to identify and respond to objectionable
+          content and abusive conduct. These processes may examine submitted text, images, listings,
+          reviews, report details, account identifiers, device or session identifiers, and relevant
+          activity on the service. Automated filters can limit or flag content for review, but
+          enforcement decisions may also be made by an authorised reviewer.
+        </p>
+        <p>
+          When you report content or conduct, we use the report and related information to investigate,
+          contact the people involved when appropriate, remove content, restrict or eject accounts,
+          prevent repeat abuse, and meet legal or safety obligations. We do not publicly identify the
+          person who made a report, but we cannot promise anonymity where disclosure is required by law
+          or is necessary to address an immediate safety risk.
+        </p>
+        <p>
+          Blocking creates a record between your account and the blocked account so that Potlly can
+          prevent the interactions covered by the block. Removing a post from your feed records that
+          preference so the post can be hidden from your view. These controls do not delete content
+          from another person&rsquo;s account or from records we must keep for safety or legal reasons.
+        </p>
+
+        <h2 id="handoff">9. WhatsApp and SMS handoff</h2>
         <p>
           When you choose to order, Potlly opens WhatsApp or SMS on your device with the
           kitchen&rsquo;s number and a suggested message. From that moment the conversation happens
@@ -143,18 +177,25 @@ export default function PrivacyPage() {
           covered by your mobile network. The kitchen will see the phone number you message from.
         </p>
 
-        <h2 id="third-parties">9. Third-party services</h2>
+        <h2 id="third-parties">10. Third-party services and disclosure</h2>
         <p>
-          Running Potlly requires a small number of service providers — for example hosting,
+          Running Potlly requires a small number of service providers, for example hosting,
           storage of uploaded kitchen photos, and error reporting. These providers process data only
           to provide their service to us.
+        </p>
+        <p>
+          Information connected with a safety report may be shared with authorised moderators and
+          service providers that help us operate reporting and moderation tools. We may also disclose
+          information where required by law, to respond to lawful requests, or where reasonably
+          necessary to protect a person from serious harm, investigate fraud or abuse, or protect the
+          security of Potlly. We do not sell personal information.
         </p>
         <p>
           The current list of providers should be published here before launch. We do not claim any
           certification or compliance programme that Potlly has not actually completed.
         </p>
 
-        <h2 id="retention">10. Data retention</h2>
+        <h2 id="retention">11. Data retention</h2>
         <ul>
           <li>Kitchen listings and account data are kept while the account is active.</li>
           <li>
@@ -167,19 +208,29 @@ export default function PrivacyPage() {
             anonymised form, because they are not attached to a reviewer identity.
           </li>
           <li>
-            Limited records may be retained where the law requires it, or to prevent abuse and
-            fraud.
+            Safety reports, moderation decisions, blocks and enforcement records are kept only as
+            long as reasonably necessary to investigate the matter, apply your safety choices,
+            prevent repeat abuse, resolve an appeal or dispute, or meet legal obligations.
+          </li>
+          <li>
+            Records showing acceptance of the terms and confirmation of 18+ eligibility may be kept
+            while the account is active and for a reasonable period afterward where needed to
+            demonstrate compliance or resolve a dispute.
+          </li>
+          <li>
+            Limited records may also be retained where the law requires it, or to prevent abuse and
+            fraud. When information is no longer needed, it is deleted or irreversibly anonymised.
           </li>
         </ul>
 
-        <h2 id="security">11. Security</h2>
+        <h2 id="security">12. Security</h2>
         <p>
           We use reasonable technical and organisational measures to protect the information we hold,
           including encrypted connections and access controls on administrative tools. No service can
           promise perfect security, and we will not claim otherwise.
         </p>
 
-        <h2 id="rights">12. Your rights</h2>
+        <h2 id="rights">13. Your rights</h2>
         <p>
           Depending on where you live, you may have the right to ask for a copy of the personal
           information we hold about you, to correct it, to delete it, or to object to certain uses.
@@ -190,22 +241,36 @@ export default function PrivacyPage() {
           <a href={`mailto:${site.contact.privacy}`}>{site.contact.privacy}</a>.
         </p>
 
-        <h2 id="children">13. Children</h2>
+        <h2 id="age">14. Age eligibility</h2>
         <p>
-          Potlly is not directed at children. We do not knowingly collect personal information from
-          a child. If you believe a child has given us information, contact us and we will remove it.
+          Potlly is an 18+ service and is not directed to anyone under 18. We may record whether a
+          person confirmed that they are at least 18, but this policy does not authorise the collection
+          of government identification, facial images or biometric information for age checks. If our
+          age-assurance method changes, we will update this policy before collecting additional data.
+        </p>
+        <p>
+          We do not knowingly collect personal information from anyone under 18. If you believe a
+          person under 18 has provided personal information to Potlly, contact us so we can investigate
+          and delete it where appropriate.
         </p>
 
-        <h2 id="changes">14. Changes</h2>
+        <h2 id="changes">15. Changes</h2>
         <p>
           If this policy changes, the date at the top of the page is updated. Material changes will
           be communicated in the app or by email to kitchen account holders.
         </p>
 
-        <h2 id="contact">15. Contact</h2>
+        <h2 id="contact">16. Contact</h2>
         <p>
-          Privacy questions and requests go to{" "}
+          Potlly is responsible for the personal information described in this policy. Privacy
+          questions, requests or complaints can be submitted through the contact option in the app
+          or sent to{" "}
           <a href={`mailto:${site.contact.privacy}`}>{site.contact.privacy}</a>.
+        </p>
+        <p>
+          Reports about inappropriate content or abusive conduct can be submitted through the in-app
+          Report action or sent to{" "}
+          <a href={`mailto:${site.contact.support}`}>{site.contact.support}</a>.
         </p>
       </LegalLayout>
     </>
