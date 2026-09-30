@@ -82,7 +82,7 @@ Each frame is exposed to assistive technology as a single labelled image.
    share-alike. Swap in Potlly's own kitchen and dish photos, then delete
    `constants/photo-credits.json` and the `/credits` route along with its footer
    link.
-2. **Replace the sample listings.** The kitchens, cooks, dishes and reviews in
+2. **Replace the sample listings.** The kitchens, food entrepreneurs, dishes and reviews in
    `constants/content.ts` are illustrative examples, labelled as such on the
    page. Point the site at real data.
 3. **Set the canonical URL** in `constants/site.ts` (`site.url`) — it drives

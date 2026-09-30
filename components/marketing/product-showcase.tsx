@@ -34,7 +34,7 @@ export function ProductShowcase() {
           <div>
             <Eyebrow tone="light">The app</Eyebrow>
             <h2 className="mt-4 text-h2 text-white">
-              Find food. Meet your local cooks.
+              Find food. Meet local food entrepreneurs.
             </h2>
             <p className="mt-5 max-w-lg text-lead text-white/65">
               Open Potlly and you are already browsing. Set your area, search a dish, and see who
@@ -126,7 +126,7 @@ const profileFacts = [
   {
     Icon: IconTag,
     title: "The full menu with real prices",
-    body: "Every dish the kitchen makes, priced the way the cook prices it. Nothing added on top.",
+    body: "Every dish the kitchen makes, priced by the food entrepreneur. Nothing added on top.",
   },
   {
     Icon: IconWallet,
@@ -167,7 +167,7 @@ export function KitchenProfileShowcase() {
               Everything you need to decide, on one screen.
             </h2>
             <p className="mt-5 max-w-lg text-lead text-ink-2">
-              A kitchen profile is the whole pitch: who cooks, what they make, what it costs, how
+              A kitchen profile is the whole pitch: who runs it, what they make, what it costs, how
               far they deliver, and what other people thought.
             </p>
 

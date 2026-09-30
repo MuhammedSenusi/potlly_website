@@ -11,7 +11,7 @@ import { IconArrowRight, IconCamera, IconMenuList, IconStar, IconWhatsApp } from
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "How Potlly works for customers and for kitchens: discover Nigerian and West African local food entrepreneurs near you, browse menus and prices, and message the kitchen directly to order. Pay by e-Transfer or cash.",
+    "How Potlly works for customers and for kitchens: discover local Nigerian and West African food entrepreneurs near you, browse menus and prices, and message the kitchen directly to order. Pay by e-Transfer or cash.",
   alternates: { canonical: "/how-it-works" },
 };
 
@@ -125,7 +125,7 @@ export default function HowItWorksPage() {
               ],
               [
                 "How do I pay?",
-                "By Interac e-Transfer or cash, settled directly with the kitchen. Potlly does not process payments and adds nothing to the cook's price.",
+                "By Interac e-Transfer or cash, settled directly with the kitchen. Potlly does not process payments and adds nothing to the food entrepreneur's price.",
               ],
               [
                 "Who delivers the food?",

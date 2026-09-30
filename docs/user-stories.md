@@ -1,4 +1,4 @@
-# Home Kitchen Marketplace App
+# Local Food Entrepreneur Marketplace App
 
 ## User Stories — Product Requirements Draft
 
@@ -11,9 +11,9 @@ A marketplace connecting local food entrepreneurs and small food vendors with cu
 | Area | Decision |
 | --- | --- |
 | **Customer accounts** | Optional — browsing, search, viewing kitchens and the order handoff never require an account. An account only unlocks the **Favorites** and **Profile** tabs (saved kitchens/dishes synced across devices). Leaving a review stays anonymous and account-free. |
-| **Cook / vendor accounts** | Required — cooks must create an account to manage their kitchen profile and menu. |
+| **Food entrepreneur / vendor accounts** | Required — food entrepreneurs must create an account to manage their kitchen profile and menu. |
 | **Tenancy** | Kitchens are the tenants — many independent kitchens on one platform, each with isolated data. No region/market tenant layer. |
-| **Ordering** | Handled outside the app — the app hands off to SMS or WhatsApp using the cook's contact number. |
+| **Ordering** | Handled outside the app — the app hands off to SMS or WhatsApp using the food entrepreneur's contact number. |
 | **Payment** | Cash on delivery — no in-app payment processing. |
 | **Reviews** | Anonymous — no reviewer identity is shown publicly. Ranking is influenced by positive review volume/score. |
 
@@ -40,9 +40,9 @@ As a customer, I want to search by dish, location/proximity, or kitchen name, so
 - Filters available for location/distance and kitchen name.
 - Results update live or on search submit.
 
-### 3. View a kitchen/cook profile
+### 3. View a kitchen/food entrepreneur profile
 
-As a customer, I want to view a cook's profile with kitchen photo, description, delivery fee info, and dishes with prices, so that I can decide if I want to order.
+As a customer, I want to view a food entrepreneur's profile with kitchen photo, description, delivery fee info, and dishes with prices, so that I can decide if I want to order.
 
 **Acceptance Criteria**
 
@@ -51,7 +51,7 @@ As a customer, I want to view a cook's profile with kitchen photo, description, 
 
 ### 4. Hand off to SMS/WhatsApp to order
 
-As a customer, I want to tap a "Message to Order" button on a meal or profile, so that it opens SMS or WhatsApp — pre-filled with the cook's number and ideally the meal name — where I can finalize the order directly with the cook.
+As a customer, I want to tap a "Message to Order" button on a meal or profile, so that it opens SMS or WhatsApp — pre-filled with the food entrepreneur's number and ideally the meal name — where I can finalize the order directly with the food entrepreneur.
 
 **Acceptance Criteria**
 
@@ -66,7 +66,7 @@ As a customer, I want to pay cash when my food is delivered, so that I don't nee
 **Acceptance Criteria**
 
 - No in-app payment flow exists.
-- Cook's profile or chat handoff clearly states payment is cash on delivery.
+- The food entrepreneur's profile or chat handoff clearly states payment is cash on delivery.
 
 ### 6. Leave an anonymous review
 
@@ -131,9 +131,9 @@ As a customer, I want to set my location by GPS or by typing an address/area, so
 
 ---
 
-## Cook / Vendor — Account Required
+## Food Entrepreneur / Vendor — Account Required
 
-### 7. Create a cook account
+### 7. Create a food entrepreneur account
 
 As a local food entrepreneur, I want to sign up and create an account, so that I can manage my kitchen profile, menu, and stay verified/trusted on the platform.
 
@@ -166,7 +166,7 @@ As a local food entrepreneur, I want customer orders to come to me through SMS o
 
 **Acceptance Criteria**
 
-- Cook's phone/WhatsApp number is linked in profile settings.
+- The food entrepreneur's phone/WhatsApp number is linked in profile settings.
 - The app does not need to build or maintain in-app chat.
 
 ### 11. Ranking visibility
@@ -202,7 +202,7 @@ As a customer, I want the app to use my location (GPS or manually entered), so t
 
 ### 14. Deep-link fallback
 
-As a customer without WhatsApp installed, I want the order button to fall back to SMS automatically, so that I'm never stuck unable to contact the cook.
+As a customer without WhatsApp installed, I want the order button to fall back to SMS automatically, so that I'm never stuck unable to contact the food entrepreneur.
 
 **Acceptance Criteria**
 
@@ -216,5 +216,5 @@ As a customer without WhatsApp installed, I want the order button to fall back t
 Worth resolving before development, since they affect scope:
 
 1. Since orders happen over SMS/WhatsApp with no in-app order tracking, how do we confirm a customer actually ordered before allowing a review? Options: trust-based (anyone can review), a self-report "did you order this?" checkbox, or no verification with reliance on moderation/reporting.
-2. Should cook accounts require any verification (ID, address, food safety) before going live?
-3. What happens if a cook's phone number changes or they stop responding — is there a way for customers to flag inactive kitchens?
+2. Should food entrepreneur accounts require any verification (ID, address, food safety) before going live?
+3. What happens if a food entrepreneur's phone number changes or they stop responding — is there a way for customers to flag inactive kitchens?

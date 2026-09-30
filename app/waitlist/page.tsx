@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const reasons = [
-  { Icon: IconPot, text: "Discover meals made in real home kitchens" },
+  { Icon: IconPot, text: "Discover meals from local food entrepreneurs" },
   { Icon: IconHeart, text: "Find local food entrepreneurs and dishes worth coming back to" },
   { Icon: IconClock, text: "Hear when Potlly opens near you" },
 ];

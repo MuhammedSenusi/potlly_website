@@ -12,7 +12,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Become a kitchen",
   description:
-    "List your Nigerian or West African home kitchen on Potlly and reach hungry people across the GTA. Create a profile, publish your menu and prices, set your delivery area, and take orders on WhatsApp. Free to list, no commission.",
+    "Join Potlly as a local Nigerian or West African food entrepreneur and reach hungry people across the GTA. Create a kitchen profile, publish your menu and prices, set your delivery area, and take orders on WhatsApp. Free to list, no commission.",
   alternates: { canonical: "/become-a-kitchen" },
 };
 

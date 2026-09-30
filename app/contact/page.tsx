@@ -40,7 +40,7 @@ const help = [
   },
   {
     q: "The price or menu on a listing is wrong",
-    a: "Kitchens manage their own menus, so the fastest fix is to mention it to the cook when you message them. If a listing is repeatedly misleading, email us with the kitchen name and we will look into it.",
+    a: "Kitchens manage their own menus, so the fastest fix is to mention it to the food entrepreneur when you message them. If a listing is repeatedly misleading, email us with the kitchen name and we will look into it.",
   },
   {
     q: "I want to report a listing or a review",

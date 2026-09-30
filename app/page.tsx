@@ -34,7 +34,7 @@ const jsonLd = {
       name: site.name,
       url: site.url,
       description:
-        "A marketplace that helps people across the Greater Toronto Area find Nigerian and West African local food entrepreneurs and small kitchens nearby, and helps those kitchens list their menus.",
+        "A marketplace that helps people across the Greater Toronto Area find local Nigerian and West African food entrepreneurs and small kitchens nearby, and helps those kitchens list their menus.",
       email: site.contact.general,
       sameAs: site.apps.ios ? [site.apps.ios] : [],
     },
@@ -64,7 +64,7 @@ const jsonLd = {
           name: "How do I place an order?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Ordering happens directly with the kitchen. Tapping Message to order opens WhatsApp or SMS with the dish and kitchen already filled in, and you agree the details and payment with the cook.",
+            text: "Ordering happens directly with the kitchen. Tapping Message to order opens WhatsApp or SMS with the dish and kitchen already filled in, and you agree the details and payment with the food entrepreneur.",
           },
         },
         {
@@ -72,7 +72,7 @@ const jsonLd = {
           name: "How do I pay?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You pay the kitchen directly by Interac e-Transfer or cash on delivery. Potlly does not process payments and does not add a service fee to the cook's price.",
+            text: "You pay the kitchen directly by Interac e-Transfer or cash on delivery. Potlly does not process payments and does not add a service fee to the food entrepreneur's price.",
           },
         },
         {

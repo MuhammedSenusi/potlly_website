@@ -69,7 +69,7 @@ export function AppPromo() {
                 Your next favorite meal is closer than you think.
               </h2>
               <p className="mt-5 max-w-md text-lead text-white/65">
-                Search dishes, open kitchen profiles, save what you love and message a cook — all
+                Search dishes, open kitchen profiles, save what you love and message a food entrepreneur — all
                 from your phone.
               </p>
 
@@ -77,7 +77,7 @@ export function AppPromo() {
                 {[
                   "Browse and order without an account",
                   "Favorites that follow you across devices",
-                  "Kitchen tools for cooks, in the same app",
+                  "Kitchen tools for food entrepreneurs, in the same app",
                 ].map((t) => (
                   <li key={t} className="flex items-center gap-2.5 text-[0.9375rem] text-white/70">
                     <IconCheck className="size-4 shrink-0 text-amber" strokeWidth={2.4} />

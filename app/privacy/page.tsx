@@ -57,7 +57,7 @@ export default function PrivacyPage() {
         </p>
         <p>
           <strong>Kitchen account holders.</strong> We store the information needed to run a public
-          listing: kitchen name, cook name, description, photos, menu and prices, delivery area and
+          listing: kitchen name, food entrepreneur&rsquo;s name, description, photos, menu and prices, delivery area and
           fees, the contact number you publish, and your login details.
         </p>
         <p>

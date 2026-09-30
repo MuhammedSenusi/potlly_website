@@ -27,12 +27,12 @@ const customerBenefits = [
   {
     Icon: IconUsers,
     title: "Browse without signing up",
-    body: "No account is needed to search, open a kitchen, read reviews or message a cook. An account only syncs your favorites.",
+    body: "No account is needed to search, open a kitchen, read reviews or message a food entrepreneur. An account only syncs your favorites.",
   },
   {
     Icon: IconTag,
     title: "See the real price",
-    body: "The price on the card is the cook's price. Potlly adds no service fee and no commission on top of it.",
+    body: "The price on the card is the food entrepreneur's price. Potlly adds no service fee and no commission on top of it.",
   },
   {
     Icon: IconHeart,
@@ -41,13 +41,13 @@ const customerBenefits = [
   },
   {
     Icon: IconWhatsApp,
-    title: "Talk to the cook directly",
+    title: "Talk to the food entrepreneur directly",
     body: "Ask for less pepper, an earlier drop-off, a bigger tray. It is a conversation, not a form.",
   },
   {
     Icon: IconWallet,
     title: "Pay by e-Transfer or cash",
-    body: "No card to enter, no wallet to top up. You settle with the cook directly by Interac e-Transfer or cash when the food arrives.",
+    body: "No card to enter, no wallet to top up. You settle with the food entrepreneur directly by Interac e-Transfer or cash when the food arrives.",
   },
 ];
 
