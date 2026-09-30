@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     "Nigerian food Toronto",
     "West African food near me",
     "jollof rice delivery GTA",
-    "home cooks Toronto",
-    "African home kitchen marketplace",
-    "order homemade Nigerian food",
+    "local food entrepreneurs Toronto",
+    "African local food marketplace",
+    "order Nigerian food",
   ],
   alternates: { canonical: "/" },
   openGraph: {

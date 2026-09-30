@@ -8,13 +8,13 @@ import { IconArrowRight } from "@/components/ui/icons";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Why Potlly exists: a simple way to find Nigerian and West African home cooks and small kitchens across the GTA, without commissions, checkouts or anything standing between a cook and a customer.",
+    "Why Potlly exists: a simple way to find local Nigerian and West African food entrepreneurs and small kitchens across the GTA, without commissions, checkouts or anything standing between a food entrepreneur and a customer.",
   alternates: { canonical: "/about" },
 };
 
 const principles = [
   {
-    title: "The cook sets the price",
+    title: "The food entrepreneur sets the price",
     body: "Potlly adds no commission and no service fee. What a kitchen charges is what a customer pays, and the kitchen keeps all of it.",
   },
   {
@@ -23,7 +23,7 @@ const principles = [
   },
   {
     title: "Let people talk to people",
-    body: "Ordering from a home cook is a conversation, not a checkout. Potlly hands you off to WhatsApp or SMS and stays out of it.",
+    body: "Ordering from a local food entrepreneur is a conversation, not a checkout. Potlly hands you off to WhatsApp or SMS and stays out of it.",
   },
   {
     title: "Say only what is true",
@@ -36,30 +36,30 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="A front door for the kitchens already cooking around you."
-        lead="Potlly started from a simple observation: some of the best Nigerian and West African cooking in the GTA is coming out of home kitchens with no website, no listing and no way to be found beyond a WhatsApp group."
+        title="A front door for local food entrepreneurs."
+        lead="Potlly started from a simple observation: some of the best Nigerian and West African food in the GTA comes from local food entrepreneurs with no website, no listing and no way to be found beyond a WhatsApp group."
       />
 
       <Container className="pb-20 sm:pb-24">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-16">
           <div className="max-w-2xl text-[1.0625rem] leading-[1.75] text-ink-2">
             <p>
-              Home cooks and small kitchens are everywhere in the Nigerian and West African
+              Local food entrepreneurs and small kitchens are everywhere in the Nigerian and West African
               community here. They cook to order, in portions people can afford, and they are
               usually a short drive from the person who wants the food. What they do not have is a
               way to be discovered by anyone who is not already in the group chat.
             </p>
             <p className="mt-5">
               The delivery apps did not solve this. Their economics are built for restaurants with
-              margin to give away, and a home cook selling a plate of jollof cannot hand over a third
-              of it to a platform. So the cooks stayed on WhatsApp, and the customers stayed unable
-              to find them.
+              margin to give away, and a local food entrepreneur selling a plate of jollof cannot
+              hand over a third of it to a platform. So local food entrepreneurs stayed on
+              WhatsApp, and customers stayed unable to find them.
             </p>
             <p className="mt-5">
-              Potlly is the smallest thing that fixes that. A cook gets a real profile, a real menu
-              and a real price list. A customer gets to search by dish, by kitchen or by area, see
-              what is actually near them, and then message the cook directly. No account to browse,
-              no checkout, no commission — an e-Transfer or cash at the door.
+              Potlly is the smallest thing that fixes that. A food entrepreneur gets a real profile,
+              a real menu and a real price list. A customer gets to search by dish, by kitchen or by
+              area, see what is actually near them, and then message the food entrepreneur directly.
+              No account to browse, no checkout, no commission — an e-Transfer or cash at the door.
             </p>
             <p className="mt-5">
               We are deliberately not a delivery company. Potlly does not take your order, hold your
@@ -126,7 +126,7 @@ export default function AboutPage() {
         <Container>
           <div className="flex flex-col items-start gap-6 rounded-lg border border-line bg-white p-8 shadow-[var(--shadow-sm)] sm:flex-row sm:items-center sm:justify-between sm:p-10">
             <div className="max-w-xl">
-              <h2 className="font-headline text-h3 text-ink">Cooking something worth finding?</h2>
+              <h2 className="font-headline text-h3 text-ink">Building a local food business?</h2>
               <p className="mt-2 leading-relaxed text-ink-2">
                 Let the people already living around you know you exist.
               </p>

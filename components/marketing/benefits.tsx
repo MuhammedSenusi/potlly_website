@@ -27,12 +27,12 @@ const customerBenefits = [
   {
     Icon: IconUsers,
     title: "Browse without signing up",
-    body: "No account is needed to search, open a kitchen, read reviews or message a cook. An account only syncs your favorites.",
+    body: "No account is needed to search, open a kitchen, read reviews or message a food entrepreneur. An account only syncs your favorites.",
   },
   {
     Icon: IconTag,
     title: "See the real price",
-    body: "The price on the card is the cook's price. Potlly adds no service fee and no commission on top of it.",
+    body: "The price on the card is the food entrepreneur's price. Potlly adds no service fee and no commission on top of it.",
   },
   {
     Icon: IconHeart,
@@ -41,13 +41,13 @@ const customerBenefits = [
   },
   {
     Icon: IconWhatsApp,
-    title: "Talk to the cook directly",
+    title: "Talk to the food entrepreneur directly",
     body: "Ask for less pepper, an earlier drop-off, a bigger tray. It is a conversation, not a form.",
   },
   {
     Icon: IconWallet,
     title: "Pay by e-Transfer or cash",
-    body: "No card to enter, no wallet to top up. You settle with the cook directly by Interac e-Transfer or cash when the food arrives.",
+    body: "No card to enter, no wallet to top up. You settle with the food entrepreneur directly by Interac e-Transfer or cash when the food arrives.",
   },
 ];
 
@@ -58,7 +58,7 @@ export function CustomerBenefits() {
         <div className="max-w-2xl">
           <Eyebrow>For customers</Eyebrow>
           <h2 className="mt-4 text-h2 text-ink">
-            Built for how people actually order from a home cook.
+            Built for how people actually order from local food entrepreneurs.
           </h2>
           <p className="mt-5 text-lead text-ink-2">
             Potlly is a way to find someone, not a system to route your food through.
@@ -197,7 +197,7 @@ export function FinalCta() {
               <Eyebrow tone="light">Ready when you are</Eyebrow>
               <h2 className="mt-4 text-h1 text-white">Ready to find something delicious?</h2>
               <p className="mt-5 text-lead text-white/70">
-                Discover home-cooked food from kitchens near you. Browsing is free and takes no
+                Discover food from local food entrepreneurs near you. Browsing is free and takes no
                 account at all.
               </p>
             </div>

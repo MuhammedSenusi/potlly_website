@@ -3,8 +3,8 @@
  *
  * Everything the marketing site shows about dishes, kitchens and reviews lives
  * here so it can be swapped for live API data without touching a component.
- * The kitchens and cooks below are illustrative examples of the kind of
- * Nigerian and West African home kitchen Potlly lists across the Greater
+ * The kitchens and food entrepreneurs below are illustrative examples of the kind of
+ * Nigerian and West African local food business Potlly lists across the Greater
  * Toronto Area — they are clearly-labelled sample content, not real vendors,
  * and no usage, revenue or scale claims are made anywhere on the site.
  */

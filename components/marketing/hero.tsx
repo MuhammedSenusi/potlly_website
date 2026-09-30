@@ -30,11 +30,11 @@ export function Hero() {
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-ember opacity-60" />
                 <span className="relative inline-flex size-2 rounded-full bg-ember" />
               </span>
-              Home kitchens cooking across the GTA today
+              Local food entrepreneurs across the GTA
             </p>
 
             <h1 className="mt-6 text-display text-ink">
-              Real Nigerian home cooking, made by{" "}
+              Real Nigerian food, made by{" "}
               <span className="relative inline-block whitespace-nowrap">
                 <span className="relative z-10">people near you.</span>
                 <span
@@ -45,7 +45,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lead text-ink-2">
-              Discover Nigerian and West African meals from home cooks and small kitchens around
+              Discover Nigerian and West African meals from local food entrepreneurs and small kitchens around
               the GTA. Browse menus, see prices, and message the kitchen directly to order.
             </p>
 

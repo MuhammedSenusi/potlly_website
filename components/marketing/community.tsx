@@ -12,10 +12,10 @@ export function Community() {
       <Container>
         <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:items-center lg:gap-16">
           <div className="max-w-xl">
-            <Eyebrow>The people cooking</Eyebrow>
-            <h2 className="mt-4 text-h2 text-ink">Good food starts at home.</h2>
+            <Eyebrow>Local food entrepreneurs</Eyebrow>
+            <h2 className="mt-4 text-h2 text-ink">Good food starts locally.</h2>
             <p className="mt-5 text-lead text-ink-2">
-              Behind every kitchen is someone who cares about what they serve. Discover local cooks,
+              Behind every kitchen is someone who cares about what they serve. Discover local food entrepreneurs,
               support small kitchens, and enjoy food made with care.
             </p>
             <p className="mt-5 text-[1rem] leading-relaxed text-ink-2">
@@ -28,8 +28,8 @@ export function Community() {
             <ul className="mt-9 grid gap-5 sm:grid-cols-3">
               {[
                 ["Cooked to order", "Nothing sits under a heat lamp."],
-                ["Priced by the cook", "Potlly does not mark anything up."],
-                ["Paid direct", "e-Transfer or cash, settled with the cook."],
+                ["Priced by the entrepreneur", "Potlly does not mark anything up."],
+                ["Paid direct", "e-Transfer or cash, settled with the food entrepreneur."],
               ].map(([t, s]) => (
                 <li key={t}>
                   <p className="font-headline text-[1rem] font-bold text-ink">{t}</p>

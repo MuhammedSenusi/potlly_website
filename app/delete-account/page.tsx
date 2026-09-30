@@ -56,7 +56,7 @@ export default function DeleteAccountPage() {
       <PageHero
         eyebrow="Account"
         title="Delete your account"
-        lead="Account deletion applies to kitchen and cook accounts. Customers can browse, search and order without an account at all, so there is usually nothing to delete."
+        lead="Account deletion applies to kitchen and food entrepreneur accounts. Customers can browse, search and order without an account at all, so there is usually nothing to delete."
       />
 
       <Container className="pb-24 sm:pb-28">

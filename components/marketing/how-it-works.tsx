@@ -22,7 +22,7 @@ export function HowItWorks() {
           <Step
             n="01"
             title="Discover"
-            body="Set your area and see the home cooks and kitchens actually near you."
+            body="Set your area and see the local food entrepreneurs and kitchens actually near you."
           >
             <DiscoverArt />
           </Step>

@@ -47,7 +47,7 @@ export default function TermsPage() {
 
         <h2 id="introduction">1. Introduction</h2>
         <p>
-          Potlly is a marketplace that helps people discover local food entrepreneurs and cooks who
+          Potlly is a marketplace that helps people discover local food entrepreneurs who
           prepare food through facilities permitted for their operations, and helps those vendors
           publish a profile, menu and contact details. In these terms, a vendor profile is called a
           &ldquo;kitchen&rdquo;. These terms form the Potlly End User Licence Agreement (EULA). They
@@ -261,7 +261,7 @@ export default function TermsPage() {
         <p>You agree not to:</p>
         <ul>
           <li>Post false, misleading or fraudulent listings, prices or reviews.</li>
-          <li>Impersonate another person, cook or kitchen.</li>
+          <li>Impersonate another person, food entrepreneur or kitchen.</li>
           <li>Harass, threaten or discriminate against another user.</li>
           <li>Post, share or promote objectionable content.</li>
           <li>Contact or target a user who has blocked you, including through another account.</li>

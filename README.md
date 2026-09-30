@@ -1,6 +1,6 @@
 # Potlly — marketing site
 
-Marketing site for Potlly, an app that connects people with home cooks and
+Marketing site for Potlly, an app that connects people with local food entrepreneurs and
 small kitchens near them. Customers browse without an account and message a
 kitchen directly on WhatsApp or SMS to order; kitchens create an account to
 publish a profile, a menu and their delivery terms.
@@ -82,7 +82,7 @@ Each frame is exposed to assistive technology as a single labelled image.
    share-alike. Swap in Potlly's own kitchen and dish photos, then delete
    `constants/photo-credits.json` and the `/credits` route along with its footer
    link.
-2. **Replace the sample listings.** The kitchens, cooks, dishes and reviews in
+2. **Replace the sample listings.** The kitchens, food entrepreneurs, dishes and reviews in
    `constants/content.ts` are illustrative examples, labelled as such on the
    page. Point the site at real data.
 3. **Set the canonical URL** in `constants/site.ts` (`site.url`) — it drives

@@ -1,9 +1,9 @@
 /** Single place to change brand-level facts, links and contact details. */
 export const site = {
   name: "Potlly",
-  tagline: "Nigerian & West African home cooking, made by people near you",
+  tagline: "Nigerian & West African food from local food entrepreneurs",
   description:
-    "Find Nigerian and West African home-cooked meals from local cooks and small kitchens across the Greater Toronto Area. Browse menus, see real prices, and message the kitchen directly to order.",
+    "Find Nigerian and West African meals from local food entrepreneurs and small kitchens across the Greater Toronto Area. Browse menus, see real prices, and message the kitchen directly to order.",
   /** Used for canonical URLs, sitemap and Open Graph. */
   url: "https://potlly.com",
   locale: "en_CA",
