@@ -4,7 +4,7 @@ export const site = {
   tagline: "Nigerian & West African home cooking, made by people near you",
   description:
     "Find Nigerian and West African home-cooked meals from local cooks and small kitchens across the Greater Toronto Area. Browse menus, see real prices, and message the kitchen directly to order.",
-  /** Update before launch — used for canonical URLs, sitemap and Open Graph. */
+  /** Used for canonical URLs, sitemap and Open Graph. */
   url: "https://potlly.com",
   locale: "en_CA",
   contact: {
@@ -18,9 +18,9 @@ export const site = {
    * add `{ label, href }` entries here and the footer renders them.
    */
   socials: [] as { label: string; href: string }[],
-  /** Store listings are not live yet, so the buttons render as "coming soon". */
+  /** A null store URL renders that platform as "coming soon". */
   apps: {
-    ios: null as string | null,
+    ios: "https://apps.apple.com/us/app/potlly/id6812769455" as string | null,
     android: null as string | null,
   },
   legalUpdated: "25 September 2026",

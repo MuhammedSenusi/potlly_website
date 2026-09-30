@@ -87,8 +87,8 @@ Each frame is exposed to assistive technology as a single labelled image.
    page. Point the site at real data.
 3. **Set the canonical URL** in `constants/site.ts` (`site.url`) — it drives
    metadata, Open Graph, the sitemap and robots.txt.
-4. **Add the store links** in `site.apps` once the app is listed. The badges
-   render as non-clickable "coming soon" plates until then.
+4. **Keep the store links current** in `site.apps`. The iOS listing is live;
+   platforms without a URL render as non-clickable "coming soon" plates.
 5. **Have the legal pages reviewed.** `/terms` and `/privacy` are structured
    drafts and say so on the page. They need a lawyer and a check against the
    third-party services actually in use.
