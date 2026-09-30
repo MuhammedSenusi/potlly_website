@@ -8,7 +8,7 @@ import { IconArrowRight } from "@/components/ui/icons";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Why Potlly exists: a simple way to find Nigerian and West African home cooks and small kitchens across the GTA, without commissions, checkouts or anything standing between a cook and a customer.",
+    "Why Potlly exists: a simple way to find Nigerian and West African local food entrepreneurs and small kitchens across the GTA, without commissions, checkouts or anything standing between a food entrepreneur and a customer.",
   alternates: { canonical: "/about" },
 };
 
@@ -23,7 +23,7 @@ const principles = [
   },
   {
     title: "Let people talk to people",
-    body: "Ordering from a home cook is a conversation, not a checkout. Potlly hands you off to WhatsApp or SMS and stays out of it.",
+    body: "Ordering from a local food entrepreneur is a conversation, not a checkout. Potlly hands you off to WhatsApp or SMS and stays out of it.",
   },
   {
     title: "Say only what is true",
@@ -44,14 +44,14 @@ export default function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-16">
           <div className="max-w-2xl text-[1.0625rem] leading-[1.75] text-ink-2">
             <p>
-              Home cooks and small kitchens are everywhere in the Nigerian and West African
+              Local food entrepreneurs and small kitchens are everywhere in the Nigerian and West African
               community here. They cook to order, in portions people can afford, and they are
               usually a short drive from the person who wants the food. What they do not have is a
               way to be discovered by anyone who is not already in the group chat.
             </p>
             <p className="mt-5">
               The delivery apps did not solve this. Their economics are built for restaurants with
-              margin to give away, and a home cook selling a plate of jollof cannot hand over a third
+              margin to give away, and a local food entrepreneur selling a plate of jollof cannot hand over a third
               of it to a platform. So the cooks stayed on WhatsApp, and the customers stayed unable
               to find them.
             </p>

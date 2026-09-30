@@ -2,7 +2,7 @@
 
 ## User Stories — Product Requirements Draft
 
-A marketplace connecting home cooks and small food vendors with customers looking for affordable, generously portioned home-cooked meals.
+A marketplace connecting local food entrepreneurs and small food vendors with customers looking for affordable, generously portioned meals.
 
 ---
 
@@ -135,7 +135,7 @@ As a customer, I want to set my location by GPS or by typing an address/area, so
 
 ### 7. Create a cook account
 
-As a home cook, I want to sign up and create an account, so that I can manage my kitchen profile, menu, and stay verified/trusted on the platform.
+As a local food entrepreneur, I want to sign up and create an account, so that I can manage my kitchen profile, menu, and stay verified/trusted on the platform.
 
 **Acceptance Criteria**
 
@@ -144,7 +144,7 @@ As a home cook, I want to sign up and create an account, so that I can manage my
 
 ### 8. Build kitchen profile
 
-As a home cook, I want to upload a kitchen photo and write a description (including delivery fees/area), so that customers know what I offer and how delivery works.
+As a local food entrepreneur, I want to upload a kitchen photo and write a description (including delivery fees/area), so that customers know what I offer and how delivery works.
 
 **Acceptance Criteria**
 
@@ -153,7 +153,7 @@ As a home cook, I want to upload a kitchen photo and write a description (includ
 
 ### 9. Manage menu/dishes
 
-As a home cook, I want to add, edit, and remove dishes with prices, so that my menu stays accurate and up to date.
+As a local food entrepreneur, I want to add, edit, and remove dishes with prices, so that my menu stays accurate and up to date.
 
 **Acceptance Criteria**
 
@@ -162,7 +162,7 @@ As a home cook, I want to add, edit, and remove dishes with prices, so that my m
 
 ### 10. Receive orders via SMS/WhatsApp
 
-As a home cook, I want customer orders to come to me through SMS or WhatsApp, so that I can confirm and manage orders using tools I already use daily.
+As a local food entrepreneur, I want customer orders to come to me through SMS or WhatsApp, so that I can confirm and manage orders using tools I already use daily.
 
 **Acceptance Criteria**
 
@@ -171,7 +171,7 @@ As a home cook, I want customer orders to come to me through SMS or WhatsApp, so
 
 ### 11. Ranking visibility
 
-As a home cook, I want my ranking to improve with more positive anonymous reviews, so that I get more visibility in search and discovery.
+As a local food entrepreneur, I want my ranking to improve with more positive anonymous reviews, so that I get more visibility in search and discovery.
 
 **Acceptance Criteria**
 

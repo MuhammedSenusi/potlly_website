@@ -65,8 +65,8 @@ export default async function OpenGraphImage() {
               flexDirection: "column",
             }}
           >
-            <span>Real Nigerian home cooking,</span>
-            <span>made by people near you.</span>
+            <span>Real Nigerian food,</span>
+            <span>made by local food entrepreneurs.</span>
           </div>
           <div
             style={{
@@ -77,7 +77,7 @@ export default async function OpenGraphImage() {
               marginTop: 22,
             }}
           >
-            Discover Nigerian and West African meals from home cooks and small kitchens across the
+            Discover Nigerian and West African meals from local food entrepreneurs and small kitchens across the
             GTA. Browse menus, see prices, and message the kitchen directly to order.
           </div>
         </div>

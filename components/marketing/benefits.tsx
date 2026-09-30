@@ -58,7 +58,7 @@ export function CustomerBenefits() {
         <div className="max-w-2xl">
           <Eyebrow>For customers</Eyebrow>
           <h2 className="mt-4 text-h2 text-ink">
-            Built for how people actually order from a home cook.
+            Built for how people actually order from local food entrepreneurs.
           </h2>
           <p className="mt-5 text-lead text-ink-2">
             Potlly is a way to find someone, not a system to route your food through.
@@ -197,7 +197,7 @@ export function FinalCta() {
               <Eyebrow tone="light">Ready when you are</Eyebrow>
               <h2 className="mt-4 text-h1 text-white">Ready to find something delicious?</h2>
               <p className="mt-5 text-lead text-white/70">
-                Discover home-cooked food from kitchens near you. Browsing is free and takes no
+                Discover food from local food entrepreneurs near you. Browsing is free and takes no
                 account at all.
               </p>
             </div>

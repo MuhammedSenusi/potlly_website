@@ -34,7 +34,7 @@ const jsonLd = {
       name: site.name,
       url: site.url,
       description:
-        "A marketplace that helps people across the Greater Toronto Area find Nigerian and West African home cooks and small kitchens nearby, and helps those kitchens list their menus.",
+        "A marketplace that helps people across the Greater Toronto Area find Nigerian and West African local food entrepreneurs and small kitchens nearby, and helps those kitchens list their menus.",
       email: site.contact.general,
       sameAs: site.apps.ios ? [site.apps.ios] : [],
     },
@@ -53,7 +53,7 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "Do I need an account to order Nigerian home-cooked food on Potlly?",
+          name: "Do I need an account to order Nigerian food on Potlly?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "No. You can search dishes, browse kitchen profiles, read reviews and message a kitchen without creating an account. An account is only needed if you want your saved favorites to follow you between devices.",
@@ -80,7 +80,7 @@ const jsonLd = {
           name: "How do I list my kitchen?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Home cooks and small kitchens create a free account, add a kitchen profile with photos and delivery details, then build a menu with their own prices. Listing is free and kitchens keep the full price of every order.",
+            text: "Local food entrepreneurs and small kitchens create a free account, add a kitchen profile with photos and delivery details, then build a menu with their own prices. Listing is free and kitchens keep the full price of every order.",
           },
         },
       ],
