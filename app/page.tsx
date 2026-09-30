@@ -36,6 +36,16 @@ const jsonLd = {
       description:
         "A marketplace that helps people across the Greater Toronto Area find Nigerian and West African home cooks and small kitchens nearby, and helps those kitchens list their menus.",
       email: site.contact.general,
+      sameAs: site.apps.ios ? [site.apps.ios] : [],
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": `${site.url}/#mobile-app`,
+      name: site.name,
+      operatingSystem: "iOS",
+      applicationCategory: "FoodApplication",
+      url: site.apps.ios,
+      downloadUrl: site.apps.ios,
     },
     {
       "@type": "FAQPage",

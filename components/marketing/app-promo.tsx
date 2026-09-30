@@ -4,11 +4,7 @@ import { CustomerHomeScreen, KitchenProfileScreen } from "@/components/app-ui/sc
 import { IconCheck } from "@/components/ui/icons";
 import { site } from "@/constants/site";
 
-/**
- * Store badges. Neither listing is live yet, so these render as clearly
- * non-clickable "coming soon" plates rather than links to nowhere — as soon as
- * `site.apps.ios` / `site.apps.android` hold real URLs they become links.
- */
+/** Store badges become links when their platform URL is available. */
 function StoreBadge({
   platform,
   href,
@@ -49,6 +45,7 @@ function StoreBadge({
   return (
     <a
       href={href}
+      aria-label={`Download Potlly on the ${label}`}
       className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 transition-colors hover:bg-white/18"
     >
       {inner}
@@ -93,7 +90,11 @@ export function AppPromo() {
                 <StoreBadge platform="ios" href={site.apps.ios} />
                 <StoreBadge platform="android" href={site.apps.android} />
               </div>
-              {!site.apps.ios && !site.apps.android ? (
+              {site.apps.ios && !site.apps.android ? (
+                <p className="mt-4 text-[0.8125rem] text-white/45">
+                  Now available on the App Store. Google Play is coming soon.
+                </p>
+              ) : !site.apps.ios && !site.apps.android ? (
                 <p className="mt-4 text-[0.8125rem] text-white/45">
                   Store listings are not live yet. In the meantime, everything on this page works in
                   your browser.
