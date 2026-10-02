@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "7Y5257X492.com.potlly.app"
+        ],
+        "components": [
+          {
+            "/": "/kitchen/*",
+            "comment": "Potlly public kitchen profiles"
+          }
+        ]
+      }
+    ]
+  }
+}
