@@ -43,24 +43,24 @@ export function Community() {
             <div className="flex flex-col gap-3 pt-8 sm:gap-4">
               <Photo
                 src="/food/story-pot.webp"
-                alt="A wide pot of egusi soup simmering on a gas burner"
+                alt="A local food entrepreneur stirring Nigerian stew in a clean commercial kitchen"
                 ratio="aspect-[4/5]"
               />
               <Photo
                 src="/food/story-table.webp"
-                alt="Serving bowls of rice and salad laid out for a gathering"
+                alt="Jollof rice, plantain, chicken and vegetables being packed at a commercial prep counter"
                 ratio="aspect-square"
               />
             </div>
             <div className="flex flex-col gap-3 sm:gap-4">
               <Photo
                 src="/food/story-hands.webp"
-                alt="Hands preparing ingredients on a kitchen counter"
+                alt="A local food entrepreneur preparing fresh vegetables at a stainless-steel workstation"
                 ratio="aspect-square"
               />
               <Photo
                 src="/food/story-kitchen.webp"
-                alt="A home kitchen counter with pots on the stove and ingredients laid out"
+                alt="A bright, clean Canadian community kitchen with commercial cooking equipment"
                 ratio="aspect-[4/5]"
               />
             </div>
