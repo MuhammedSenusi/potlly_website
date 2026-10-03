@@ -146,7 +146,7 @@ export default function BecomeAKitchenPage() {
               <div className="relative min-h-[18rem] lg:min-h-full">
                 <Image
                   src="/food/story-kitchen.webp"
-                  alt="A home kitchen counter with pots on the stove and ingredients laid out"
+                  alt="A bright, clean Canadian community kitchen with commercial cooking equipment"
                   fill
                   loading="lazy"
                   sizes="(max-width: 1024px) 100vw, 36rem"
