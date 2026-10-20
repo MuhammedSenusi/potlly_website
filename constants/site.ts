@@ -42,6 +42,7 @@ export const nav = {
   kitchens: [
     { label: "List your kitchen", href: "/become-a-kitchen" },
     { label: "Kitchen login", href: "/become-a-kitchen#login" },
+    { label: "Kitchen guides", href: "/help" },
     { label: "How it works", href: "/how-it-works" },
   ],
   company: [

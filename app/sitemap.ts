@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/constants/site";
+import { guidePath, guides } from "@/constants/guides";
 
 export const dynamic = "force-static";
 
@@ -13,6 +14,8 @@ const routes: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
   { path: "/delete-account", priority: 0.4, changeFrequency: "yearly" },
   { path: "/waitlist", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/help", priority: 0.5, changeFrequency: "monthly" },
+  ...guides.map((g) => ({ path: guidePath(g.slug), priority: 0.5, changeFrequency: "monthly" as const })),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

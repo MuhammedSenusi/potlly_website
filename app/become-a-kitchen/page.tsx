@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { PageHero } from "@/components/site/page-hero";
 import { Container, Eyebrow } from "@/components/ui/layout";
 import { ButtonLink } from "@/components/ui/button";
@@ -124,6 +125,16 @@ export default function BecomeAKitchenPage() {
                     Ask a question
                   </ButtonLink>
                 </div>
+                <p className="mt-5 text-[0.9375rem] text-ink-2">
+                  New to Potlly? Read our{" "}
+                  <Link
+                    href="/help"
+                    className="font-semibold text-ember-dark underline decoration-ember/30 underline-offset-4"
+                  >
+                    kitchen guides
+                  </Link>{" "}
+                  on setting up, taking photos and handling orders.
+                </p>
 
                 <div id="login" className="mt-10 scroll-mt-24 border-t border-line pt-7">
                   <h3 className="font-headline text-[1rem] font-bold text-ink">
