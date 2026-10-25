@@ -8,7 +8,7 @@ import { IconArrowRight } from "@/components/ui/icons";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Why Potlly exists: a simple way to find local Nigerian and West African food entrepreneurs and small kitchens across the GTA, without commissions, checkouts or anything standing between a food entrepreneur and a customer.",
+    "Why Potlly exists: a simple way to find local Nigerian and West African food entrepreneurs and small kitchens across the GTA, without commissions, markups or anything standing between a food entrepreneur and a customer.",
   alternates: { canonical: "/about" },
 };
 
@@ -22,8 +22,8 @@ const principles = [
     body: "Being asked to sign up before you can see what food exists near you is the fastest way to lose someone who is hungry. So we do not ask.",
   },
   {
-    title: "Let people talk to people",
-    body: "Ordering from a local food entrepreneur is a conversation, not a checkout. Potlly hands you off to WhatsApp or SMS and stays out of it.",
+    title: "Keep it between you and the kitchen",
+    body: "Ordering from a local food entrepreneur should feel personal. Potlly gives you a simple way to order and follow along, and the kitchen stays in charge of the food, the price and the handover.",
   },
   {
     title: "Say only what is true",
@@ -58,14 +58,14 @@ export default function AboutPage() {
             <p className="mt-5">
               Potlly is the smallest thing that fixes that. A food entrepreneur gets a real profile,
               a real menu and a real price list. A customer gets to search by dish, by kitchen or by
-              area, see what is actually near them, and then message the food entrepreneur directly.
-              No account to browse, no checkout, no commission — an e-Transfer or cash at the door.
+              area, see what is actually near them, and then order straight from the food entrepreneur.
+              No account to browse, no commission, no markup — an e-Transfer or cash to the kitchen.
             </p>
             <p className="mt-5">
-              We are deliberately not a delivery company. Potlly does not take your order, hold your
-              money, or promise you a delivery window. It gets you to the right kitchen and then
-              gets out of the way — which is exactly how ordering from a neighbour has always
-              worked.
+              We are deliberately not a delivery company. Potlly carries your order to the kitchen and
+              shows you where it is, but it does not hold your money, add fees or take a cut. The
+              kitchen cooks, delivers and is paid directly — which is exactly how ordering from a
+              neighbour has always worked.
             </p>
           </div>
 

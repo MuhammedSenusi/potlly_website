@@ -1,8 +1,8 @@
 # Potlly — marketing site
 
 Marketing site for Potlly, an app that connects people with local food entrepreneurs and
-small kitchens near them. Customers browse without an account and message a
-kitchen directly on WhatsApp or SMS to order; kitchens create an account to
+small kitchens near them. Customers browse without an account and place an
+order in the app, then follow it from request to delivery; kitchens create an account to
 publish a profile, a menu and their delivery terms.
 
 Built with Next.js (App Router), React and Tailwind CSS v4. No UI or icon

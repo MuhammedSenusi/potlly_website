@@ -53,10 +53,10 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "Do I need an account to order Nigerian food on Potlly?",
+          name: "Do I need an account to browse or order Nigerian food on Potlly?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. You can search dishes, browse kitchen profiles, read reviews and message a kitchen without creating an account. An account is only needed if you want your saved favorites to follow you between devices.",
+            text: "You can search dishes, browse kitchen profiles and read reviews without an account. You need an account to place an order, so you can follow it from request to delivery, and so your saved favorites follow you between devices.",
           },
         },
         {
@@ -64,7 +64,7 @@ const jsonLd = {
           name: "How do I place an order?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Ordering happens directly with the kitchen. Tapping Message to order opens WhatsApp or SMS with the dish and kitchen already filled in, and you agree the details and payment with the food entrepreneur.",
+            text: "Choose your dishes from a kitchen's menu in the app, add your delivery address and pick when you want it, now or as a pre-order for later. The kitchen accepts your request and you follow the order from preparing to out for delivery to completed.",
           },
         },
         {

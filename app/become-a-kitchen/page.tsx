@@ -13,12 +13,12 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Become a kitchen",
   description:
-    "Join Potlly as a local Nigerian or West African food entrepreneur and reach hungry people across the GTA. Create a kitchen profile, publish your menu and prices, set your delivery area, and take orders on WhatsApp. Free to list, no commission.",
+    "Join Potlly as a local Nigerian or West African food entrepreneur and reach hungry people across the GTA. Create a kitchen profile, publish your menu and prices, set your delivery area, and take orders in the app. Free to list, no commission.",
   alternates: { canonical: "/become-a-kitchen" },
 };
 
 const checklist = [
-  "A phone number you use for WhatsApp or SMS",
+  "A phone number you can be reached on",
   "A few clear photos of your food and your kitchen",
   "The dishes you want to sell, with prices",
   "The areas you are willing to deliver to",
@@ -56,7 +56,7 @@ export default function BecomeAKitchenPage() {
       <KitchenBenefits
         eyebrow="What you get"
         title="Everything you need to run a listing."
-        lead="A kitchen account is a small set of tools that do one job each — describe your kitchen, publish your menu, and let people reach you on the number you already use."
+        lead="A kitchen account is a small set of tools that do one job each — describe your kitchen, publish your menu, and take orders from people nearby."
       />
 
       {/* What your listing looks like */}
@@ -66,7 +66,7 @@ export default function BecomeAKitchenPage() {
             <div className="flex justify-center">
               <div data-reveal>
                 <PhoneFrame
-                  label="How a kitchen listing appears to customers: cover photo, name, rating, description, delivery details, menu and a Message to order button"
+                  label="How a kitchen listing appears to customers: cover photo, name, rating, description, delivery details, menu and an Order now button"
                   width={306}
                 >
                   <KitchenProfileScreen />
@@ -78,12 +78,12 @@ export default function BecomeAKitchenPage() {
               <h2 className="mt-4 text-h2 text-ink">This is what customers see.</h2>
               <p className="mt-5 max-w-lg text-lead text-ink-2">
                 One screen with your photo, your rating, your description, your delivery terms and
-                your full menu — then a button that opens your WhatsApp.
+                your full menu — then an order button that sends requests straight to you in the app.
               </p>
               <p className="mt-5 max-w-lg leading-relaxed text-ink-2">
-                Nothing sits between you and the customer. Potlly does not take the order, does not
-                hold the money and does not talk to your customer on your behalf. It gets people to
-                your door and lets you do the rest the way you always have.
+                Nothing sits between you and the customer. Potlly passes each order request to you and
+                shows both of you where it stands, but never holds the money. You accept it, cook it,
+                deliver it and get paid directly.
               </p>
               <div className="mt-8 rounded-card border border-line bg-shell p-6">
                 <h3 className="font-headline text-[1rem] font-bold text-ink">

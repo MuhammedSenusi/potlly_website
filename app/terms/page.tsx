@@ -176,14 +176,15 @@ export default function TermsPage() {
 
         <h2 id="ordering">7. Ordering</h2>
         <p>
-          Orders are not placed or processed inside Potlly. When you choose to order, Potlly opens
-          WhatsApp or SMS with the kitchen&rsquo;s number and, where possible, the dish and kitchen name
-          already filled in. Everything after that, including confirming the order, price, delivery
-          time and handover, is arranged directly between you and the kitchen.
+          When you place an order, Potlly passes your request, including the dishes, delivery address and
+          requested time, to the kitchen, and shows you both its status as the kitchen accepts,
+          prepares, delivers and completes it. The kitchen decides whether to accept an order and is
+          responsible for preparing and delivering it.
         </p>
         <p>
-          Potlly does not confirm, track, deliver, refund or cancel orders, and does not act as an
-          agent for either party.
+          Potlly does not prepare or deliver orders, does not refund or cancel them on a kitchen&rsquo;s
+          behalf, and does not act as an agent for either party. The contract for each order is
+          between you and the kitchen.
         </p>
 
         <h2 id="payments">8. Payments</h2>

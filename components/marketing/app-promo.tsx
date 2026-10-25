@@ -69,13 +69,13 @@ export function AppPromo() {
                 Your next favorite meal is closer than you think.
               </h2>
               <p className="mt-5 max-w-md text-lead text-white/65">
-                Search dishes, open kitchen profiles, save what you love and message a food entrepreneur — all
+                Search dishes, open kitchen profiles, save what you love and order from a food entrepreneur — all
                 from your phone.
               </p>
 
               <ul className="mt-7 flex flex-col gap-2.5">
                 {[
-                  "Browse and order without an account",
+                  "Browse without an account, order when you are ready",
                   "Favorites that follow you across devices",
                   "Kitchen tools for food entrepreneurs, in the same app",
                 ].map((t) => (

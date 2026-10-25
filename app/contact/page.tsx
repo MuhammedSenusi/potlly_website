@@ -36,11 +36,11 @@ const routes = [
 const help = [
   {
     q: "A kitchen is not replying to me",
-    a: "Kitchens set their own hours and reply on their own phones. A profile shows whether the kitchen is open. If nobody answers, try another kitchen nearby — and let us know if a listing looks abandoned so we can check on it.",
+    a: "Kitchens set their own hours and accept orders when they can. A profile shows whether the kitchen is open. If nobody accepts your order, try another kitchen nearby — and let us know if a listing looks abandoned so we can check on it.",
   },
   {
     q: "The price or menu on a listing is wrong",
-    a: "Kitchens manage their own menus, so the fastest fix is to mention it to the food entrepreneur when you message them. If a listing is repeatedly misleading, email us with the kitchen name and we will look into it.",
+    a: "Kitchens manage their own menus, so the fastest fix is to let the food entrepreneur know. If a listing is repeatedly misleading, email us with the kitchen name and we will look into it.",
   },
   {
     q: "I want to report a listing or a review",
@@ -48,7 +48,7 @@ const help = [
   },
   {
     q: "Something went wrong with my order",
-    a: "Orders are agreed directly between you and the kitchen, so start there — most issues are sorted in the same conversation. Potlly cannot refund, cancel or re-deliver an order, because it never handled it.",
+    a: "Start with the kitchen — it cooks, delivers and is paid directly, so it is best placed to put things right. Potlly cannot refund an order or take payment back, because it never handles the money. If it is still not sorted, email us with the order number and we will look into it.",
   },
   {
     q: "I want to delete my kitchen account",

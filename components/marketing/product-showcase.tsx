@@ -4,13 +4,13 @@ import { PhoneFrame } from "@/components/app-ui/phone-frame";
 import { CustomerHomeScreen, FavoritesScreen, KitchenProfileScreen } from "@/components/app-ui/screens";
 import {
   IconArrowRight,
+  IconClock,
   IconHeart,
   IconPin,
   IconSearch,
   IconStar,
   IconTag,
   IconWallet,
-  IconWhatsApp,
 } from "@/components/ui/icons";
 
 /** Customer-side product tour, set on a dark panel so the screens carry the light. */
@@ -131,12 +131,12 @@ const profileFacts = [
   {
     Icon: IconWallet,
     title: "Delivery area, fee and how to pay",
-    body: "You see where they deliver, what it costs and that it's e-Transfer or cash before you type a single message.",
+    body: "You see where they deliver, what it costs and that it's e-Transfer or cash before you place an order.",
   },
   {
-    Icon: IconWhatsApp,
-    title: "One tap to WhatsApp or SMS",
-    body: "The message opens pre-filled with the dish and the kitchen. You finish the order with a person, not a checkout.",
+    Icon: IconClock,
+    title: "Order now or pre-order",
+    body: "Pick your dishes, add your address and choose when you want it. Then follow the order from requested to completed.",
   },
 ];
 
@@ -153,7 +153,7 @@ export function KitchenProfileShowcase() {
             />
             <div data-reveal>
               <PhoneFrame
-                label="A kitchen profile in the Potlly app: cover photo, kitchen name, rating, description, delivery fee, ready-in time, payment method, the menu, and a Message to order button"
+                label="A kitchen profile in the Potlly app: cover photo, kitchen name, rating, description, delivery fee, ready-in time, payment method, the menu, and an Order now button"
                 width={310}
               >
                 <KitchenProfileScreen />

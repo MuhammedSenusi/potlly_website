@@ -78,12 +78,12 @@ export default async function OpenGraphImage() {
             }}
           >
             Discover Nigerian and West African meals from local food entrepreneurs and small kitchens across the
-            GTA. Browse menus, see prices, and message the kitchen directly to order.
+            GTA. Browse menus, see prices, and order straight from the kitchen.
           </div>
         </div>
 
         <div style={{ display: "flex", gap: 12 }}>
-          {["No account needed", "Real prices", "e-Transfer or cash"].map((t) => (
+          {["No account to browse", "Real prices", "e-Transfer or cash"].map((t) => (
             <div
               key={t}
               style={{
