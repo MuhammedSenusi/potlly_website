@@ -11,7 +11,6 @@ import {
   IconPlus,
   IconSearch,
   IconStar,
-  IconWhatsApp,
 } from "@/components/ui/icons";
 
 /* -------------------------------------------------------------------------- */
@@ -309,18 +308,15 @@ export function KitchenProfileScreen() {
 
       <div className="absolute inset-x-0 bottom-0 border-t border-line/80 bg-white/95 px-4 pb-4 pt-[9px] backdrop-blur">
         <div className="flex gap-[7px]">
-          <span className="flex h-[36px] flex-1 items-center justify-center gap-[6px] rounded-full bg-[#25D366] text-[11.5px] font-bold text-white">
-            <IconWhatsApp className="size-[14px]" />
-            Message to order
+          <span className="flex h-[36px] flex-1 items-center justify-center gap-[6px] rounded-full bg-ember text-[11.5px] font-bold text-white">
+            Order now
           </span>
           <span className="grid h-[36px] w-[42px] place-items-center rounded-full border border-line-strong bg-white text-ink">
-            <svg viewBox="0 0 20 20" className="size-[15px]" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-              <path d="M16.7 10.4c0 3-3 5.4-6.7 5.4a8 8 0 0 1-2.2-.3L4.2 17l1-2.7a5.2 5.2 0 0 1-1.6-3.9C3.6 7.4 6.6 5 10.3 5s6.4 2.4 6.4 5.4Z" />
-            </svg>
+            <IconHeart className="size-[15px]" />
           </span>
         </div>
         <p className="mt-[5px] text-center text-[8.5px] text-ink-3">
-          e-Transfer or cash · You arrange directly with the kitchen
+          e-Transfer or cash · Paid directly to the kitchen
         </p>
       </div>
     </div>

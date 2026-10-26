@@ -16,7 +16,7 @@ export const guides = [
   {
     slug: "handling-orders",
     title: "Handling orders",
-    summary: "How orders reach you on WhatsApp or SMS, and how to confirm, deliver and get paid without surprises.",
+    summary: "How orders reach you in the app, and how to accept, prepare, deliver and get paid without surprises.",
   },
 ] as const;
 

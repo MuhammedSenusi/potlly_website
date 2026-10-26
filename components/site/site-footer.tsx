@@ -19,7 +19,7 @@ export function SiteFooter() {
             <Logo tone="light" />
             <p className="mt-5 text-[0.9375rem] leading-relaxed text-white/60">
               Potlly connects you with local food entrepreneurs and small kitchens in your area. Browse menus and
-              real prices, then message the kitchen directly to arrange your order.
+              real prices, then order straight from the kitchen and follow it to your door.
             </p>
             <p className="mt-5 text-sm text-white/45">
               Questions?{" "}

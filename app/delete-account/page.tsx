@@ -45,8 +45,8 @@ const kept = [
     body: "A minimal record of the deletion request itself, and anything a law or a live dispute requires us to retain, is kept for as long as that requirement lasts.",
   },
   {
-    title: "Conversations in WhatsApp or SMS",
-    body: "Messages between you and customers live in WhatsApp or in your phone's messages, never on Potlly. Deleting your account does not touch them — remove those in the app where they are stored.",
+    title: "Open orders",
+    body: "Anything already arranged with a customer, such as an order in progress, is between you and them. Finish or settle open orders before you delete your account.",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function DeleteAccountPage() {
       <PageHero
         eyebrow="Account"
         title="Delete your account"
-        lead="Account deletion applies to kitchen and food entrepreneur accounts. Customers can browse, search and order without an account at all, so there is usually nothing to delete."
+        lead="Account deletion applies to kitchen and food entrepreneur accounts. Customers can browse and search without an account, so there is often nothing to delete."
       />
 
       <Container className="pb-24 sm:pb-28">

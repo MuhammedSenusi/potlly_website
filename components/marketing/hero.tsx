@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/layout";
-import { IconArrowRight, IconCheck, IconStar, IconWhatsApp } from "@/components/ui/icons";
+import { IconArrowRight, IconCheck, IconClock, IconStar } from "@/components/ui/icons";
 import { PhoneFrame } from "@/components/app-ui/phone-frame";
 import { CustomerHomeScreen } from "@/components/app-ui/screens";
 import { formatPrice, dishes } from "@/constants/content";
@@ -46,7 +46,7 @@ export function Hero() {
 
             <p className="mt-6 max-w-xl text-lead text-ink-2">
               Discover Nigerian and West African meals from local food entrepreneurs and small kitchens around
-              the GTA. Browse menus, see prices, and message the kitchen directly to order.
+              the GTA. Browse menus, see prices, and order straight from the kitchen and follow it to your door.
             </p>
 
             <div className="mt-8 max-w-xl">
@@ -137,14 +137,14 @@ export function Hero() {
               className="animate-float absolute left-0 top-2 z-20 flex items-center gap-2.5 rounded-full border border-line bg-white py-2.5 pl-2.5 pr-4 shadow-[var(--shadow-card)] sm:bottom-0 sm:left-2 sm:top-auto lg:left-6"
               style={{ animationDelay: "-3.2s" }}
             >
-              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#25D366] text-white">
-                <IconWhatsApp className="size-[1.05rem]" />
+              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-ember text-white">
+                <IconClock className="size-[1.05rem]" />
               </span>
               <span>
                 <span className="block text-[0.8125rem] font-bold leading-tight text-ink">
-                  Message to order
+                  Order in the app
                 </span>
-                <span className="block text-[0.75rem] text-ink-3">WhatsApp or SMS</span>
+                <span className="block text-[0.75rem] text-ink-3">Track it live</span>
               </span>
             </div>
           </div>

@@ -18,7 +18,7 @@ const toc = [
   { id: "storage", label: "6. Cookies and local storage" },
   { id: "reviews", label: "7. Reviews" },
   { id: "safety", label: "8. Safety, reports and moderation" },
-  { id: "handoff", label: "9. WhatsApp and SMS handoff" },
+  { id: "orders", label: "9. Placing orders" },
   { id: "third-parties", label: "10. Third-party services and disclosure" },
   { id: "retention", label: "11. Data retention" },
   { id: "security", label: "12. Security" },
@@ -165,16 +165,15 @@ export default function PrivacyPage() {
           from another person&rsquo;s account or from records we must keep for safety or legal reasons.
         </p>
 
-        <h2 id="handoff">9. WhatsApp and SMS handoff</h2>
+        <h2 id="orders">9. Placing orders</h2>
         <p>
-          When you choose to order, Potlly opens WhatsApp or SMS on your device with the
-          kitchen&rsquo;s number and a suggested message. From that moment the conversation happens
-          in that app, between you and the kitchen.
+          When you place an order, Potlly shares the details the kitchen needs to fulfil it with that
+          kitchen: the dishes you chose, your delivery address, the time you asked for and how you
+          plan to pay. The kitchen uses them to prepare and deliver your order.
         </p>
         <p>
-          Potlly does not host, read, store or have access to those messages. What happens in
-          WhatsApp is covered by WhatsApp&rsquo;s own privacy policy, and what happens over SMS is
-          covered by your mobile network. The kitchen will see the phone number you message from.
+          Potlly does not process payment. Payment is made directly to the kitchen by e-Transfer or
+          cash. Once an order is placed, its status is visible to you and to the kitchen.
         </p>
 
         <h2 id="third-parties">10. Third-party services and disclosure</h2>

@@ -6,12 +6,12 @@ import { HowItWorks } from "@/components/marketing/how-it-works";
 import { KitchenProfileShowcase } from "@/components/marketing/product-showcase";
 import { PhoneFrame } from "@/components/app-ui/phone-frame";
 import { KitchenDashboardScreen } from "@/components/app-ui/screens";
-import { IconArrowRight, IconCamera, IconMenuList, IconStar, IconWhatsApp } from "@/components/ui/icons";
+import { IconArrowRight, IconCamera, IconMenuList, IconStar, IconBell } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "How Potlly works for customers and for kitchens: discover local Nigerian and West African food entrepreneurs near you, browse menus and prices, and message the kitchen directly to order. Pay by e-Transfer or cash.",
+    "How Potlly works for customers and for kitchens: discover local Nigerian and West African food entrepreneurs near you, browse menus and prices, and order straight from the kitchen and follow it to your door. Pay by e-Transfer or cash.",
   alternates: { canonical: "/how-it-works" },
 };
 
@@ -27,14 +27,14 @@ const cookSteps = [
     body: "Add each dish with a price, a photo and a short note. Set your delivery areas and your delivery fee. Everything goes live on your profile immediately.",
   },
   {
-    Icon: IconWhatsApp,
-    title: "Take orders on WhatsApp",
-    body: "Customers who find you tap Message to order and land in your WhatsApp or SMS with the dish already named. You confirm the details, the price and payment yourself — e-Transfer or cash, straight to you.",
+    Icon: IconBell,
+    title: "Accept and track orders",
+    body: "Customers who find you place an order in the app with their address and time. You accept each request, then move it through preparing, out for delivery and completed. You are paid directly — e-Transfer or cash, straight to you.",
   },
   {
     Icon: IconStar,
     title: "Grow through reviews",
-    body: "Customers leave anonymous ratings after ordering. Good ratings raise where you appear in search, Near You and Top Rated.",
+    body: "Customers leave anonymous ratings once an order is completed. Good ratings raise where you appear in search, Near You and Top Rated.",
   },
 ];
 
@@ -43,8 +43,8 @@ export default function HowItWorksPage() {
     <>
       <PageHero
         eyebrow="How it works"
-        title="Find a local food entrepreneur. Message them. Eat."
-        lead="Potlly is deliberately simple: it helps you find the right kitchen, then gets out of the way so you can talk to a person."
+        title="Find a local food entrepreneur. Order. Eat."
+        lead="Potlly is deliberately simple: it helps you find the right kitchen, then lets you order from it and follow the order to your door."
       >
         <div className="flex flex-wrap gap-3">
           <ButtonLink href="/#discover" size="lg">
@@ -121,7 +121,7 @@ export default function HowItWorksPage() {
             {[
               [
                 "Do I need an account?",
-                "Not to browse, search, read reviews or message a kitchen. An account only exists so your saved favorites follow you between devices.",
+                "Not to browse, search or read reviews. You need an account to place an order, so you can follow it from request to delivery.",
               ],
               [
                 "How do I pay?",
@@ -132,8 +132,8 @@ export default function HowItWorksPage() {
                 "The kitchen does, or arranges it. Delivery areas and fees are set by each kitchen and shown on its profile.",
               ],
               [
-                "What if a kitchen does not reply?",
-                "Kitchens are independent and set their own hours. Profiles show when a kitchen is open, and you can always message another one nearby.",
+                "What if a kitchen does not accept my order?",
+                "Kitchens are independent and set their own hours. Profiles show when a kitchen is open, and you can always order from another one nearby.",
               ],
               [
                 "Are reviews anonymous?",

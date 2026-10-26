@@ -9,7 +9,7 @@ import { site } from "@/constants/site";
 export const metadata: Metadata = {
   title: "Kitchen guides",
   description:
-    "Practical guides for Potlly kitchens: getting set up, taking great food photos and handling orders on WhatsApp or SMS.",
+    "Practical guides for Potlly kitchens: getting set up, taking great food photos and handling orders in the app.",
   alternates: { canonical: "/help" },
 };
 

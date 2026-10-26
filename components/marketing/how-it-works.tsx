@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container, Eyebrow } from "@/components/ui/layout";
-import { IconPin, IconSearch, IconStar, IconWhatsApp } from "@/components/ui/icons";
+import { IconCheck, IconPin, IconSearch, IconStar } from "@/components/ui/icons";
 import { dishes, formatPrice, kitchenMenu } from "@/constants/content";
 
 /**
@@ -35,10 +35,10 @@ export function HowItWorks() {
           </Step>
           <Step
             n="03"
-            title="Message & order"
-            body="Tap once to open WhatsApp or SMS with your order ready to send. Pay by e-Transfer or cash."
+            title="Order & track"
+            body="Place your order in the app and follow it from requested to completed. Pay the kitchen by e-Transfer or cash."
           >
-            <MessageArt />
+            <OrderArt />
           </Step>
         </ol>
       </Container>
@@ -145,24 +145,34 @@ function ChooseArt() {
   );
 }
 
-function MessageArt() {
+function OrderArt() {
+  const steps = ["Requested", "Accepted", "Preparing", "Out for delivery"];
   return (
     <div className="relative flex h-full flex-col justify-between">
-      <div className="ml-auto max-w-[87%] rounded-[1rem] rounded-br-[0.3rem] bg-[#dcf8c6] px-3 py-2.5 shadow-[var(--shadow-xs)]">
-        <p className="text-[0.75rem] leading-relaxed text-[#14311b]">
-          Hi Mama Tayo, I&rsquo;d like <strong className="font-semibold">1× Party Jollof &amp; Chicken</strong>{" "}
-          ($18) delivered to Agincourt today.
-        </p>
-        <p className="mt-1 text-right text-[0.625rem] text-[#14311b]/45">12:04 ✓✓</p>
+      <div className="rounded-[1rem] border border-line bg-white px-3.5 py-3 shadow-[var(--shadow-xs)]">
+        <div className="flex items-center justify-between">
+          <p className="font-headline text-[0.8125rem] font-bold text-ink">Mama Tayo&rsquo;s Kitchen</p>
+          <span className="rounded-full bg-leaf-soft px-2 py-0.5 text-[0.625rem] font-bold text-leaf">
+            In progress
+          </span>
+        </div>
+        <ol className="mt-2.5 flex flex-col gap-1.5">
+          {steps.map((label, i) => (
+            <li key={label} className="flex items-center gap-2 text-[0.75rem] text-ink-2">
+              <span
+                className={`grid size-4 shrink-0 place-items-center rounded-full ${
+                  i < 3 ? "bg-ember text-white" : "border border-line-strong bg-white"
+                }`}
+              >
+                {i < 3 && <IconCheck className="size-2.5" strokeWidth={3} />}
+              </span>
+              <span className={i === 3 ? "text-ink-3" : "font-semibold text-ink"}>{label}</span>
+            </li>
+          ))}
+        </ol>
       </div>
-      <div className="mr-auto mt-2 max-w-[75%] rounded-[1rem] rounded-bl-[0.3rem] border border-line bg-white px-3 py-2.5 shadow-[var(--shadow-xs)]">
-        <p className="text-[0.75rem] leading-relaxed text-ink-2">
-          Received! It will be with you by 1:30. $7 delivery, e-Transfer or cash.
-        </p>
-      </div>
-      <div className="mt-3 flex h-10 items-center justify-center gap-2 rounded-full bg-[#25D366] text-[0.8125rem] font-bold text-white">
-        <IconWhatsApp className="size-4" />
-        Message to order
+      <div className="mt-3 flex h-10 items-center justify-center rounded-full bg-ember text-[0.8125rem] font-bold text-white">
+        Order now
       </div>
     </div>
   );

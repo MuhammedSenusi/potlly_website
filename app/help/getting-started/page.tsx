@@ -35,8 +35,8 @@ export default function GettingStartedGuidePage() {
         <p>Have these ready. It makes setup quick and means you will not need to come back later.</p>
         <ul>
           <li>
-            <strong>A phone number you watch.</strong> Customers message this number on WhatsApp or
-            SMS to order, so use one you check throughout the day.
+            <strong>A phone number you watch.</strong> Use one you can answer throughout the day, so you
+            can be reached about an order.
           </li>
           <li>
             <strong>Your documents.</strong> Government ID, and the permits and approvals for the
@@ -61,8 +61,8 @@ export default function GettingStartedGuidePage() {
           then sign back in to the app.
         </p>
         <p>
-          Customers never need an account to browse or order. Your kitchen account is only what lets
-          you manage your listing.
+          Customers can browse without an account but need one to place an order. Your kitchen account
+          is what lets you manage your listing and your orders.
         </p>
 
         <h2 id="verification">2. Get verified</h2>
@@ -112,7 +112,7 @@ export default function GettingStartedGuidePage() {
         <p>Every dish needs a name and a price. The best listings also add:</p>
         <ul>
           <li>
-            <strong>A photo.</strong> Dishes with photos get far more messages than dishes without.
+            <strong>A photo.</strong> Dishes with photos get far more orders than dishes without.
           </li>
           <li>
             <strong>The portion size.</strong> &ldquo;1 litre&rdquo;, &ldquo;serves 2&rdquo; or
@@ -134,7 +134,7 @@ export default function GettingStartedGuidePage() {
         </p>
 
         <h2 id="delivery">5. Set delivery and payment</h2>
-        <p>Spell out how food gets to the customer so nobody is surprised when they message you.</p>
+        <p>Spell out how food gets to the customer so nobody is surprised when they order.</p>
         <ul>
           <li>The areas or neighbourhoods you deliver to</li>
           <li>Your delivery fee, or how it changes with distance</li>
@@ -153,7 +153,7 @@ export default function GettingStartedGuidePage() {
           customers nearby. Before you share it, open your listing as a customer would and check:
         </p>
         <ul>
-          <li>Your phone number is right and the order button opens a message to you</li>
+          <li>Your phone number is right and your kitchen shows as open</li>
           <li>Every dish has a price, and the prices are current</li>
           <li>Your delivery details answer &ldquo;do you deliver to me, and how much?&rdquo;</li>
         </ul>

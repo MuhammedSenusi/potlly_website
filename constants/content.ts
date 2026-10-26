@@ -409,7 +409,7 @@ export const reviews: Review[] = [
     id: "r1",
     rating: 5,
     body:
-      "Portion was much bigger than I expected for the price, and the jollof actually tasted like party jollof. Messaged her on WhatsApp at 10, food came just after 12.",
+      "Portion was much bigger than I expected for the price, and the jollof actually tasted like party jollof. Ordered at 10, food came just after 12.",
     kitchen: "Mama Tayo's Kitchen",
     kitchenId: "mama-tayo",
     dish: "Party Jollof & Chicken",
@@ -429,7 +429,7 @@ export const reviews: Review[] = [
     id: "r3",
     rating: 4,
     body:
-      "Suya was excellent and the yaji is not shy. Took a little longer than the estimate on a Saturday, but she told me upfront on WhatsApp.",
+      "Suya was excellent and the yaji is not shy. Took a little longer than the estimate on a Saturday, but she let me know upfront.",
     kitchen: "Halima's Home Kitchen",
     kitchenId: "halima-home",
     dish: "Beef Suya (Large)",
@@ -449,7 +449,7 @@ export const reviews: Review[] = [
     id: "r5",
     rating: 5,
     body:
-      "I sent a picture of what I wanted and she matched it. Cake was moist, not too sweet, and the price we agreed on WhatsApp was the price I paid.",
+      "I sent a picture of what I wanted and she matched it. Cake was moist, not too sweet, and the price on the order was the price I paid.",
     kitchen: "Auntie Ronke Bakes",
     kitchenId: "ronke-bakes",
     dish: "Butter Cake (8 inch)",

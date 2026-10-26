@@ -5,8 +5,10 @@ import { PhoneFrame } from "@/components/app-ui/phone-frame";
 import { KitchenDashboardScreen } from "@/components/app-ui/screens";
 import {
   IconArrowRight,
+  IconBell,
   IconCamera,
   IconCheck,
+  IconClock,
   IconHeart,
   IconMenuList,
   IconPin,
@@ -15,7 +17,6 @@ import {
   IconTag,
   IconUsers,
   IconWallet,
-  IconWhatsApp,
 } from "@/components/ui/icons";
 
 const customerBenefits = [
@@ -27,7 +28,7 @@ const customerBenefits = [
   {
     Icon: IconUsers,
     title: "Browse without signing up",
-    body: "No account is needed to search, open a kitchen, read reviews or message a food entrepreneur. An account only syncs your favorites.",
+    body: "No account is needed to search, open a kitchen or read reviews. Create one when you are ready to order or to sync your favorites.",
   },
   {
     Icon: IconTag,
@@ -40,9 +41,9 @@ const customerBenefits = [
     body: "Heart a dish or a kitchen and it is on your Favorites tab the next time you are deciding what to eat.",
   },
   {
-    Icon: IconWhatsApp,
-    title: "Talk to the food entrepreneur directly",
-    body: "Ask for less pepper, an earlier drop-off, a bigger tray. It is a conversation, not a form.",
+    Icon: IconClock,
+    title: "Follow your order live",
+    body: "See it move from requested to accepted, preparing, out for delivery and completed. Order now or pre-order for later.",
   },
   {
     Icon: IconWallet,
@@ -92,7 +93,7 @@ const kitchenTools = [
   { Icon: IconCamera, label: "Create your kitchen profile", body: "Photos, description, and the areas you deliver to." },
   { Icon: IconMenuList, label: "Add and edit your menu", body: "Dishes, prices and notes. Changes go live immediately." },
   { Icon: IconWallet, label: "Set your own prices and fees", body: "Your price, your delivery fee. Potlly takes no cut." },
-  { Icon: IconWhatsApp, label: "Take orders where you already are", body: "Customers reach you on WhatsApp or SMS on your own number." },
+  { Icon: IconBell, label: "Manage orders in the app", body: "Requests arrive in the app. Accept them, then move each one from preparing to out for delivery to completed." },
   { Icon: IconStar, label: "Build a reputation", body: "Anonymous reviews add up to a rating that lifts your visibility." },
   { Icon: IconShield, label: "Stay in control", body: "Pause your kitchen, hide a dish, or update your hours any time." },
 ];
@@ -198,7 +199,7 @@ export function FinalCta() {
               <h2 className="mt-4 text-h1 text-white">Ready to find something delicious?</h2>
               <p className="mt-5 text-lead text-white/70">
                 Discover food from local food entrepreneurs near you. Browsing is free and takes no
-                account at all.
+                account.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
