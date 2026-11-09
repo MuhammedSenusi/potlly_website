@@ -5,6 +5,7 @@ import { IconArrowRight, IconCheck, IconClock, IconStar } from "@/components/ui/
 import { PhoneFrame } from "@/components/app-ui/phone-frame";
 import { CustomerHomeScreen } from "@/components/app-ui/screens";
 import { formatPrice, dishes } from "@/constants/content";
+import { site } from "@/constants/site";
 import { HeroSearch } from "./hero-search";
 
 const assurances = ["No account needed to browse", "Real prices, no markup", "Pay by e-Transfer or cash"];
@@ -63,7 +64,18 @@ export function Hero() {
               </ButtonLink>
             </div>
 
-            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2.5">
+            <p className="mt-4 text-[0.9375rem] text-ink-2">
+              Prefer a browser?{" "}
+              <a
+                href={site.webApp}
+                className="font-semibold text-ember-dark underline decoration-ember/30 underline-offset-4"
+              >
+                Order on the web
+              </a>
+              .
+            </p>
+
+            <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2.5">
               {assurances.map((a) => (
                 <li key={a} className="flex items-center gap-2 text-[0.875rem] font-medium text-ink-2">
                   <IconCheck className="size-4 shrink-0 text-leaf" strokeWidth={2.4} />

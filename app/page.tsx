@@ -64,7 +64,7 @@ const jsonLd = {
           name: "How do I place an order?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Choose your dishes from a kitchen's menu in the app, add your delivery address and pick when you want it, now or as a pre-order for later. The kitchen accepts your request and you follow the order from preparing to out for delivery to completed.",
+            text: "Choose your dishes from a kitchen's menu in the Potlly app, or on the web at app.potlly.com, add your delivery address and pick when you want it, now or as a pre-order for later. The kitchen accepts your request and you follow the order from preparing to out for delivery to completed.",
           },
         },
         {

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Logo } from "./logo";
 import { ButtonLink } from "@/components/ui/button";
-import { nav } from "@/constants/site";
+import { nav, site } from "@/constants/site";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -67,8 +67,8 @@ export function SiteHeader() {
           <ButtonLink href="/become-a-kitchen" variant="secondary" size="md">
             List your kitchen
           </ButtonLink>
-          <ButtonLink href="/#discover" size="md">
-            Find food near you
+          <ButtonLink href={site.webApp} size="md">
+            Order on the web
           </ButtonLink>
         </div>
 
@@ -114,8 +114,8 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="mt-5 flex flex-col gap-2.5">
-          <ButtonLink href="/#discover" size="lg" onClick={() => setOpen(false)}>
-            Find food near you
+          <ButtonLink href={site.webApp} size="lg" onClick={() => setOpen(false)}>
+            Order on the web
           </ButtonLink>
           <ButtonLink
             href="/become-a-kitchen"

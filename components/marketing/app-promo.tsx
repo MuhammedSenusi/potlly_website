@@ -90,14 +90,23 @@ export function AppPromo() {
                 <StoreBadge platform="ios" href={site.apps.ios} />
                 <StoreBadge platform="android" href={site.apps.android} />
               </div>
+              <p className="mt-4 text-[0.9375rem] text-white/65">
+                Rather use a browser?{" "}
+                <a
+                  href={site.webApp}
+                  className="font-semibold text-white underline decoration-white/30 underline-offset-4 transition-colors hover:text-amber hover:decoration-amber/60"
+                >
+                  Order on the web at app.potlly.com
+                </a>
+                .
+              </p>
               {site.apps.ios && !site.apps.android ? (
                 <p className="mt-4 text-[0.8125rem] text-white/45">
                   Now available on the App Store. Google Play is coming soon.
                 </p>
               ) : !site.apps.ios && !site.apps.android ? (
                 <p className="mt-4 text-[0.8125rem] text-white/45">
-                  Store listings are not live yet. In the meantime, everything on this page works in
-                  your browser.
+                  Store listings are not live yet. In the meantime, you can order from your browser.
                 </p>
               ) : null}
             </div>
