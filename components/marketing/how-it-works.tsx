@@ -36,7 +36,7 @@ export function HowItWorks() {
           <Step
             n="03"
             title="Order & track"
-            body="Place your order in the app and follow it from requested to completed. Pay the kitchen by e-Transfer or cash."
+            body="Place your order in the app or on the web at app.potlly.com and follow it from requested to completed. Pay the kitchen by e-Transfer or cash."
           >
             <OrderArt />
           </Step>

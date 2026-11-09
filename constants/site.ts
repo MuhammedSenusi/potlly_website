@@ -23,6 +23,8 @@ export const site = {
     ios: "https://apps.apple.com/us/app/potlly/id6812769455" as string | null,
     android: null as string | null,
   },
+  /** Browser version of the app, for people who would rather order on the web. */
+  webApp: "https://app.potlly.com",
   legalUpdated: "25 September 2026",
 } as const;
 
@@ -35,6 +37,7 @@ export const nav = {
   ],
   explore: [
     { label: "Find food", href: "/#discover" },
+    { label: "Order on the web", href: "https://app.potlly.com" },
     { label: "Kitchens", href: "/#kitchens" },
     { label: "Popular dishes", href: "/#discover" },
     { label: "Top rated", href: "/#reviews" },
